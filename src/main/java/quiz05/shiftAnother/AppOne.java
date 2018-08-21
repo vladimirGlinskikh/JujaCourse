@@ -1,4 +1,4 @@
-package quiz05.shift;
+package quiz05.shiftAnother;
 
 public class AppOne {
     public static void main(String[] args) {
