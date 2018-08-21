@@ -1,4 +1,4 @@
-package quiz05;
+package quiz05.and;
 
 public class AppSix {
     public static void main(String[] args) {
