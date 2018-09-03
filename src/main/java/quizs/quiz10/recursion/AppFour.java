@@ -1,6 +1,6 @@
-package quizs.quiz10;
+package quizs.quiz10.recursion;
 
-public class AppThree {
+public class AppFour {
     public static void main(String[] args) {
         f(1);
     }
@@ -8,7 +8,7 @@ public class AppThree {
     private static void f(int n) {
         if (n < 7) {
             f(2 * n);
+            System.out.print(n);
         }
-        System.out.print(n);
     }
 }

@@ -1,4 +1,4 @@
-package quizs.quiz10;
+package quizs.quiz10.recursion;
 
 public class AppTwo {
     public static void main(String[] args) {
