@@ -1,7 +1,6 @@
 package laboratoryWork.lab20;
 
 import java.util.Arrays;
-//реализация первого варианта. Не проходит валидацию.
 public class Permutator {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3};
