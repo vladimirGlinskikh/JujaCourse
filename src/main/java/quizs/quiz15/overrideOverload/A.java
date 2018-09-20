@@ -1,6 +1,6 @@
 package quizs.quiz15.overrideOverload;
 
-abstract class Parent {
+abstract class A {
     String first() {
         return second();
     }
@@ -8,7 +8,6 @@ abstract class Parent {
     abstract String second();
 
    static String third() {
-        return "Parent";
+        return "A";
     }
 }
-
