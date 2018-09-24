@@ -11,9 +11,6 @@ public class Liner extends AbstractShip {
 
     @Override
     public float calculatePayment() {
-        if (DEFAULT_RENTAL <= 0) {
-            return DEFAULT_RENTAL;
-        }
         return passengers * DEFAULT_RENTAL;
     }
 
