@@ -1,4 +1,4 @@
-package quizs.quiz23;
+package quizs.quiz23.try_catch;
 
 public class Application11 {
     public static void main(String[] args) throws Throwable {
