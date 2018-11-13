@@ -1,4 +1,4 @@
-package quizs.quiz25;
+package quizs.quiz25.setUsage;
 
 import java.util.Arrays;
 import java.util.HashSet;
