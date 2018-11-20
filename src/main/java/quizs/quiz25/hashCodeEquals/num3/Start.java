@@ -1,24 +1,24 @@
-package quizs.quiz25.hashCodeEquals.num2;
+package quizs.quiz25.hashCodeEquals.num3;
 
 import java.util.HashSet;
 import java.util.Set;
 
 public class Start {
     public static void main(String[] args) {
-        Point2 one = new Point2(1, 2);
-        Point2 two = new Point2(1, 2);
+        Point3 one = new Point3(3, 6);
+        Point3 two = new Point3(3, 6);
 
         if (one.equals(two)) {
-            System.out.println("OK");
+            System.out.println("Ok");
             System.out.println(one.hashCode());
             System.out.println(two.hashCode());
         } else {
-            System.out.println("Wrong !");
+            System.out.println("Wrong!");
             System.out.println(one.hashCode());
             System.out.println(two.hashCode());
         }
 
-        Set<Point2> set = new HashSet<>();
+        Set<Point3> set = new HashSet<>();
         set.add(one);
         set.add(two);
 
