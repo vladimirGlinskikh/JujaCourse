@@ -1,10 +1,23 @@
-package quizs.quiz25.hashCodeEquals;
+package quizs.quiz25.hashCodeEquals.num5;
 
 import java.util.Objects;
 
 public class Point5 {
     public int x;
     public int y;
+
+    public Point5(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
 
     @Override
     public int hashCode() {
