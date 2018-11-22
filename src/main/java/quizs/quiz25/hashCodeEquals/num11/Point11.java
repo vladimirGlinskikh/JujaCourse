@@ -1,10 +1,10 @@
-package quizs.quiz25.hashCodeEquals.num10;
+package quizs.quiz25.hashCodeEquals.num11;
 
-public class Point10 {
+public class Point11 {
     public int x;
     public int y;
 
-    public Point10(int x, int y) {
+    public Point11(int x, int y) {
         this.x = x;
         this.y = y;
     }
@@ -18,11 +18,11 @@ public class Point10 {
     }
 
     public int hashCode() {
-        return 0;
+        return x;
     }
 
     public boolean equals(Object ref) {
-        Point10 that = (Point10) ref;
+        Point11 that = (Point11) ref;
         return (this.x == that.x) && (this.y == that.y);
     }
 }
