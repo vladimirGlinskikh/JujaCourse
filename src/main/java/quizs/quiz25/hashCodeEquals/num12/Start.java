@@ -1,4 +1,4 @@
-package quizs.quiz25.hashCodeEquals.num11;
+package quizs.quiz25.hashCodeEquals.num12;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -9,7 +9,7 @@ public class Start {
         Point12 two = new Point12(1, 2);
 
         if (one.equals(two)) {
-            System.out.println("OK!");
+            System.out.println("OK !");
             System.out.println(one.hashCode());
             System.out.println(two.hashCode());
         } else {
