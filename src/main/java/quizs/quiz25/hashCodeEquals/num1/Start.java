@@ -6,7 +6,7 @@ import java.util.Set;
 public class Start {
     public static void main(String[] args) {
         Point point = new Point(1, 3);
-        Point point1 = new Point(1, 2);
+        Point point1 = new Point(1, 3);
         if (point.equals(point1)) {
             System.out.println("OK");
             System.out.println(point.hashCode());
