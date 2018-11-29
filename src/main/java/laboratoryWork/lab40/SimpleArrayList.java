@@ -1,13 +1,13 @@
 package laboratoryWork.lab40;
 
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class SimpleArrayList<E> implements SimpleList<E> {
-        private static final int DEFAULT_INITIAL_CAPACITY = 16;
+    private static final int DEFAULT_INITIAL_CAPACITY = 16;
     private E[] data;
     private int size = 0;
+    private int index = 0;
     private Iterator<E> iterator;
 
     public SimpleArrayList() {
@@ -16,35 +16,37 @@ public class SimpleArrayList<E> implements SimpleList<E> {
 
     public SimpleArrayList(int initialCapacity) {
         this.data = (E[]) new Object[initialCapacity];
-        iterator = new Iterator<>() {
-            private int index = 0;
-
+        iterator = new Iterator<E>() {
             @Override
             public boolean hasNext() {
-                if (!(index == size))
-                    return true;
-                else return false;
+                if (index == data.length - 1)
+                    return false;
+                for (int i = index; i < data.length; i++) {
+
+                    if (data[i] != null) {
+                        return true;
+                    }
+                }
+                return false;
             }
 
             @Override
             public E next() {
-                if (index == size) {
+                if (!hasNext()) {
                     throw new NoSuchElementException();
                 }
-                index += 1;
-                return data[index - 1];
+                return data[index++];
             }
 
             @Override
             public void remove() {
-                if (index <= 0) {
-                    throw new IllegalArgumentException();
+                if (index != 0) {
+                    int numMoved = size + 1 - index;
+                    System.arraycopy(data, index, data, index - 1, numMoved);
+                } else {
+                    throw new IllegalStateException();
                 }
-                for (int i = index; i < size; i++) {
-                    data[i - 1] = data[i];
-                }
-                size -= 1;
-                data[size] = null;
+                data[--size] = null;
             }
         };
     }
@@ -61,6 +63,52 @@ public class SimpleArrayList<E> implements SimpleList<E> {
     public E get(int index) {
         rangeCheck(index);
         return data[index];
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return iterator;
+    }
+
+    @Override
+    public String toString() {
+        String result = "[";
+        for (int i = 0; i < size(); i++) {
+            if (i == 0) {
+                result += data[i];
+            } else {
+                result += ", " + data[i];
+            }
+        }
+        result += "]";
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || this.data == null) {
+            return false;
+        } else if (!(o instanceof SimpleArrayList)) {
+            return false;
+        } else if (o == this) {
+            return true;
+        } else if (((SimpleArrayList) o).size() == this.size()) {
+            for (int i = 0; i < DEFAULT_INITIAL_CAPACITY; i++) {
+                if (((SimpleArrayList) o).get(i) == data[i]) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        int hashCode = 0;
+        while (iterator.hasNext()) {
+            hashCode += iterator.next().hashCode();
+        }
+        return hashCode;
     }
 
     @Override
@@ -83,11 +131,6 @@ public class SimpleArrayList<E> implements SimpleList<E> {
         return oldValue;
     }
 
-    @Override
-    public Iterator<E> iterator() {
-        return iterator;
-    }
-
     private void rangeCheck(int index) {
         if (index < 0 || size < index) {
             throw new ArrayIndexOutOfBoundsException();
@@ -101,42 +144,5 @@ public class SimpleArrayList<E> implements SimpleList<E> {
             System.arraycopy(data, 0, newData, 0, data.length);
             this.data = newData;
         }
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (o instanceof SimpleArrayList) {
-            SimpleArrayList<E> obj = (SimpleArrayList<E>) o;
-            if (size != obj.size) {
-                return false;
-            }
-            for (int i = 0; i < size; i++) {
-                if (!data[i].equals(obj.data[i])) {
-                    return false;
-                }
-            }
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public int hashCode() {
-        return Arrays.hashCode(data);
-    }
-
-    @Override
-    public String toString() {
-        String brace = "[";
-        int lastIndex = size - 1;
-
-        if (size == 0) {
-            return "[" + "]";
-        }
-        for (int i = 0; i < lastIndex; i++) {
-            brace += data[i].toString() + ", ";
-        }
-        brace += data[lastIndex] + "]";
-        return brace;
     }
 }
