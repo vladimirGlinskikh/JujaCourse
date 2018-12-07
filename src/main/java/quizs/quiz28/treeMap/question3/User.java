@@ -1,4 +1,4 @@
-package quizs.quiz28.treeMap.quistion2;
+package quizs.quiz28.treeMap.question3;
 
 public class User implements Comparable<User> {
     public String name;
@@ -19,11 +19,11 @@ public class User implements Comparable<User> {
 
     @Override
     public int compareTo(User that) {
-        int result = that.age - this.age;
+        int result = this.age - that.age;
         if (result != 0) {
             return result;
         } else {
-            return that.name.compareTo(this.name);
+            return this.name.compareTo(that.name);
         }
     }
 }

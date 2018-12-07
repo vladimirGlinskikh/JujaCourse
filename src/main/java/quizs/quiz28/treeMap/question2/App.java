@@ -1,4 +1,4 @@
-package quizs.quiz28.treeMap.quistion2;
+package quizs.quiz28.treeMap.question2;
 
 import java.util.NavigableSet;
 import java.util.TreeSet;
