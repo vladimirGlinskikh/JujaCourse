@@ -4,7 +4,7 @@ public class User implements Comparable<User> {
     public String name;
     public int age;
 
-    User(int age, String name) {
+    public User(int age, String name) {
         this.name = name;
         this.age = age;
     }
