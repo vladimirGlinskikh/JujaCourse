@@ -4,6 +4,22 @@ import java.io.IOException;
 
 public class App {
     public static void main(String[] args) throws IOException {
+//        --App1--
+//        new BufferedWriter(new BufferedWriter(...));
+//        new BufferedWriter(new OutputStreamWriter(...))
+//        Writer ref = new BufferedWriter(...);
+//        --App2--
+//        new BufferedReader(new BufferedReader(...));
+//        new BufferedReader(new InputStreamReader(...));
+//        Reader ref = new BufferedReader(...);
+//        --App3--
+//        new BufferedOutputStream(new GZIPOutputStream(...));
+//        new BufferedOutputStream(new DataOutputStream(...));
+//        OutputStream ref = new BufferedOutputStream(...);
+//        --App4--
+//        new BufferedInputStream(new GZIPInputStream(...));
+//        new BufferedInputStream(new DataInputStream(...));
+//        InputStream ref = new BufferedInputStream(...);
 //        --App5--
 //        new GZIPOutputStream(new GZIPOutputStream(...));
 //        new GZIPOutputStream(new DataOutputStream(...));
