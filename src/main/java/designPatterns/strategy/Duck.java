@@ -15,7 +15,7 @@ public abstract class Duck {
     }
 
     public void performQuack(){
-        flyBehavior.quack();
+        quackBehavior.quack();
     }
 
     public void swim(){
