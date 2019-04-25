@@ -32,4 +32,8 @@ public class WeatherData implements Subject {
             observer.update(temperature, humidity, pressure);
         }
     }
+
+    public void measurementsChanged() {
+        notifyObservers();
+    }
 }
