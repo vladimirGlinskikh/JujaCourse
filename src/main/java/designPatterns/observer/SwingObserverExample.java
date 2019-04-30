@@ -14,6 +14,10 @@ public class SwingObserverExample {
 
     public void go() {
         frame = new JFrame();
+
+        JButton button = new JButton("Should I do it?");
+        button.addActionListener(new AngelListener());
+        button.addActionListener(new DevilListener());
     }
 
     class AngelListener implements ActionListener {
