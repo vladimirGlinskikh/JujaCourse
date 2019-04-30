@@ -23,4 +23,12 @@ public class SwingObserverExample {
             System.out.println("Don't do it, you might regret it!");
         }
     }
+
+    class DevilListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent event) {
+            System.out.println("Come on, do it!");
+        }
+    }
 }
