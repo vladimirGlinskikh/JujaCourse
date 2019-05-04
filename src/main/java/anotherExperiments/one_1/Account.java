@@ -20,9 +20,15 @@ public class Account {
         this.balance = balance;
     }
 
-    public void deposit(double amount){
-        if (amount > 0){
+    public void deposit(double amount) {
+        if (amount > 0) {
             balance += amount;
+        }
+    }
+
+    public void withDraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
         }
     }
 }
