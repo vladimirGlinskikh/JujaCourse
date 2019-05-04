@@ -1,4 +1,4 @@
-package anotherExperiments.one_1;
+package anotherExperiments.one_1.domain;
 
 public class Account {
     private double balance;

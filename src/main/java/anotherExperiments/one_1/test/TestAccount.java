@@ -1,4 +1,6 @@
-package anotherExperiments.one_1;
+package anotherExperiments.one_1.test;
+
+import anotherExperiments.one_1.domain.Account;
 
 public class TestAccount {
     public static void main(String[] args) {
