@@ -19,4 +19,10 @@ public class Account {
     public void setBalance(double balance) {
         this.balance = balance;
     }
+
+    public void deposit(double amount){
+        if (amount > 0){
+            balance += amount;
+        }
+    }
 }
