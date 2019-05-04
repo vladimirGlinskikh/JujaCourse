@@ -5,7 +5,7 @@ public class Account {
 
     public Account(double balance) {
 
-        if (this.balance >= 0) {
+        if (balance >= 0) {
             this.setBalance(balance);
         } else {
             this.balance = 0;
