@@ -7,6 +7,6 @@ public class StarbuzzCoffee {
                 + " $" + beverage.coast());
 
         Beverage beverage2 = new DarkRoast();
-
+        beverage2 = new Mocha(beverage2);
     }
 }
