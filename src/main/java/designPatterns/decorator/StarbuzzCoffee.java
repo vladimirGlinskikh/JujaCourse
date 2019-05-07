@@ -5,5 +5,8 @@ public class StarbuzzCoffee {
         Beverage beverage = new Espresso();
         System.out.println(beverage.getDescription()
                 + " $" + beverage.coast());
+
+        Beverage beverage2 = new DarkRoast();
+
     }
 }
