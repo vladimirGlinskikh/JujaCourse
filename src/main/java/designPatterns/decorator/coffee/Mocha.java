@@ -1,4 +1,4 @@
-package designPatterns.decorator;
+package designPatterns.decorator.coffee;
 
 public class Mocha extends CondimentDecorator {
     Beverage beverage;
