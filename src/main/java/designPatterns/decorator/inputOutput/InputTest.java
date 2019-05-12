@@ -12,7 +12,7 @@ public class InputTest {
             InputStream in =
                     new LowerCaseInputStream(
                             new BufferedInputStream(
-                                    new FileInputStream("src\\main\\resources\\test.txt")
+                                    new FileInputStream("src/main/resources/test.txt")
                             )
                     );
             while ((c = in.read()) >= 0) {
