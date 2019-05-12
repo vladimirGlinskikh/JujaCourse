@@ -1,4 +1,4 @@
-package anotherExperiments.thread;
+package anotherExperiments.thread.hellow;
 
 public class App {
     public static void main(String[] args) {

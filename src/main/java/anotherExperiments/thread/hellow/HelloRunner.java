@@ -1,4 +1,4 @@
-package anotherExperiments.thread;
+package anotherExperiments.thread.hellow;
 
 public class HelloRunner implements Runnable {
     int i;
