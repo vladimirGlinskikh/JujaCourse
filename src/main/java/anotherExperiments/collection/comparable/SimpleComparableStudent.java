@@ -1,4 +1,4 @@
-package anotherExperiments.collection;
+package anotherExperiments.collection.comparable;
 
 import java.util.Arrays;
 
