@@ -39,7 +39,7 @@ public class SimpleQueue {
 
 class QueueMain {
     public static void main(String[] args) {
-        SimpleQueue simpleQueue = new SimpleQueue(10);
+        SimpleQueue simpleQueue = new SimpleQueue(3);
 
         simpleQueue.insert(10);
         simpleQueue.insert(20);
@@ -47,6 +47,10 @@ class QueueMain {
         simpleQueue.insert(40);
         simpleQueue.remove();
         simpleQueue.remove();
+        simpleQueue.insert(105);
+        simpleQueue.insert(106);
+        simpleQueue.insert(107);
+        simpleQueue.insert(108);
 
         while (!simpleQueue.isEmpty()) {
             long n = simpleQueue.remove();
