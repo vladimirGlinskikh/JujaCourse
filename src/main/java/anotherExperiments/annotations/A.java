@@ -1,24 +1,28 @@
 package anotherExperiments.annotations;
 
 public class A {
-    public static void print() {
+    public void print() {
         System.out.println("A");
     }
 }
 
 class C extends B {
-    public static void print(){
+
+    @Override
+    public void print() {
         System.out.println("C");
     }
 }
 
 class B extends A {
-    public static void print() {
+
+    @Override
+    public void print() {
         System.out.println("B");
     }
 
     public static void main(String[] args) {
-        B a = new C();
+        A a = new C();
         a.print();
     }
 }
