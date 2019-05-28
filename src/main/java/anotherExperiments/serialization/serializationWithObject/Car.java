@@ -6,7 +6,7 @@ import java.util.Objects;
 public class Car implements Serializable {
     private int price;
     private String model;
-    private Engine engine;
+    transient private Engine engine;
 
     public Car() {
     }
