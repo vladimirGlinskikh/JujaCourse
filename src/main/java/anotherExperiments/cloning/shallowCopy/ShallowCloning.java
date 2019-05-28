@@ -1,4 +1,4 @@
-package anotherExperiments.cloning.exampleOne;
+package anotherExperiments.cloning.shallowCopy;
 
 public class ShallowCloning {
     public static void main(String[] args) {
