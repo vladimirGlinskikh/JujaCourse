@@ -9,6 +9,16 @@ public class ShallowCloning {
             Student cloneStudent = (Student) student.clone();
             System.out.println(student);
             System.out.println(cloneStudent);
+
+            cloneStudent.name = "Alexander";
+            cloneStudent.group.id = 10;
+            cloneStudent.age = 35;
+
+            System.out.println("After cloning---------- ");
+
+            System.out.println(student);
+            System.out.println(cloneStudent);
+
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
