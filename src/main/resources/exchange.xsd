@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="exchange" type="exchangeType"/>
+    <xs:complexType name="currencyType">
+        <xs:sequence>
+            <xs:element name="r030">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="36"/>
+                        <xs:enumeration value="124"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="txt">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Australian dollar"/>
+                        <xs:enumeration value="Kanadian dollar"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="rate">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="18.558298"/>
+                        <xs:enumeration value="19.811889"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="cc">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="AUD"/>
+                        <xs:enumeration value="CAD"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element type="xs:string" name="exchangedate"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="exchangeType">
+        <xs:sequence>
+            <xs:element type="currencyType" name="currency" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

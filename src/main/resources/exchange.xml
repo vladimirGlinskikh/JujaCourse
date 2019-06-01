@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE exchange[
+        <!ELEMENT exchange (currency)*>
+        <!ELEMENT currency (r030|txt|rate|cc|exchangedate)*>
+        <!ELEMENT r030 (#PCDATA)>
+        <!ELEMENT txt (#PCDATA)>
+        <!ELEMENT rate (#PCDATA)>
+        <!ELEMENT cc (#PCDATA)>
+        <!ELEMENT exchangedate (#PCDATA)>
+        ]>
+
+<exchange>
+    <currency>
+        <r030>36</r030>
+        <txt>Австралійський долар</txt>
+        <rate>18.558298</rate>
+        <cc>AUD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+</exchange>
