@@ -17,4 +17,424 @@
         <cc>AUD</cc>
         <exchangedate>03.06.2019</exchangedate>
     </currency>
+    <currency>
+        <r030>124</r030>
+        <txt>Канадський долар</txt>
+        <rate>19.811889</rate>
+        <cc>CAD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>156</r030>
+        <txt>Юань Женьмiньбi</txt>
+        <rate>3.886777</rate>
+        <cc>CNY</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>191</r030>
+        <txt>Куна</txt>
+        <rate>4.036621</rate>
+        <cc>HRK</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>203</r030>
+        <txt>Чеська крона</txt>
+        <rate>1.159966</rate>
+        <cc>CZK</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>208</r030>
+        <txt>Данська крона</txt>
+        <rate>4.009865</rate>
+        <cc>DKK</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>344</r030>
+        <txt>Гонконгівський долар</txt>
+        <rate>3.424045</rate>
+        <cc>HKD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>348</r030>
+        <txt>Форинт</txt>
+        <rate>0.092328</rate>
+        <cc>HUF</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>356</r030>
+        <txt>Індійська рупія</txt>
+        <rate>0.3851979</rate>
+        <cc>INR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>360</r030>
+        <txt>Рупія</txt>
+        <rate>0.00187369</rate>
+        <cc>IDR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>364</r030>
+        <txt>Іранський ріал</txt>
+        <rate>0.0006394</rate>
+        <cc>IRR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>376</r030>
+        <txt>Новий ізраїльський шекель</txt>
+        <rate>7.39308</rate>
+        <cc>ILS</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>392</r030>
+        <txt>Єна</txt>
+        <rate>0.2469339</rate>
+        <cc>JPY</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>398</r030>
+        <txt>Теньге</txt>
+        <rate>0.070197</rate>
+        <cc>KZT</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>410</r030>
+        <txt>Вона</txt>
+        <rate>0.0225442</rate>
+        <cc>KRW</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>484</r030>
+        <txt>Мексіканський песо</txt>
+        <rate>1.367869</rate>
+        <cc>MXN</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>498</r030>
+        <txt>Молдовський лей</txt>
+        <rate>1.475557</rate>
+        <cc>MDL</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>554</r030>
+        <txt>Новозеландський долар</txt>
+        <rate>17.477338</rate>
+        <cc>NZD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>578</r030>
+        <txt>Норвезька крона</txt>
+        <rate>3.058333</rate>
+        <cc>NOK</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>643</r030>
+        <txt>Російський рубль</txt>
+        <rate>0.41073</rate>
+        <cc>RUB</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>682</r030>
+        <txt>Саудівський рiял</txt>
+        <rate>7.161252</rate>
+        <cc>SAR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>702</r030>
+        <txt>Сінгапурський долар</txt>
+        <rate>19.473059</rate>
+        <cc>SGD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>710</r030>
+        <txt>Ренд</txt>
+        <rate>1.827806</rate>
+        <cc>ZAR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>752</r030>
+        <txt>Шведська крона</txt>
+        <rate>2.814707</rate>
+        <cc>SEK</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>756</r030>
+        <txt>Швейцарський франк</txt>
+        <rate>26.703826</rate>
+        <cc>CHF</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>818</r030>
+        <txt>Єгипетський фунт</txt>
+        <rate>1.603572</rate>
+        <cc>EGP</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>826</r030>
+        <txt>Фунт стерлінгів</txt>
+        <rate>33.763285</rate>
+        <cc>GBP</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>840</r030>
+        <txt>Долар США</txt>
+        <rate>26.854695</rate>
+        <cc>USD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>933</r030>
+        <txt>Бiлоруський рубль</txt>
+        <rate>12.79465</rate>
+        <cc>BYN</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>944</r030>
+        <txt>Азербайджанський манат</txt>
+        <rate>15.796879</rate>
+        <cc>AZN</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>946</r030>
+        <txt>Румунський лей</txt>
+        <rate>6.313656</rate>
+        <cc>RON</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>949</r030>
+        <txt>Турецька ліра</txt>
+        <rate>4.587968</rate>
+        <cc>TRY</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>960</r030>
+        <txt>СПЗ(спеціальні права запозичення)</txt>
+        <rate>36.995543</rate>
+        <cc>XDR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>975</r030>
+        <txt>Болгарський лев</txt>
+        <rate>15.311213</rate>
+        <cc>BGN</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>978</r030>
+        <txt>Євро</txt>
+        <rate>29.94567</rate>
+        <cc>EUR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>985</r030>
+        <txt>Злотий</txt>
+        <rate>6.98963</rate>
+        <cc>PLN</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>12</r030>
+        <txt>Алжирський динар</txt>
+        <rate>0.22452</rate>
+        <cc>DZD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>50</r030>
+        <txt>Така</txt>
+        <rate>0.319965</rate>
+        <cc>BDT</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>51</r030>
+        <txt>Вiрменський драм</txt>
+        <rate>0.05593563</rate>
+        <cc>AMD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>368</r030>
+        <txt>Іракський динар</txt>
+        <rate>0.022635</rate>
+        <cc>IQD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>417</r030>
+        <txt>Сом</txt>
+        <rate>0.384463</rate>
+        <cc>KGS</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>422</r030>
+        <txt>Ліванський фунт</txt>
+        <rate>0.0178354</rate>
+        <cc>LBP</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>434</r030>
+        <txt>Лівійський динар</txt>
+        <rate>19.191521</rate>
+        <cc>LYD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>458</r030>
+        <txt>Малайзійський ринггіт</txt>
+        <rate>6.405902</rate>
+        <cc>MYR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>504</r030>
+        <txt>Марокканський дирхам</txt>
+        <rate>2.761068</rate>
+        <cc>MAD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>586</r030>
+        <txt>Пакистанська рупія</txt>
+        <rate>0.179594</rate>
+        <cc>PKR</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>704</r030>
+        <txt>Донг</txt>
+        <rate>0.0011469</rate>
+        <cc>VND</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>764</r030>
+        <txt>Бат</txt>
+        <rate>0.848752</rate>
+        <cc>THB</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>784</r030>
+        <txt>Дирхам ОАЕ</txt>
+        <rate>7.311976</rate>
+        <cc>AED</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>788</r030>
+        <txt>Туніський динар</txt>
+        <rate>8.964115</rate>
+        <cc>TND</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>860</r030>
+        <txt>Узбецький сум</txt>
+        <rate>0.003165</rate>
+        <cc>UZS</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>901</r030>
+        <txt>Новий тайванський долар</txt>
+        <rate>0.850774</rate>
+        <cc>TWD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>934</r030>
+        <txt>Туркменський новий манат</txt>
+        <rate>7.67277</rate>
+        <cc>TMT</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>936</r030>
+        <txt>Ганських седі</txt>
+        <rate>5.08217</rate>
+        <cc>GHS</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>941</r030>
+        <txt>Сербський динар</txt>
+        <rate>0.253993</rate>
+        <cc>RSD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>972</r030>
+        <txt>Сомонi</txt>
+        <rate>2.844867</rate>
+        <cc>TJS</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>981</r030>
+        <txt>Ларi</txt>
+        <rate>9.6357</rate>
+        <cc>GEL</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>959</r030>
+        <txt>Золото</txt>
+        <rate>34803.685</rate>
+        <cc>XAU</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>961</r030>
+        <txt>Срiбло</txt>
+        <rate>386.708</rate>
+        <cc>XAG</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>962</r030>
+        <txt>Платина</txt>
+        <rate>21242.064</rate>
+        <cc>XPT</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
+    <currency>
+        <r030>964</r030>
+        <txt>Паладiй</txt>
+        <rate>36119.565</rate>
+        <cc>XPD</cc>
+        <exchangedate>03.06.2019</exchangedate>
+    </currency>
 </exchange>
