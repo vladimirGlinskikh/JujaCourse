@@ -1,4 +1,4 @@
-package anotherExperiments.xml;
+package anotherExperiments.xml.xmlParser;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

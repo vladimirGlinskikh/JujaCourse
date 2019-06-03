@@ -1,4 +1,4 @@
-package anotherExperiments.xml;
+package anotherExperiments.xml.xmlParser;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;

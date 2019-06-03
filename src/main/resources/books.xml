@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog>
+    <book>
+        <author>Дмитрий Хара</author>
+        <genre>Художественная литература</genre>
+        <createBookYear>15 августа 2011</createBookYear>
+        <ISBN>978-5-17-102732-2</ISBN>
+    </book>
+</catalog>
