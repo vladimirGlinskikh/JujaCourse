@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <catalog>
     <book>
-        <author>Дмитрий Хара</author>
-        <genre>Художественная литература</genre>
-        <name>Новая жизнь. Последний шаг</name>
-        <publishDate>15 августа 2011</publishDate>
-        <ISBN>978-5-17-102732-2</ISBN>
+        <author>Artur Daly</author>
+        <genre>Документальная литература</genre>
+        <ISBN>978-5-04-199323-4</ISBN>
+        <name>Общая психология</name>
+        <publish_date>15 августа 2011</publish_date>
     </book>
     <book>
-        <author>Татьяна Устинова</author>
+        <author>Марина Хорс</author>
         <genre>Художественная литература</genre>
-        <name>Свидание с богом у огня</name>
-        <publishDate>27 мая 2019</publishDate>
-        <ISBN>978-5-04-100323-4</ISBN>
+        <ISBN>972-5-01-989323-3</ISBN>
+        <name>Озеро на острове</name>
+        <publish_date>15 августа 2011</publish_date>
     </book>
 </catalog>

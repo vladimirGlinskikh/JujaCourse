@@ -1,21 +1,20 @@
 package anotherExperiments.xml.JAXB;
 
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-
-import java.util.Date;
 
 @XmlRootElement(name = "name")
 public class Book {
     private String author;
     private String genre;
     private String name;
-    private Date publishDate;
+    private String publishDate;
     private String ISBN;
 
     public Book() {
     }
 
-    public Book(String author, String genre, String name, Date publishDate, String ISBN) {
+    public Book(String author, String genre, String name, String publishDate, String ISBN) {
         this.author = author;
         this.genre = genre;
         this.name = name;
@@ -26,7 +25,7 @@ public class Book {
     public String getAuthor() {
         return author;
     }
-
+    @XmlElement
     public void setAuthor(String author) {
         this.author = author;
     }
@@ -35,6 +34,7 @@ public class Book {
         return genre;
     }
 
+    @XmlElement
     public void setGenre(String genre) {
         this.genre = genre;
     }
@@ -43,15 +43,17 @@ public class Book {
         return name;
     }
 
+    @XmlElement
     public void setName(String name) {
         this.name = name;
     }
 
-    public Date getPublishDate() {
+    public String getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(Date publishDate) {
+    @XmlElement(name = "publish_date")
+    public void setPublishDate(String publishDate) {
         this.publishDate = publishDate;
     }
 
@@ -59,18 +61,17 @@ public class Book {
         return ISBN;
     }
 
+    @XmlElement
     public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 
     @Override
     public String toString() {
-        return "Book{" +
-                "author='" + author + '\'' +
-                ", genre='" + genre + '\'' +
-                ", name='" + name + '\'' +
-                ", publishDate=" + publishDate +
-                ", ISBN='" + ISBN + '\'' +
-                '}';
+        return "[" + author +
+                genre +
+                name +
+                publishDate +
+                ISBN + "]";
     }
 }
