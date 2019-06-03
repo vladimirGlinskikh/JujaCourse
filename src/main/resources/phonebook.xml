@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<phonebook>
+    <person>
+        <name>Vladimir</name>
+        <email>vladimir.v.glinskikh@gmail.com</email>
+        <telephone>8-701-934-56-67</telephone>
+        <web>www.zhelezyaka.kz</web>
+    </person>
+    <person>
+        <name>Dmitry</name>
+        <email>dmitry@gmail.com</email>
+        <telephone>8-701-932-18-30</telephone>
+        <web>www.oracle.com</web>
+    </person>
+    <person>
+        <name>Denis</name>
+        <email>denis@gmail.com</email>
+        <telephone>8-701-345-23-12</telephone>
+        <web>www.intel.com</web>
+    </person>
+</phonebook>
