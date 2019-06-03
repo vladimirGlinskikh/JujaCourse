@@ -26,7 +26,13 @@ public class SaxParserStart {
         if (qName.equalsIgnoreCase("name")) {
             name = true;
         }
+    }
 
+    public void characters(char ch[], int start, int length) throws SAXException {
+        if (name) {
+            System.out.println("Name: " + new String(ch, start, length));
+            name = false;
+        }
     }
 }
 
