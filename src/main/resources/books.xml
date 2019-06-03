@@ -3,7 +3,15 @@
     <book>
         <author>Дмитрий Хара</author>
         <genre>Художественная литература</genre>
-        <createBookYear>15 августа 2011</createBookYear>
+        <name>Новая жизнь. Последний шаг</name>
+        <publishDate>15 августа 2011</publishDate>
         <ISBN>978-5-17-102732-2</ISBN>
+    </book>
+    <book>
+        <author>Татьяна Устинова</author>
+        <genre>Художественная литература</genre>
+        <name>Свидание с богом у огня</name>
+        <publishDate>27 мая 2019</publishDate>
+        <ISBN>978-5-04-100323-4</ISBN>
     </book>
 </catalog>
