@@ -1,0 +1,14 @@
+{
+  "firstName": "Vladimir",
+  "lastName": "Glinskikh",
+  "course": {
+    "author": "Alexander Baglay",
+    "title": "Java Profesional",
+    "description": "For everyone"
+  },
+  "personalContacts": [
+    "http://www.zhelezyaka.kz",
+    "support@zhelezyaka.kz",
+    "vladimir.v.glinskikh@gmail.com"
+  ]
+}
