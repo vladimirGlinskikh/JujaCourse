@@ -8,6 +8,9 @@ import com.google.gson.stream.JsonReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 public class GsonParser {
     public static void parseJson(String url) throws IOException {
@@ -21,5 +24,8 @@ public class GsonParser {
         for (CurrencyRate rate : currencyRates) {
             System.out.println(rate);
         }
+        String gsonString = gson.toJson(currencyRates);
+        Files.write(Paths.get("/home/vladimir/Documents/IdeaProjects/JujaCourse/src/main/resources/gsonCurrency.json"),
+                gsonString.getBytes(), StandardOpenOption.CREATE);
     }
 }
