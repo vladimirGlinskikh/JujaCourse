@@ -3,7 +3,7 @@ package anotherExperiments.thread.simpleTread;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SimpleThread extends Thread {
+public class SimpleThread implements Runnable {
     public static void main(String[] args) {
         System.out.println(Thread.currentThread().getName());
         System.out.println("Start Thread main()");
