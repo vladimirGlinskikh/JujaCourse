@@ -10,17 +10,9 @@ public class Cashier extends Thread {
     }
 
     @Override
-    public void run() {
+    public synchronized void run() {
         for (int i = 0; i < tickets.length; i++) {
-            if (!tickets[i].isBought) {
-                try {
-                    Thread.sleep(10);
-                } catch (InterruptedException e) {
-                    System.err.println(e);
-                }
-                tickets[i].isBought = true;
-                System.out.println("Cashier: " + id + " " + "ticket: " + tickets[i].place);
-            }
+            tickets[i].buy(this);
         }
     }
 }
