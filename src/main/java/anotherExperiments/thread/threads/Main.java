@@ -1,6 +1,13 @@
 package anotherExperiments.thread.threads;
 
 public class Main {
+    public static void main(String[] args) {
+
+    }
+
+    private static void isChickenOrEgg(EggVoice eggVoice) {
+
+    }
 }
 
 class EggVoice extends Thread {
