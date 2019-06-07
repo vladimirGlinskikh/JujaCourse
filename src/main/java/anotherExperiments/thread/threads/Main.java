@@ -13,14 +13,21 @@ public class Main {
                 e.printStackTrace();
             }
             System.out.println("Первым появилось яйцо!");
-        }else {
+        } else {
             System.out.println("Первой появилась курица!");
         }
         System.out.println("Спор окончен!");
     }
 
-    private static void sayChicken(){
-
+    private static void sayChicken() {
+        for (int i = 0; i < 7; i++) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Курица!");
+        }
     }
 }
 
