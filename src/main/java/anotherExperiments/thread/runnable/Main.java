@@ -1,6 +1,6 @@
 package anotherExperiments.thread.runnable;
 
-public class Main implements Runnable {
+public class Main extends Thread {
     private String word;
     private int delay;
 
