@@ -2,7 +2,12 @@ package anotherExperiments.thread.threads;
 
 public class Main {
     public static void main(String[] args) {
+        EggVoice eggVoice = new EggVoice();
+        System.out.println("Спор начат...");
 
+        eggVoice.start();
+        sayChicken();
+        isChickenOrEgg(eggVoice);
     }
 
     private static void isChickenOrEgg(EggVoice eggVoice) {
