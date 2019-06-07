@@ -18,6 +18,10 @@ public class Main {
         }
         System.out.println("Спор окончен!");
     }
+
+    private static void sayChicken(){
+
+    }
 }
 
 class EggVoice extends Thread {
