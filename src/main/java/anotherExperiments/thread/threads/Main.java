@@ -6,7 +6,17 @@ public class Main {
     }
 
     private static void isChickenOrEgg(EggVoice eggVoice) {
-
+        if (eggVoice.isAlive()) {
+            try {
+                eggVoice.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("Первым появилось яйцо!");
+        }else {
+            System.out.println("Первой появилась курица!");
+        }
+        System.out.println("Спор окончен!");
     }
 }
 
