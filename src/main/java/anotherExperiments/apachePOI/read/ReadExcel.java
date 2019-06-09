@@ -5,6 +5,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.util.CellReference;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -27,6 +28,9 @@ public class ReadExcel {
 //            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(8)));
             for (Row row : workbook.getSheetAt(0)) {
                 for (Cell cell : row) {
+                    CellReference cellRef = new CellReference(row.getRowNum(), cell.getColumnIndex());
+                    System.out.print(cellRef.formatAsString());
+                    System.out.print(" - ");
                     System.out.println(getCellText(cell));
                 }
             }
