@@ -1,4 +1,4 @@
-package anotherExperiments.apachePOI;
+package anotherExperiments.apachePOI.write;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
