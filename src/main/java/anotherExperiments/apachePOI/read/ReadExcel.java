@@ -3,6 +3,7 @@ package anotherExperiments.apachePOI.read;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.FileInputStream;
@@ -20,10 +21,15 @@ public class ReadExcel {
             Workbook workbook = new HSSFWorkbook(fileInputStream);
 //            String result = workbook.getSheetAt(0).getRow(3).getCell(5).getStringCellValue();
 //            System.out.println(result);
-            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(5)));
-            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(6)));
-            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(7)));
-            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(8)));
+//            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(5)));
+//            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(6)));
+//            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(7)));
+//            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(8)));
+            for (Row row : workbook.getSheetAt(0)) {
+                for (Cell cell : row) {
+                    System.out.println(getCellText(cell));
+                }
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
