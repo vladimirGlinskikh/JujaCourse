@@ -7,8 +7,14 @@ import org.apache.poi.ss.usermodel.Workbook;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 public class ReadExcel {
+    public static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
+    public static Calendar calendar = Calendar.getInstance();
+
+
     public static void main(String[] args) {
         try (FileInputStream fileInputStream = new FileInputStream("src/main/resources/excelBook.xls")) {
             Workbook workbook = new HSSFWorkbook(fileInputStream);
@@ -33,7 +39,7 @@ public class ReadExcel {
                 break;
             case NUMERIC:
                 if (DateUtil.isCellDateFormatted(cell)) {
-                    result = cell.getDateCellValue().toString();
+                    result = simpleDateFormat.format(calendar.getTime());
                 } else {
                     result = Double.toString(cell.getNumericCellValue());
                 }
