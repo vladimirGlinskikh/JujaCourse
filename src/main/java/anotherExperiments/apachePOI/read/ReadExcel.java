@@ -17,6 +17,7 @@ public class ReadExcel {
             System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(5)));
             System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(6)));
             System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(7)));
+            System.out.println(getCellText(workbook.getSheetAt(0).getRow(3).getCell(8)));
         } catch (IOException e) {
             e.printStackTrace();
         }
