@@ -8,12 +8,13 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class JavaExcel {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Workbook workbook = new HSSFWorkbook();
         Sheet sheet = workbook.createSheet("book");
-
-        FileOutputStream fileOutputStream = new FileOutputStream("/home/vladimir/Documents/IdeaProjects/JujaCourse/src/main/resources/excelBook.xls");
-        workbook.write(fileOutputStream);
-        fileOutputStream.close();
+        try (FileOutputStream fileOutputStream = new FileOutputStream("/home/vladimir/Documents/IdeaProjects/JujaCourse/src/main/resources/excelBook.xls")) {
+            workbook.write(fileOutputStream);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
