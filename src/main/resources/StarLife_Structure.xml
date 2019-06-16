@@ -1,0 +1,3354 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TABLES>
+	<TABLE NAMESQL="_Acc8" NAME1C="ПланСчетов.Основной" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_ParentIDRRef" FIELDS1C="Родитель"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_OrderField" FIELDS1C="Порядок"/>
+		<FIELD FIELDSSQL="_Kind" FIELDS1C="Вид"/>
+		<FIELD FIELDSSQL="_OffBalance" FIELDS1C="Забалансовый"/>
+		<FIELD FIELDSSQL="_Fld79" FIELDS1C="Количественный"/>
+		<FIELD FIELDSSQL="_Fld80" FIELDS1C="Валютный"/>
+	</TABLE>
+	<TABLE NAMESQL="_Acc8_ExtDim81" NAME1C="ПланСчетов.Основной.ВидыСубконто" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_DimKindRRef" FIELDS1C="ВидСубконто"/>
+		<FIELD FIELDSSQL="_DimIsMetadata" FIELDS1C="Предопределенное"/>
+		<FIELD FIELDSSQL="_TurnoverOnly" FIELDS1C="ТолькоОбороты"/>
+		<FIELD FIELDSSQL="_Fld82" FIELDS1C="СуммовойУчет"/>
+		<FIELD FIELDSSQL="_Fld83" FIELDS1C="ВалютныйУчет"/>
+		<FIELD FIELDSSQL="_Fld84" FIELDS1C="КоличественныйУчет"/>
+		<FIELD FIELDSSQL="_Acc8_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRg86" NAME1C="РегистрБухгалтерии.БухРег" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_AccountDtRRef" FIELDS1C="СчетДт"/>
+		<FIELD FIELDSSQL="_AccountCtRRef" FIELDS1C="СчетКт"/>
+		<FIELD FIELDSSQL="_Fld87DtRRef" FIELDS1C="ВалютаДт"/>
+		<FIELD FIELDSSQL="_Fld87CtRRef" FIELDS1C="ВалютаКт"/>
+		<FIELD FIELDSSQL="_Fld88" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld89Dt" FIELDS1C="ВалютнаяСуммаДт"/>
+		<FIELD FIELDSSQL="_Fld89Ct" FIELDS1C="ВалютнаяСуммаКт"/>
+		<FIELD FIELDSSQL="_Fld90Dt" FIELDS1C="КоличествоДт"/>
+		<FIELD FIELDSSQL="_Fld90Ct" FIELDS1C="КоличествоКт"/>
+		<FIELD FIELDSSQL="_Fld91" FIELDS1C="СодержаниеПроводки"/>
+		<FIELD FIELDSSQL="_Fld92_TYPE" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld92_RTRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld92_RRRef" FIELDS1C="Договор"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRgAT094" NAME1C="РегистрБухгалтерии.БухРег.Остатки" MEMO="ИтогиПоСчетам">
+		<FIELD FIELDSSQL="_AccountRRef" FIELDS1C="Счет"/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld87RRef" FIELDS1C="Валюта"/>
+		<FIELD FIELDSSQL="_Fld88" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt95" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt96" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Turnover97" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld89" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt98" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt99" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Turnover100" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Fld90" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverDt101" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverCt102" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Turnover103" FIELDS1C="Количество"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRgAT1104" NAME1C="РегистрБухгалтерии.БухРег.Субконто" MEMO="ИтогиПоСчетамССубконто1">
+		<FIELD FIELDSSQL="_AccountRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld87RRef" FIELDS1C="Валюта"/>
+		<FIELD FIELDSSQL="_Value1_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld88" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt95" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt96" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Turnover97" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld89" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt98" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt99" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Turnover100" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Fld90" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverDt101" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverCt102" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Turnover103" FIELDS1C="Количество"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRgAT2105" NAME1C="РегистрБухгалтерии.БухРег.Субконто" MEMO="ИтогиПоСчетамССубконто2">
+		<FIELD FIELDSSQL="_AccountRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld87RRef" FIELDS1C="Валюта"/>
+		<FIELD FIELDSSQL="_Value1_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld88" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt95" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt96" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Turnover97" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld89" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt98" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt99" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Turnover100" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Fld90" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverDt101" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverCt102" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Turnover103" FIELDS1C="Количество"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRgAT3106" NAME1C="РегистрБухгалтерии.БухРег.Субконто" MEMO="ИтогиПоСчетамССубконто3">
+		<FIELD FIELDSSQL="_AccountRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld87RRef" FIELDS1C="Валюта"/>
+		<FIELD FIELDSSQL="_Value1_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld88" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt95" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt96" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Turnover97" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld89" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt98" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt99" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Turnover100" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Fld90" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverDt101" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverCt102" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Turnover103" FIELDS1C="Количество"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRgAT4107" NAME1C="РегистрБухгалтерии.БухРег.Субконто" MEMO="ИтогиПоСчетамССубконто4">
+		<FIELD FIELDSSQL="_AccountRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld87RRef" FIELDS1C="Валюта"/>
+		<FIELD FIELDSSQL="_Value1_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value1_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value2_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value3_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value4_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value4_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value4_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value4_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value4_RRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld88" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt95" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt96" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Turnover97" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld89" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverDt98" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_TurnoverCt99" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Turnover100" FIELDS1C="ВалютнаяСумма"/>
+		<FIELD FIELDSSQL="_Fld90" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverDt101" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_TurnoverCt102" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Turnover103" FIELDS1C="Количество"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRgCT108" NAME1C="РегистрБухгалтерии.БухРег.Обороты" MEMO="ИтогиМеждуСчетами">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_AccountDtRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_AccountCtRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld87DtRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld87CtRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld88" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld89Dt" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld89Ct" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld90Dt" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld90Ct" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRgED109" NAME1C="" MEMO="ЗначенияСубконто">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Correspond" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_KindRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value_TYPE" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value_N" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value_T" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value_RTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Value_RRRef" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccRgOpt111" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраБухгалтерии">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1052" NAME1C="РегистрНакопления.ИспользованиеОплатПремий" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1053RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1054" FIELDS1C="НомерПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1055" FIELDS1C="СтатусКорректировки"/>
+		<FIELD FIELDSSQL="_Fld1056" FIELDS1C="СуммаОплаты"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1059" NAME1C="РегистрНакопления.НачисленныеЕдиницы" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1060RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1061RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1062RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld1063" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1064" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1065_TYPE" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1065_RTRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1065_RRRef" FIELDS1C="Договор"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1068" NAME1C="РегистрНакопления.СторнированныеЕдиницы" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1069RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1070RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1071RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld1072" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1073" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1074_TYPE" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1074_RTRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1074_RRRef" FIELDS1C="Договор"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1077" NAME1C="РегистрНакопления.НачисленныеКомиссионные" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1078RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1079RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1080RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld1081" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1082" FIELDS1C="СуммаКомиссионных"/>
+		<FIELD FIELDSSQL="_Fld1083_TYPE" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1083_RTRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1083_RRRef" FIELDS1C="Договор"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1086" NAME1C="РегистрНакопления.ПрогнозКомиссионных" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1087RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1088RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1089RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1090" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1091" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Fld1092" FIELDS1C="СуммаКомиссионных"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1095" NAME1C="РегистрНакопления.ЕдиницыДляУчетаПереходов" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1096RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1097RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1098" FIELDS1C="КоличествоЕдиниц"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1101" NAME1C="РегистрНакопления.ЕдиницыДляУчетаПереходовСтарые" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1102RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1103" FIELDS1C="КоличествоЕдиниц"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1106" NAME1C="РегистрНакопления.КомиссованныеЕдиницы" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1107RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1108RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1109" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1110_TYPE" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1110_RTRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1110_RRRef" FIELDS1C="Договор"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1113" NAME1C="РегистрНакопления.Клауза50" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1114RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1115" FIELDS1C="КоличествоЕдиниц"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRg1118" NAME1C="РегистрНакопления.Клауза75" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_RecordKind" FIELDS1C="ВидДвижения"/>
+		<FIELD FIELDSSQL="_Fld1119RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1120" FIELDS1C="КоличествоЕдиниц"/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1123" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1124" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1125" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1126" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1127" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1128" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1129" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1130" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1131" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgOpt1132" NAME1C="" MEMO="НастройкиХраненияИтоговРегистраНакопления">
+		<FIELD FIELDSSQL="_RegID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActualPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Periodicity" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RepetitionFactor" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseTotals" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MinPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UseSplitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1057" NAME1C="РегистрНакопления.ИспользованиеОплатПремий.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1053RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1054" FIELDS1C="НомерПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1055" FIELDS1C="СтатусКорректировки"/>
+		<FIELD FIELDSSQL="_Fld1056" FIELDS1C="СуммаОплаты"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1066" NAME1C="РегистрНакопления.НачисленныеЕдиницы.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1060RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1061RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1062RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld1063" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1064" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1075" NAME1C="РегистрНакопления.СторнированныеЕдиницы.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1069RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1070RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1071RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld1072" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1073" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1084" NAME1C="РегистрНакопления.НачисленныеКомиссионные.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1078RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1079RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1080RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld1081" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1082" FIELDS1C="СуммаКомиссионных"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1093" NAME1C="РегистрНакопления.ПрогнозКомиссионных.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1087RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1088RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1089RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1090" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1091" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Fld1092" FIELDS1C="СуммаКомиссионных"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1099" NAME1C="РегистрНакопления.ЕдиницыДляУчетаПереходов.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1096RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1097RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1098" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1104" NAME1C="РегистрНакопления.ЕдиницыДляУчетаПереходовСтарые.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1102RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1103" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1111" NAME1C="РегистрНакопления.КомиссованныеЕдиницы.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1107RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1108RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1109" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1116" NAME1C="РегистрНакопления.Клауза50.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1114RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1115" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_AccumRgT1121" NAME1C="РегистрНакопления.Клауза75.Остатки" MEMO="Итоги">
+		<FIELD FIELDSSQL="_Period" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1119RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1120" FIELDS1C="КоличествоЕдиниц"/>
+		<FIELD FIELDSSQL="_Splitter" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Chrc78" NAME1C="ПланВидовХарактеристик.ДляВсехПлСч" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Type" FIELDS1C="ТипЗначения"/>
+	</TABLE>
+	<TABLE NAMESQL="_CommonSettings" NAME1C="" MEMO="ХранилищеОбщихНастроек">
+		<FIELD FIELDSSQL="_UserId" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ObjectKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsPresentation" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsData" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_ConfigChngR" NAME1C="" MEMO="РегистрацияИзмененийКонфигурации">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MDObjID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_ConfigChngR_ExtProps" NAME1C="" MEMO="РегистрацияИзмененийВнешнихСвойствКонфигурации">
+		<FIELD FIELDSSQL="_FileName" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ConfigChngR_IDRRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const1135" NAME1C="Константа.ПоказыватьУровеньИКуратораКонсультантаВСправочнике" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld1136" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const1137" NAME1C="Константа.ПоказыватьСтатусДоговораВЖурнале" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld1138" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const1198" NAME1C="Константа.ПоказыватьКнопкуПересчетаВСледРасчете" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld1199" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const1357" NAME1C="Константа.ПараметрыАдминистрированияИБ" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld1358" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const1455" NAME1C="Константа.НазваниеОрганизацииПолное" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld1456" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const1461" NAME1C="Константа.КаталогОтчетовНаВебСервере" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld1462" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const792" NAME1C="Константа.КонсультантРуководитель" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld793RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const795" NAME1C="Константа.РегионПоУмолч" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld796RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const798" NAME1C="Константа.НазваниеОрганизации" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld799" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const801" NAME1C="Константа.РасчетныйСчет" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld802" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const804" NAME1C="Константа.БанкОрганизации" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld805" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const807" NAME1C="Константа.КодМФО" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld808" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const810" NAME1C="Константа.КодОКПО" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld811" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const813" NAME1C="Константа.ЮрАдресОрганизации" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld814" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const816" NAME1C="Константа.ТелефоныОрганизации" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld817" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const819" NAME1C="Константа.ВидЕдБонус" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld820RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const822" NAME1C="Константа.ВалютаГривна" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld823RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const825" NAME1C="Константа.КодСсылкиАдминаСайта" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld826" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const828" NAME1C="Константа.icq_АдминаСайта" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld829" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const831" NAME1C="Константа.email_Админа" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld832" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const834" NAME1C="Константа.ПроцентПодоходного" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld835" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const837" NAME1C="Константа.ПартнерПоУмолч" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld838RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const840" NAME1C="Константа.СтатусДоговНовый" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld841RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const843" NAME1C="Константа.АдминистративныеРасходы" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld844" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const846" NAME1C="Константа.КодБрокераВФайлахAIG" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld847" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const849" NAME1C="Константа.ПустойКонсультант" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld850RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const852" NAME1C="Константа.EMail_Рассылка_Сервер" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld853" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const855" NAME1C="Константа.EMail_Рассылка_Порт" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld856" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const858" NAME1C="Константа.EMail_Рассылка_Логин" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld859" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const861" NAME1C="Константа.EMail_Рассылка_Пароль" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld862" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const864" NAME1C="Константа.EMail_Рассылка_АдресОтправителя" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld865" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const867" NAME1C="Константа.МинУровПриФормАналСтруктуры" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld868" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const870" NAME1C="Константа.ПартнерАлико" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld871RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const873" NAME1C="Константа.МинПределДирБонус" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld874" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const876" NAME1C="Константа.КоэффПредприн" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld877" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const879" NAME1C="Константа.ВершинаИерархии" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld880RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const882" NAME1C="Константа.ДопустКвоУровнейИерархии" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld883" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const885" NAME1C="Константа.ВидСеминЛС0" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld886RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const888" NAME1C="Константа.ВидСеминЛС1" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld889RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const891" NAME1C="Константа.ВидСеминЛС2" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld892RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const894" NAME1C="Константа.РазоваяОбработка" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld895" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const897" NAME1C="Константа.СтатусДоговВыпущ" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld898RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const900" NAME1C="Константа.СтатусДоговОтмен" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld901RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const903" NAME1C="Константа.СтатусДоговСторно" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld904RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const906" NAME1C="Константа.СтатусДоговЗаверш" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld907RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const909" NAME1C="Константа.КонсПеренес" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld910RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const912" NAME1C="Константа.СтавкаПенсФонда" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld913" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const915" NAME1C="Константа.ПорогНДФЛ" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld916" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const918" NAME1C="Константа.ПартнерРенесанс" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld919RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const921" NAME1C="Константа.ВидимостьСправСтатусовВДоговоре" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld922" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const924" NAME1C="Константа.ВершинаИерархииБелорусов" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld925RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const927" NAME1C="Константа.ПроцентыПоГодамРазделятьПоПрограммам" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld928RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const930" NAME1C="Константа.КвоЗнПослеЗапВЕдин" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld931" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const933" NAME1C="Константа.ЯзыкИнтерфейса" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld934RRef" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Const936" NAME1C="Константа.ПутьДляФайловXML" MEMO="Константа">
+		<FIELD FIELDSSQL="_Fld937" FIELDS1C="Значение"/>
+		<FIELD FIELDSSQL="_RecordKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1226" NAME1C="Документ.НачислениеДиректорскогоБонуса" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld1227RRef" FIELDS1C="ДокОсновРасчетИтогов"/>
+		<FIELD FIELDSSQL="_Fld1228RRef" FIELDS1C="ДокОсновЗакрытиеМесяца"/>
+		<FIELD FIELDSSQL="_Fld1229" FIELDS1C="ДатаНач"/>
+		<FIELD FIELDSSQL="_Fld1230" FIELDS1C="ДатаКон"/>
+		<FIELD FIELDSSQL="_Fld1231" FIELDS1C="ДатаНачДогов1"/>
+		<FIELD FIELDSSQL="_Fld1232" FIELDS1C="ДатаКонДогов1"/>
+		<FIELD FIELDSSQL="_Fld1233" FIELDS1C="ДатаНачДогов2"/>
+		<FIELD FIELDSSQL="_Fld1234" FIELDS1C="ДатаКонДогов2"/>
+		<FIELD FIELDSSQL="_Fld1235" FIELDS1C="фБезПодчинДиректоров"/>
+		<FIELD FIELDSSQL="_Fld1236" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld1237RRef" FIELDS1C="ДокДиректБонусов"/>
+		<FIELD FIELDSSQL="_Fld1281" FIELDS1C="ДатаПровДок"/>
+		<FIELD FIELDSSQL="_Fld1297" FIELDS1C="фСчитатьПоСтатусу20"/>
+		<FIELD FIELDSSQL="_Fld1342" FIELDS1C="СтруктураНаДатуДоговора"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1226_VT1238" NAME1C="Документ.НачислениеДиректорскогоБонуса.Начисления" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1239" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1240RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1241" FIELDS1C="ТекУровКонс"/>
+		<FIELD FIELDSSQL="_Fld1242" FIELDS1C="КвоВсего"/>
+		<FIELD FIELDSSQL="_Fld1243" FIELDS1C="КвоОплаченных"/>
+		<FIELD FIELDSSQL="_Fld1244" FIELDS1C="ПроцПовтОплат"/>
+		<FIELD FIELDSSQL="_Fld1245" FIELDS1C="Ставка"/>
+		<FIELD FIELDSSQL="_Fld1494" FIELDS1C="Ставка2016"/>
+		<FIELD FIELDSSQL="_Fld1246RRef" FIELDS1C="ПодчКонс"/>
+		<FIELD FIELDSSQL="_Fld1247" FIELDS1C="ТекУровПодчКонс"/>
+		<FIELD FIELDSSQL="_Fld1248" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld1495" FIELDS1C="КвоЕд2016"/>
+		<FIELD FIELDSSQL="_Fld1249" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld1250" FIELDS1C="Примечание"/>
+		<FIELD FIELDSSQL="_Document1226_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1226_VT1251" NAME1C="Документ.НачислениеДиректорскогоБонуса.РасшифровкаПоПроценту" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1252" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1253RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1254" FIELDS1C="ТекУровКонс"/>
+		<FIELD FIELDSSQL="_Fld1255RRef" FIELDS1C="ТекСтатАкт"/>
+		<FIELD FIELDSSQL="_Fld1256RRef" FIELDS1C="ПодчКонс"/>
+		<FIELD FIELDSSQL="_Fld1257" FIELDS1C="ТекУровПодчКонс"/>
+		<FIELD FIELDSSQL="_Fld1258RRef" FIELDS1C="ТекСтатАктПодчКонс"/>
+		<FIELD FIELDSSQL="_Fld1259RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1260" FIELDS1C="НомерПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1261" FIELDS1C="СрокПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1262" FIELDS1C="СтатусОплаты"/>
+		<FIELD FIELDSSQL="_Fld1263RRef" FIELDS1C="СтатусПолиса"/>
+		<FIELD FIELDSSQL="_Document1226_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1226_VT1272" NAME1C="Документ.НачислениеДиректорскогоБонуса.ПроцентыПроплат" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1273" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1274RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1275" FIELDS1C="ТекУровКонс"/>
+		<FIELD FIELDSSQL="_Fld1276" FIELDS1C="КвоВсего"/>
+		<FIELD FIELDSSQL="_Fld1277" FIELDS1C="КвоОплаченных"/>
+		<FIELD FIELDSSQL="_Fld1278" FIELDS1C="ПроцПовтОплат"/>
+		<FIELD FIELDSSQL="_Fld1279" FIELDS1C="ИзмененоВручную"/>
+		<FIELD FIELDSSQL="_Fld1280" FIELDS1C="КемИзменено"/>
+		<FIELD FIELDSSQL="_Document1226_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1522" NAME1C="Документ.РасчетПроцентаПовторныхПроплат" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld1523" FIELDS1C="ОтчетныйМесяц"/>
+		<FIELD FIELDSSQL="_Fld1545RRef" FIELDS1C="ПрогнозФакт"/>
+		<FIELD FIELDSSQL="_Fld1546" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld1556" FIELDS1C="ДатаПересчета"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1522_VT1524" NAME1C="Документ.РасчетПроцентаПовторныхПроплат.Договора" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1525" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1526RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1527" FIELDS1C="ЧтоДелать"/>
+		<FIELD FIELDSSQL="_Fld1528" FIELDS1C="СтатусОплаты"/>
+		<FIELD FIELDSSQL="_Fld1529" FIELDS1C="ИерархияТекущая"/>
+		<FIELD FIELDSSQL="_Fld1530" FIELDS1C="ИерархияНаМоментДоговора"/>
+		<FIELD FIELDSSQL="_Document1522_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1522_VT1531" NAME1C="Документ.РасчетПроцентаПовторныхПроплат.Консультанты" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1532" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1533RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1534" FIELDS1C="ТекУровень"/>
+		<FIELD FIELDSSQL="_Fld1535" FIELDS1C="ВсегоДоговоров"/>
+		<FIELD FIELDSSQL="_Fld1536" FIELDS1C="ОплаченоДоговоров"/>
+		<FIELD FIELDSSQL="_Fld1537" FIELDS1C="ПроцентПроплат"/>
+		<FIELD FIELDSSQL="_Fld1538" FIELDS1C="Договора"/>
+		<FIELD FIELDSSQL="_Fld1539" FIELDS1C="ВсегоДоговоровБезДиректоров"/>
+		<FIELD FIELDSSQL="_Fld1540" FIELDS1C="ОплаченоДоговоровБезДиректоров"/>
+		<FIELD FIELDSSQL="_Fld1541" FIELDS1C="ПроцентПроплатБезДиректоров"/>
+		<FIELD FIELDSSQL="_Fld1542" FIELDS1C="ВсегоДоговоровБезДиректоров8Ур"/>
+		<FIELD FIELDSSQL="_Fld1543" FIELDS1C="ОплаченоДоговоровБезДиректоров8Ур"/>
+		<FIELD FIELDSSQL="_Fld1544" FIELDS1C="ПроцентПроплатБезДиректоров8Ур"/>
+		<FIELD FIELDSSQL="_Fld1560" FIELDS1C="ВсегоДоговоровТолькоБезДиректоров8Ур"/>
+		<FIELD FIELDSSQL="_Fld1561" FIELDS1C="ОплаченоДоговоровТолькоБезДиректоров8Ур"/>
+		<FIELD FIELDSSQL="_Fld1562" FIELDS1C="ПроцентПроплатТолькоБезДиректоров8Ур"/>
+		<FIELD FIELDSSQL="_Fld1577" FIELDS1C="ВсегоЛичныхДоговоров"/>
+		<FIELD FIELDSSQL="_Fld1578" FIELDS1C="ОплаченоЛичныхДоговоров"/>
+		<FIELD FIELDSSQL="_Fld1579" FIELDS1C="ПроцентПроплатЛичных"/>
+		<FIELD FIELDSSQL="_Document1522_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1600" NAME1C="Документ.ИзменениеКарьерыКонсультанта" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld1606RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1607RRef" FIELDS1C="НовВидКарьеры"/>
+		<FIELD FIELDSSQL="_Fld1608RRef" FIELDS1C="НовУровПоКарьереАгента"/>
+		<FIELD FIELDSSQL="_Fld1609" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld1610" FIELDS1C="ФлагПеренестиПодчиненныхКонсультантов"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1659" NAME1C="Документ.СписаниеОплатыПоНомеру" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld1660RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1661" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document1659_VT1662" NAME1C="Документ.СписаниеОплатыПоНомеру.ОстаткиПоПлатежам" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1663" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1664" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld1665" FIELDS1C="СтатусКорректировки"/>
+		<FIELD FIELDSSQL="_Fld1666" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld1667" FIELDS1C="СрокПлат"/>
+		<FIELD FIELDSSQL="_Fld1668" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld1669RRef" FIELDS1C="Списать"/>
+		<FIELD FIELDSSQL="_Document1659_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document40" NAME1C="Документ.Операция" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld305" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document41" NAME1C="Документ.ДоговорЛайф" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld307RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld308RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld309RRef" FIELDS1C="Страхователь"/>
+		<FIELD FIELDSSQL="_Fld310RRef" FIELDS1C="ЗастрахЛицо"/>
+		<FIELD FIELDSSQL="_Fld311" FIELDS1C="ДатаНачДейств"/>
+		<FIELD FIELDSSQL="_Fld312" FIELDS1C="ДатаКонДейств"/>
+		<FIELD FIELDSSQL="_Fld313" FIELDS1C="СрокДействДог"/>
+		<FIELD FIELDSSQL="_Fld314" FIELDS1C="КвоПлатежейВГод"/>
+		<FIELD FIELDSSQL="_Fld315" FIELDS1C="ПремияЗаПериод"/>
+		<FIELD FIELDSSQL="_Fld316" FIELDS1C="Фактор"/>
+		<FIELD FIELDSSQL="_Fld317RRef" FIELDS1C="Регион"/>
+		<FIELD FIELDSSQL="_Fld318" FIELDS1C="ПринудФакт"/>
+		<FIELD FIELDSSQL="_Fld319" FIELDS1C="УжеРасторгнут"/>
+		<FIELD FIELDSSQL="_Fld320" FIELDS1C="НомПервПланирПлатежа"/>
+		<FIELD FIELDSSQL="_Fld321RRef" FIELDS1C="Периодичность"/>
+		<FIELD FIELDSSQL="_Fld322" FIELDS1C="ЗЛтотже"/>
+		<FIELD FIELDSSQL="_Fld323RRef" FIELDS1C="СостояниеДог"/>
+		<FIELD FIELDSSQL="_Fld324" FIELDS1C="НомерПолиса"/>
+		<FIELD FIELDSSQL="_Fld325" FIELDS1C="ДатаПодпЗаявл"/>
+		<FIELD FIELDSSQL="_Fld326" FIELDS1C="ДатаОплаты"/>
+		<FIELD FIELDSSQL="_Fld327" FIELDS1C="ПроцИсполн"/>
+		<FIELD FIELDSSQL="_Fld328" FIELDS1C="ПризнКоллект"/>
+		<FIELD FIELDSSQL="_Fld329" FIELDS1C="СтрСтрукт"/>
+		<FIELD FIELDSSQL="_Fld330" FIELDS1C="Примечание"/>
+		<FIELD FIELDSSQL="_Fld331" FIELDS1C="фОриг"/>
+		<FIELD FIELDSSQL="_Fld332RRef" FIELDS1C="ПрограммаЛайф"/>
+		<FIELD FIELDSSQL="_Fld333RRef" FIELDS1C="КорректГП"/>
+		<FIELD FIELDSSQL="_Fld334RRef" FIELDS1C="ПериодичностьСоВторогоГода"/>
+		<FIELD FIELDSSQL="_Fld335" FIELDS1C="фАкционный"/>
+		<FIELD FIELDSSQL="_Fld336" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld337" FIELDS1C="ПремияЗаПериодСоВторогоГода"/>
+		<FIELD FIELDSSQL="_Fld338" FIELDS1C="СрокУплаты"/>
+		<FIELD FIELDSSQL="_Fld339" FIELDS1C="СтарНомер"/>
+		<FIELD FIELDSSQL="_Fld340" FIELDS1C="НомерДокКорректГП"/>
+		<FIELD FIELDSSQL="_Fld341" FIELDS1C="ДатаДокКорректГП"/>
+		<FIELD FIELDSSQL="_Fld1339" FIELDS1C="ДатаСоздания"/>
+		<FIELD FIELDSSQL="_Fld1340" FIELDS1C="ПроблемныйДоговор"/>
+		<FIELD FIELDSSQL="_Fld1343RRef" FIELDS1C="Директор6"/>
+		<FIELD FIELDSSQL="_Fld1344RRef" FIELDS1C="Директор8"/>
+		<FIELD FIELDSSQL="_Fld1632" FIELDS1C="фЕстьАгентыВИерархии"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document41_VT342" NAME1C="Документ.ДоговорЛайф.График" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo343" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld344" FIELDS1C="НомерПлатежа"/>
+		<FIELD FIELDSSQL="_Fld345" FIELDS1C="НомерГодаПлатежа"/>
+		<FIELD FIELDSSQL="_Fld346" FIELDS1C="СрокПлатежа"/>
+		<FIELD FIELDSSQL="_Fld347" FIELDS1C="СуммаПремии"/>
+		<FIELD FIELDSSQL="_Document41_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document41_VT348" NAME1C="Документ.ДоговорЛайф.Иерархия" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo349" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld350RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld351" FIELDS1C="УровеньКонсультанта"/>
+		<FIELD FIELDSSQL="_Fld1629RRef" FIELDS1C="УровеньАгента"/>
+		<FIELD FIELDSSQL="_Document41_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document41_VT352" NAME1C="Документ.ДоговорЛайф.Движения77" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo353" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld354RRef" FIELDS1C="СчетДт"/>
+		<FIELD FIELDSSQL="_Fld355RRef" FIELDS1C="Конс"/>
+		<FIELD FIELDSSQL="_Fld356RRef" FIELDS1C="ВидЕдин"/>
+		<FIELD FIELDSSQL="_Fld357" FIELDS1C="НомПлат"/>
+		<FIELD FIELDSSQL="_Fld358" FIELDS1C="НомГода"/>
+		<FIELD FIELDSSQL="_Fld359" FIELDS1C="СрокПлат"/>
+		<FIELD FIELDSSQL="_Fld360" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Fld361" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld362" FIELDS1C="СодержаниеПроводки"/>
+		<FIELD FIELDSSQL="_Document41_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document42" NAME1C="Документ.НачислениеБонусов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld367" FIELDS1C="ЗаЧтоНачисление"/>
+		<FIELD FIELDSSQL="_Fld368RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld369RRef" FIELDS1C="ПроводитьПоСтруктуре"/>
+		<FIELD FIELDSSQL="_Fld370" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld371" FIELDS1C="фПроводитьПоСчетуУЕП"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document42_VT372" NAME1C="Документ.НачислениеБонусов.Консультанты" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo373" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld374RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld375" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld376" FIELDS1C="Примечание"/>
+		<FIELD FIELDSSQL="_Document42_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document42_VT378" NAME1C="Документ.НачислениеБонусов.ПроведеноПоФакту" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo379" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld380RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld381" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld382" FIELDS1C="Примечание"/>
+		<FIELD FIELDSSQL="_Fld383RRef" FIELDS1C="ЛичнСтрукт"/>
+		<FIELD FIELDSSQL="_Document42_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document43" NAME1C="Документ.НачислениеДоплатЛичные" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld385" FIELDS1C="ЗаЧтоНачисление"/>
+		<FIELD FIELDSSQL="_Fld386RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld387" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld388" FIELDS1C="СуммаГрн_Итог"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document43_VT389" NAME1C="Документ.НачислениеДоплатЛичные.Консультанты" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo390" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld391RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld392" FIELDS1C="СуммаГрн"/>
+		<FIELD FIELDSSQL="_Fld393" FIELDS1C="Примечание"/>
+		<FIELD FIELDSSQL="_Document43_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document44" NAME1C="Документ.ИзменениеУровняКонсультантов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld396" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document44_VT397" NAME1C="Документ.ИзменениеУровняКонсультантов.ТабличнаяЧасть1" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo398" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld399RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld400" FIELDS1C="СтарУровень"/>
+		<FIELD FIELDSSQL="_Fld401" FIELDS1C="НовУровень"/>
+		<FIELD FIELDSSQL="_Document44_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45" NAME1C="Документ.РасчетИтогов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld403" FIELDS1C="ДатаОт"/>
+		<FIELD FIELDSSQL="_Fld404" FIELDS1C="ДатаПо"/>
+		<FIELD FIELDSSQL="_Fld405" FIELDS1C="ПровУров"/>
+		<FIELD FIELDSSQL="_Fld406" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld407RRef" FIELDS1C="СлужДокДвижения77"/>
+		<FIELD FIELDSSQL="_Fld1193" FIELDS1C="фАннулироватьСтарыеЗависшиеЗаявления"/>
+		<FIELD FIELDSSQL="_Fld1194" FIELDS1C="ДатаПроверкиДляАннуляции"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45_VT1589" NAME1C="Документ.РасчетИтогов.ЗаменыСупердиректорами" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1590" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1591" FIELDS1C="НомСтрокиДокумента"/>
+		<FIELD FIELDSSQL="_Fld1592RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1593RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1594RRef" FIELDS1C="Замена"/>
+		<FIELD FIELDSSQL="_Fld1595" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld1596" FIELDS1C="СумКомис"/>
+		<FIELD FIELDSSQL="_Fld1597" FIELDS1C="ФормулаРасчета"/>
+		<FIELD FIELDSSQL="_Fld1598" FIELDS1C="ТипКомис"/>
+		<FIELD FIELDSSQL="_Document45_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45_VT1633" NAME1C="Документ.РасчетИтогов.Агенты" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1634" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1635RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1636RRef" FIELDS1C="Агент"/>
+		<FIELD FIELDSSQL="_Fld1637RRef" FIELDS1C="УровеньАгента"/>
+		<FIELD FIELDSSQL="_Fld1638" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld1639RRef" FIELDS1C="ЛичнСтрукт"/>
+		<FIELD FIELDSSQL="_Fld1640RRef" FIELDS1C="УровеньПодчиненногоАгента"/>
+		<FIELD FIELDSSQL="_Fld1641" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld1642" FIELDS1C="НомерГодаПлатежа"/>
+		<FIELD FIELDSSQL="_Document45_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45_VT408" NAME1C="Документ.РасчетИтогов.ТаблЧастьЛ" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo409" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld410RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld411RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld412" FIELDS1C="СтарУр"/>
+		<FIELD FIELDSSQL="_Fld413RRef" FIELDS1C="СтарСтатДогов"/>
+		<FIELD FIELDSSQL="_Fld414RRef" FIELDS1C="НовСтатДогов"/>
+		<FIELD FIELDSSQL="_Fld415RRef" FIELDS1C="СтарСтатНачислЕд"/>
+		<FIELD FIELDSSQL="_Fld416RRef" FIELDS1C="НовСтатНачислЕд"/>
+		<FIELD FIELDSSQL="_Fld417" FIELDS1C="БазаНачисленияЕдин"/>
+		<FIELD FIELDSSQL="_Fld418" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld419" FIELDS1C="СумКомис"/>
+		<FIELD FIELDSSQL="_Fld420" FIELDS1C="ТипКомис"/>
+		<FIELD FIELDSSQL="_Fld421" FIELDS1C="ФормулаРасчета"/>
+		<FIELD FIELDSSQL="_Fld422RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld423RRef" FIELDS1C="ЛичнСтрукт"/>
+		<FIELD FIELDSSQL="_Fld424" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld425" FIELDS1C="СтруктИсх"/>
+		<FIELD FIELDSSQL="_Fld426" FIELDS1C="СтруктПослеРедакт"/>
+		<FIELD FIELDSSQL="_Fld427" FIELDS1C="СтатРедакт"/>
+		<FIELD FIELDSSQL="_Fld428" FIELDS1C="НужнРедВСледПериоде"/>
+		<FIELD FIELDSSQL="_Fld429" FIELDS1C="СтатПерехлест"/>
+		<FIELD FIELDSSQL="_Fld430RRef" FIELDS1C="СтарСтатНачислКом"/>
+		<FIELD FIELDSSQL="_Fld431RRef" FIELDS1C="НовСтатНачислКом"/>
+		<FIELD FIELDSSQL="_Fld432" FIELDS1C="УрВРасч"/>
+		<FIELD FIELDSSQL="_Fld433" FIELDS1C="КвоЕдВРасч"/>
+		<FIELD FIELDSSQL="_Fld434_TYPE" FIELDS1C="ДокПредРасч"/>
+		<FIELD FIELDSSQL="_Fld434_RTRef" FIELDS1C="ДокПредРасч"/>
+		<FIELD FIELDSSQL="_Fld434_RRRef" FIELDS1C="ДокПредРасч"/>
+		<FIELD FIELDSSQL="_Fld435" FIELDS1C="НовУр"/>
+		<FIELD FIELDSSQL="_Fld436" FIELDS1C="СумСО"/>
+		<FIELD FIELDSSQL="_Fld437" FIELDS1C="НомСтр"/>
+		<FIELD FIELDSSQL="_Fld438RRef" FIELDS1C="СтарСтатАктивнКонс"/>
+		<FIELD FIELDSSQL="_Fld439" FIELDS1C="НомерГодаПлатежа"/>
+		<FIELD FIELDSSQL="_Fld440" FIELDS1C="ПогашенаСуммаОплаты"/>
+		<FIELD FIELDSSQL="_Fld441" FIELDS1C="ПогашенСтатусКорректировки"/>
+		<FIELD FIELDSSQL="_Fld442" FIELDS1C="фПогаситьВсеОстатки"/>
+		<FIELD FIELDSSQL="_Document45_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45_VT443" NAME1C="Документ.РасчетИтогов.ТаблЧастьР" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo444" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld445RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld446RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld447" FIELDS1C="СтарУр"/>
+		<FIELD FIELDSSQL="_Fld448" FIELDS1C="База"/>
+		<FIELD FIELDSSQL="_Fld449" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld450" FIELDS1C="СумКомис"/>
+		<FIELD FIELDSSQL="_Fld451" FIELDS1C="ФормулаРасчета"/>
+		<FIELD FIELDSSQL="_Fld452RRef" FIELDS1C="ЛичнСтрукт"/>
+		<FIELD FIELDSSQL="_Fld453" FIELDS1C="Структ"/>
+		<FIELD FIELDSSQL="_Document45_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45_VT454" NAME1C="Документ.РасчетИтогов.ТаблИзмСтатДогЛ" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo455" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld456RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld457RRef" FIELDS1C="НовСтатНачислЕд"/>
+		<FIELD FIELDSSQL="_Fld458RRef" FIELDS1C="НовСтатНачислКом"/>
+		<FIELD FIELDSSQL="_Fld459" FIELDS1C="СтруктПослеРедакт"/>
+		<FIELD FIELDSSQL="_Fld460" FIELDS1C="КвоНачЕд"/>
+		<FIELD FIELDSSQL="_Fld461" FIELDS1C="НужнРедВСледПериоде"/>
+		<FIELD FIELDSSQL="_Document45_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45_VT462" NAME1C="Документ.РасчетИтогов.ТаблИзмКонс" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo463" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld464RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld465" FIELDS1C="НовУр"/>
+		<FIELD FIELDSSQL="_Document45_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45_VT466" NAME1C="Документ.РасчетИтогов.Движения77" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo467" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld468RRef" FIELDS1C="СчетДт"/>
+		<FIELD FIELDSSQL="_Fld469RRef" FIELDS1C="СчетКт"/>
+		<FIELD FIELDSSQL="_Fld470RRef" FIELDS1C="ВидЕдин"/>
+		<FIELD FIELDSSQL="_Fld471" FIELDS1C="НомГода"/>
+		<FIELD FIELDSSQL="_Fld472RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld473RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld474_TYPE" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld474_RTRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld474_RRRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld475" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Fld476" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld477" FIELDS1C="СодержаниеПроводки"/>
+		<FIELD FIELDSSQL="_Document45_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document45_VT478" NAME1C="Документ.РасчетИтогов.ТабличнаяЧастьСтар" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo479" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld480_TYPE" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld480_RTRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld480_RRRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld481RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld482RRef" FIELDS1C="СтарСтатДогов"/>
+		<FIELD FIELDSSQL="_Fld483RRef" FIELDS1C="НовСтатДогов"/>
+		<FIELD FIELDSSQL="_Fld484RRef" FIELDS1C="СтарСтатНачислЕд"/>
+		<FIELD FIELDSSQL="_Fld485RRef" FIELDS1C="НовСтатНачислЕд"/>
+		<FIELD FIELDSSQL="_Fld486" FIELDS1C="БазаНачисленияЕдин"/>
+		<FIELD FIELDSSQL="_Fld487" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld488" FIELDS1C="СумКомис"/>
+		<FIELD FIELDSSQL="_Fld489" FIELDS1C="ТипКомис"/>
+		<FIELD FIELDSSQL="_Fld490RRef" FIELDS1C="СостДогов"/>
+		<FIELD FIELDSSQL="_Fld491" FIELDS1C="ФормулаРасчета"/>
+		<FIELD FIELDSSQL="_Fld492RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld493RRef" FIELDS1C="ЛичнСтрукт"/>
+		<FIELD FIELDSSQL="_Fld494" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld495" FIELDS1C="СтруктИсх"/>
+		<FIELD FIELDSSQL="_Fld496" FIELDS1C="СтруктПослеРедакт"/>
+		<FIELD FIELDSSQL="_Fld497" FIELDS1C="СтатРедакт"/>
+		<FIELD FIELDSSQL="_Fld498" FIELDS1C="НужнРедВСледПериоде"/>
+		<FIELD FIELDSSQL="_Fld499" FIELDS1C="СтатПерехлест"/>
+		<FIELD FIELDSSQL="_Fld500" FIELDS1C="КвоЕдВРасч"/>
+		<FIELD FIELDSSQL="_Fld501" FIELDS1C="НомСтр"/>
+		<FIELD FIELDSSQL="_Document45_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document46" NAME1C="Документ.ЗакрытиеМесяца" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld504" FIELDS1C="РасчСторн"/>
+		<FIELD FIELDSSQL="_Fld505" FIELDS1C="ПроверУровни"/>
+		<FIELD FIELDSSQL="_Fld506RRef" FIELDS1C="ДокДиректБонусов"/>
+		<FIELD FIELDSSQL="_Fld507" FIELDS1C="РассчДирБонусы"/>
+		<FIELD FIELDSSQL="_Fld508RRef" FIELDS1C="ВидУчетаКлаузы"/>
+		<FIELD FIELDSSQL="_Fld509" FIELDS1C="ДирБонусыПоСырым"/>
+		<FIELD FIELDSSQL="_Fld510" FIELDS1C="фУчСторноВРасчДирБон"/>
+		<FIELD FIELDSSQL="_Fld511RRef" FIELDS1C="ВидКлаузыДляЗачета"/>
+		<FIELD FIELDSSQL="_Fld512" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld1347" FIELDS1C="ДатаПровДок"/>
+		<FIELD FIELDSSQL="_Fld1348" FIELDS1C="ДатаНач"/>
+		<FIELD FIELDSSQL="_Fld1349" FIELDS1C="ДатаКон"/>
+		<FIELD FIELDSSQL="_Fld1350" FIELDS1C="ДатаНачДог1"/>
+		<FIELD FIELDSSQL="_Fld1351" FIELDS1C="ДатаКонДог1"/>
+		<FIELD FIELDSSQL="_Fld1352RRef" FIELDS1C="ВыбСК"/>
+		<FIELD FIELDSSQL="_Fld1353" FIELDS1C="фБезПодчинДиректоров"/>
+		<FIELD FIELDSSQL="_Fld1354" FIELDS1C="фСчитатьПоСтатусу20"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document46_VT1184" NAME1C="Документ.ЗакрытиеМесяца.РасшифровкаКлаузы" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1185" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1186RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1187" FIELDS1C="ЕдЛичн6Мес"/>
+		<FIELD FIELDSSQL="_Fld1188RRef" FIELDS1C="ПодчКонс"/>
+		<FIELD FIELDSSQL="_Fld1189" FIELDS1C="ПодчКонсЕдОбщ6Мес"/>
+		<FIELD FIELDSSQL="_Fld1190" FIELDS1C="ЕдКлауза"/>
+		<FIELD FIELDSSQL="_Fld1191" FIELDS1C="ЕдКлауза75"/>
+		<FIELD FIELDSSQL="_Fld1192" FIELDS1C="ДатаПереходаНаНовУр"/>
+		<FIELD FIELDSSQL="_Fld1547" FIELDS1C="ДатаПереходаВСтруктуру"/>
+		<FIELD FIELDSSQL="_Document46_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document46_VT1644" NAME1C="Документ.ЗакрытиеМесяца.Агенты" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1645" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1646RRef" FIELDS1C="Агент"/>
+		<FIELD FIELDSSQL="_Fld1647RRef" FIELDS1C="ТекУровеньАгента"/>
+		<FIELD FIELDSSQL="_Fld1648RRef" FIELDS1C="ТекСтатусАктивности"/>
+		<FIELD FIELDSSQL="_Fld1649" FIELDS1C="КвоЕдЗаМесяц"/>
+		<FIELD FIELDSSQL="_Fld1650" FIELDS1C="КвоЕдЗа3ПоследнихМесяца"/>
+		<FIELD FIELDSSQL="_Fld1651RRef" FIELDS1C="НовыйУровеньАгента"/>
+		<FIELD FIELDSSQL="_Fld1652RRef" FIELDS1C="НовыйСтатусАктивности"/>
+		<FIELD FIELDSSQL="_Fld1653RRef" FIELDS1C="НовыйКуратор"/>
+		<FIELD FIELDSSQL="_Fld1654" FIELDS1C="КвоПодчиненныхАгентов"/>
+		<FIELD FIELDSSQL="_Fld1655" FIELDS1C="КвоПодчиненныхМенеджеров"/>
+		<FIELD FIELDSSQL="_Fld1656" FIELDS1C="КвоПодчиненныхТренеров"/>
+		<FIELD FIELDSSQL="_Fld1657" FIELDS1C="КвоПодчиненныхДиректоров"/>
+		<FIELD FIELDSSQL="_Fld1658" FIELDS1C="ТаблицаПодчиненных"/>
+		<FIELD FIELDSSQL="_Document46_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document46_VT513" NAME1C="Документ.ЗакрытиеМесяца.ТаблЧасть" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo514" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld515RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld516" FIELDS1C="СтарУров"/>
+		<FIELD FIELDSSQL="_Fld517" FIELDS1C="ЕдОбщ3Мес"/>
+		<FIELD FIELDSSQL="_Fld518" FIELDS1C="ЕдОбщВс"/>
+		<FIELD FIELDSSQL="_Fld519" FIELDS1C="ЕдЛичнВс"/>
+		<FIELD FIELDSSQL="_Fld520" FIELDS1C="ЕдКлауза"/>
+		<FIELD FIELDSSQL="_Fld521RRef" FIELDS1C="ПодчКонс"/>
+		<FIELD FIELDSSQL="_Fld522" FIELDS1C="ПодчКонсУров"/>
+		<FIELD FIELDSSQL="_Fld523" FIELDS1C="ПодчКонсЕдОбщ6Мес"/>
+		<FIELD FIELDSSQL="_Fld524" FIELDS1C="ПодчКонсЕдОбщ3Мес"/>
+		<FIELD FIELDSSQL="_Fld1197RRef" FIELDS1C="ПодчКонсСтарСтатАкт"/>
+		<FIELD FIELDSSQL="_Fld525" FIELDS1C="НовУров"/>
+		<FIELD FIELDSSQL="_Fld526" FIELDS1C="СтарЕдКлауза"/>
+		<FIELD FIELDSSQL="_Fld527" FIELDS1C="ПревышениеЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld528" FIELDS1C="ЕдЛичн6Мес"/>
+		<FIELD FIELDSSQL="_Fld529" FIELDS1C="ЕдВсПосл6Мес"/>
+		<FIELD FIELDSSQL="_Fld530" FIELDS1C="ЕдБонус"/>
+		<FIELD FIELDSSQL="_Fld531RRef" FIELDS1C="НовСтатАкт"/>
+		<FIELD FIELDSSQL="_Fld532RRef" FIELDS1C="НовКуратор"/>
+		<FIELD FIELDSSQL="_Fld533" FIELDS1C="ЕдЛПосл6Мес"/>
+		<FIELD FIELDSSQL="_Fld534" FIELDS1C="ЕдВсПосл6МесБезСторн"/>
+		<FIELD FIELDSSQL="_Fld535" FIELDS1C="ЕдКлауза75"/>
+		<FIELD FIELDSSQL="_Fld536" FIELDS1C="СтарЕдКлауза75"/>
+		<FIELD FIELDSSQL="_Fld537" FIELDS1C="ДатаПослДог"/>
+		<FIELD FIELDSSQL="_Fld538RRef" FIELDS1C="СтарСтатАкт"/>
+		<FIELD FIELDSSQL="_Fld1355" FIELDS1C="ПроцПроплат"/>
+		<FIELD FIELDSSQL="_Fld1458" FIELDS1C="ПроверкаПроцПроплат"/>
+		<FIELD FIELDSSQL="_Fld1459" FIELDS1C="ПроверкаЕд"/>
+		<FIELD FIELDSSQL="_Fld1564RRef" FIELDS1C="ПредупреждениеОСниженииУровня"/>
+		<FIELD FIELDSSQL="_Document46_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document46_VT540" NAME1C="Документ.ЗакрытиеМесяца.Движения77" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo541" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld542RRef" FIELDS1C="СчетДт"/>
+		<FIELD FIELDSSQL="_Fld543RRef" FIELDS1C="СчетКт"/>
+		<FIELD FIELDSSQL="_Fld544RRef" FIELDS1C="ВидЕдин"/>
+		<FIELD FIELDSSQL="_Fld545RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld546" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Fld547" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld548" FIELDS1C="СодержаниеПроводки"/>
+		<FIELD FIELDSSQL="_Fld549" FIELDS1C="НовУров"/>
+		<FIELD FIELDSSQL="_Fld550RRef" FIELDS1C="НовСтатАкт"/>
+		<FIELD FIELDSSQL="_Fld551RRef" FIELDS1C="НовКуратор"/>
+		<FIELD FIELDSSQL="_Document46_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document47" NAME1C="Документ.ЗаносСтатусовДоговоров" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld553" FIELDS1C="ПутьКФайлу"/>
+		<FIELD FIELDSSQL="_Fld554" FIELDS1C="СоздНедостДог"/>
+		<FIELD FIELDSSQL="_Fld555" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document47_VT556" NAME1C="Документ.ЗаносСтатусовДоговоров.Договора" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo557" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld558" FIELDS1C="НомЗаявл"/>
+		<FIELD FIELDSSQL="_Fld559RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld560RRef" FIELDS1C="Статус"/>
+		<FIELD FIELDSSQL="_Fld561" FIELDS1C="ДатаДогОт"/>
+		<FIELD FIELDSSQL="_Fld562" FIELDS1C="ДатаДогПо"/>
+		<FIELD FIELDSSQL="_Fld563" FIELDS1C="ДатаДогИзм"/>
+		<FIELD FIELDSSQL="_Fld564" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld565" FIELDS1C="НомПолиса"/>
+		<FIELD FIELDSSQL="_Fld566" FIELDS1C="СумДог"/>
+		<FIELD FIELDSSQL="_Fld567" FIELDS1C="ДатаДог"/>
+		<FIELD FIELDSSQL="_Document47_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document48" NAME1C="Документ.ЗаносОплат" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld569" FIELDS1C="ПутьКФайлу"/>
+		<FIELD FIELDSSQL="_Fld570" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld571" FIELDS1C="фИз77"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document48_VT572" NAME1C="Документ.ЗаносОплат.Договора" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo573" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld574" FIELDS1C="НомЗаявл"/>
+		<FIELD FIELDSSQL="_Fld575RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld576" FIELDS1C="НомПолиса"/>
+		<FIELD FIELDSSQL="_Fld577" FIELDS1C="ДатаОт"/>
+		<FIELD FIELDSSQL="_Fld578" FIELDS1C="ДатаПо"/>
+		<FIELD FIELDSSQL="_Fld579" FIELDS1C="ДатаОплаты"/>
+		<FIELD FIELDSSQL="_Fld580" FIELDS1C="СумОпл"/>
+		<FIELD FIELDSSQL="_Fld581" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld582RRef" FIELDS1C="Корректировка"/>
+		<FIELD FIELDSSQL="_Fld583" FIELDS1C="ДатаДог"/>
+		<FIELD FIELDSSQL="_Fld584" FIELDS1C="ПросрочкаДней"/>
+		<FIELD FIELDSSQL="_Document48_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document49" NAME1C="Документ.ЗаносСтатусовИОплатВместе" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld586RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld587" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld588" FIELDS1C="фИз77"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document49_VT589" NAME1C="Документ.ЗаносСтатусовИОплатВместе.Договора" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo590" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld591" FIELDS1C="НомЗаявл"/>
+		<FIELD FIELDSSQL="_Fld592RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld593" FIELDS1C="НомПолиса"/>
+		<FIELD FIELDSSQL="_Fld594" FIELDS1C="ДатаДог"/>
+		<FIELD FIELDSSQL="_Fld595RRef" FIELDS1C="СтатДог"/>
+		<FIELD FIELDSSQL="_Fld596RRef" FIELDS1C="СтатКод"/>
+		<FIELD FIELDSSQL="_Fld597" FIELDS1C="СумОпл"/>
+		<FIELD FIELDSSQL="_Fld598" FIELDS1C="ДатаОплаты"/>
+		<FIELD FIELDSSQL="_Fld599" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld600RRef" FIELDS1C="Корректировка"/>
+		<FIELD FIELDSSQL="_Fld601" FIELDS1C="ПросрочкаДней"/>
+		<FIELD FIELDSSQL="_Document49_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document50" NAME1C="Документ.ОплатаКомиссийАлико" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld603" FIELDS1C="ДатаОт"/>
+		<FIELD FIELDSSQL="_Fld604" FIELDS1C="ДатаПо"/>
+		<FIELD FIELDSSQL="_Fld605RRef" FIELDS1C="ВыбКонс"/>
+		<FIELD FIELDSSQL="_Fld606" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld607" FIELDS1C="СумВс_Итог"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document50_VT608" NAME1C="Документ.ОплатаКомиссийАлико.ТабличнаяЧасть1" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo609" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld610" FIELDS1C="НомерЗаяв"/>
+		<FIELD FIELDSSQL="_Fld611" FIELDS1C="НомерПолиса"/>
+		<FIELD FIELDSSQL="_Fld612RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld613" FIELDS1C="Сум1"/>
+		<FIELD FIELDSSQL="_Fld614" FIELDS1C="Сум2"/>
+		<FIELD FIELDSSQL="_Fld615" FIELDS1C="Сум3"/>
+		<FIELD FIELDSSQL="_Fld616" FIELDS1C="Сум4"/>
+		<FIELD FIELDSSQL="_Fld617" FIELDS1C="Сум5"/>
+		<FIELD FIELDSSQL="_Fld618" FIELDS1C="Сум6"/>
+		<FIELD FIELDSSQL="_Fld619" FIELDS1C="Сум7"/>
+		<FIELD FIELDSSQL="_Fld620" FIELDS1C="Сум8"/>
+		<FIELD FIELDSSQL="_Fld621" FIELDS1C="Сум9"/>
+		<FIELD FIELDSSQL="_Fld622" FIELDS1C="Сум10"/>
+		<FIELD FIELDSSQL="_Fld623" FIELDS1C="СумВс"/>
+		<FIELD FIELDSSQL="_Fld624RRef" FIELDS1C="Догов"/>
+		<FIELD FIELDSSQL="_Document50_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document51" NAME1C="Документ.ДоговорНонЛайф" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld626RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld627RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld628" FIELDS1C="ДатаНачДейств"/>
+		<FIELD FIELDSSQL="_Fld629" FIELDS1C="ДатаКонДейств"/>
+		<FIELD FIELDSSQL="_Fld630" FIELDS1C="ПремияГрн"/>
+		<FIELD FIELDSSQL="_Fld631RRef" FIELDS1C="ВидРиска"/>
+		<FIELD FIELDSSQL="_Fld632" FIELDS1C="НомерСтикера"/>
+		<FIELD FIELDSSQL="_Fld633RRef" FIELDS1C="Страхователь"/>
+		<FIELD FIELDSSQL="_Fld634" FIELDS1C="Фактор"/>
+		<FIELD FIELDSSQL="_Fld635" FIELDS1C="ПроцИсполн"/>
+		<FIELD FIELDSSQL="_Fld636" FIELDS1C="СтрСтрукт"/>
+		<FIELD FIELDSSQL="_Fld637" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document52" NAME1C="Документ.УстановкаЗамены" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld639RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld640RRef" FIELDS1C="КонсЗамена"/>
+		<FIELD FIELDSSQL="_Fld641" FIELDS1C="фПереносЕдин"/>
+		<FIELD FIELDSSQL="_Fld642" FIELDS1C="ЕдЛВс"/>
+		<FIELD FIELDSSQL="_Fld643" FIELDS1C="ЕдСВс"/>
+		<FIELD FIELDSSQL="_Fld644" FIELDS1C="ЕдЛПолуг"/>
+		<FIELD FIELDSSQL="_Fld645" FIELDS1C="ЕдСПолуг"/>
+		<FIELD FIELDSSQL="_Fld646" FIELDS1C="ДатаДляПереносаЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld647" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document52_VT648" NAME1C="Документ.УстановкаЗамены.Консультанты" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo649" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld650RRef" FIELDS1C="ПодчКонс"/>
+		<FIELD FIELDSSQL="_Fld651RRef" FIELDS1C="СтарКуратор"/>
+		<FIELD FIELDSSQL="_Fld652RRef" FIELDS1C="НовКуратор"/>
+		<FIELD FIELDSSQL="_Document52_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document52_VT653" NAME1C="Документ.УстановкаЗамены.Движения77" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo654" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld655" FIELDS1C="ДатаДвиж"/>
+		<FIELD FIELDSSQL="_Fld656RRef" FIELDS1C="СчетДт"/>
+		<FIELD FIELDSSQL="_Fld657RRef" FIELDS1C="СчетКт"/>
+		<FIELD FIELDSSQL="_Fld658RRef" FIELDS1C="ВидЕдин"/>
+		<FIELD FIELDSSQL="_Fld659" FIELDS1C="НомГода"/>
+		<FIELD FIELDSSQL="_Fld660RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld661" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Fld662" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld663" FIELDS1C="СодержаниеПроводки"/>
+		<FIELD FIELDSSQL="_Fld664" FIELDS1C="НовУров"/>
+		<FIELD FIELDSSQL="_Fld665RRef" FIELDS1C="НовСтатАкт"/>
+		<FIELD FIELDSSQL="_Fld666RRef" FIELDS1C="НовКуратор"/>
+		<FIELD FIELDSSQL="_Fld667RRef" FIELDS1C="НовЗамена"/>
+		<FIELD FIELDSSQL="_Document52_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document53" NAME1C="Документ.ОплатыНонЛайф" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld669RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld670" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document53_VT671" NAME1C="Документ.ОплатыНонЛайф.Договора" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo672" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld673RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld674RRef" FIELDS1C="Страхователь"/>
+		<FIELD FIELDSSQL="_Fld675" FIELDS1C="СуммаОпл"/>
+		<FIELD FIELDSSQL="_Fld676" FIELDS1C="ДатаОпл"/>
+		<FIELD FIELDSSQL="_Fld677RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld678" FIELDS1C="ПроцИсп"/>
+		<FIELD FIELDSSQL="_Fld679RRef" FIELDS1C="ВидРиска"/>
+		<FIELD FIELDSSQL="_Document53_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document54" NAME1C="Документ.УчастиеВСеминарах" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld681RRef" FIELDS1C="ВидСеминара"/>
+		<FIELD FIELDSSQL="_Fld682" FIELDS1C="МестоПроведения"/>
+		<FIELD FIELDSSQL="_Fld683" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document54_VT684" NAME1C="Документ.УчастиеВСеминарах.Консультанты" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo685" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld686RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld687" FIELDS1C="Примечание"/>
+		<FIELD FIELDSSQL="_Document54_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document55" NAME1C="Документ.ИзменениеТекДанКонс" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld689RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld690" FIELDS1C="НовУров"/>
+		<FIELD FIELDSSQL="_Fld691RRef" FIELDS1C="НовКуратор"/>
+		<FIELD FIELDSSQL="_Fld692RRef" FIELDS1C="НовСтатАкт"/>
+		<FIELD FIELDSSQL="_Fld693RRef" FIELDS1C="НовЮрСтат"/>
+		<FIELD FIELDSSQL="_Fld694RRef" FIELDS1C="НовЗамена"/>
+		<FIELD FIELDSSQL="_Fld695RRef" FIELDS1C="НовСтатСоглНаБлаготв"/>
+		<FIELD FIELDSSQL="_Fld696RRef" FIELDS1C="НовСтатСоглНа10Проц"/>
+		<FIELD FIELDSSQL="_Fld697RRef" FIELDS1C="НовСтатСворачиванияПоВетке"/>
+		<FIELD FIELDSSQL="_Fld698" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Fld1630RRef" FIELDS1C="НовВидКарьеры"/>
+		<FIELD FIELDSSQL="_Fld1631RRef" FIELDS1C="НовУровПоКарьереАгента"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document56" NAME1C="Документ.СворачиваниеНачислений" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld700RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld701" FIELDS1C="фПропПоИнн"/>
+		<FIELD FIELDSSQL="_Fld702" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document56_VT703" NAME1C="Документ.СворачиваниеНачислений.ТаблЧасть" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo704" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld705RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld706" FIELDS1C="Уров"/>
+		<FIELD FIELDSSQL="_Fld707RRef" FIELDS1C="СтатАкт"/>
+		<FIELD FIELDSSQL="_Fld708" FIELDS1C="СумНач"/>
+		<FIELD FIELDSSQL="_Fld709" FIELDS1C="СтатСвор"/>
+		<FIELD FIELDSSQL="_Fld710" FIELDS1C="НомЛинии"/>
+		<FIELD FIELDSSQL="_Fld711" FIELDS1C="СумУжеСвернуто"/>
+		<FIELD FIELDSSQL="_Fld712RRef" FIELDS1C="СворКуратор"/>
+		<FIELD FIELDSSQL="_Fld713" FIELDS1C="СумНакоплено"/>
+		<FIELD FIELDSSQL="_Document56_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document57" NAME1C="Документ.СворачиваниеНачисленийВручную" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld715RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld716" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document57_VT717" NAME1C="Документ.СворачиваниеНачисленийВручную.ТаблЧасть" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo718" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld719RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld720" FIELDS1C="СумНач"/>
+		<FIELD FIELDSSQL="_Fld721RRef" FIELDS1C="СворКуратор"/>
+		<FIELD FIELDSSQL="_Fld722" FIELDS1C="НомЛинии"/>
+		<FIELD FIELDSSQL="_Document57_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document58" NAME1C="Документ.ИзменениеГрафикаПлатежей" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld724RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld725" FIELDS1C="БылоПремия"/>
+		<FIELD FIELDSSQL="_Fld726RRef" FIELDS1C="БылоПериодичность"/>
+		<FIELD FIELDSSQL="_Fld727" FIELDS1C="СталоПремия"/>
+		<FIELD FIELDSSQL="_Fld728RRef" FIELDS1C="СталоПериодичность"/>
+		<FIELD FIELDSSQL="_Fld729" FIELDS1C="СтрТЗ"/>
+		<FIELD FIELDSSQL="_Fld730" FIELDS1C="БылоКвоПлат"/>
+		<FIELD FIELDSSQL="_Fld731" FIELDS1C="СталоКвоПлат"/>
+		<FIELD FIELDSSQL="_Fld732" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document58_VT733" NAME1C="Документ.ИзменениеГрафикаПлатежей.ПроведенныеПлатежи" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo734" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld735" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld736" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld737" FIELDS1C="СрокПлат"/>
+		<FIELD FIELDSSQL="_Fld738" FIELDS1C="фОплата"/>
+		<FIELD FIELDSSQL="_Document58_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document58_VT739" NAME1C="Документ.ИзменениеГрафикаПлатежей.ИзмененияПоПлатежам" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo740" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld741" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld742" FIELDS1C="НомерГода"/>
+		<FIELD FIELDSSQL="_Fld743" FIELDS1C="СрокПлат"/>
+		<FIELD FIELDSSQL="_Fld744RRef" FIELDS1C="Актуальность"/>
+		<FIELD FIELDSSQL="_Document58_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Document59" NAME1C="Документ.СлужДвижения77РасчИтогов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Fld746RRef" FIELDS1C="РодитДокумент"/>
+	</TABLE>
+	<TABLE NAMESQL="_Document59_VT747" NAME1C="Документ.СлужДвижения77РасчИтогов.Движения77" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo748" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld749RRef" FIELDS1C="СчетДт"/>
+		<FIELD FIELDSSQL="_Fld750RRef" FIELDS1C="СчетКт"/>
+		<FIELD FIELDSSQL="_Fld751RRef" FIELDS1C="ВидЕдин"/>
+		<FIELD FIELDSSQL="_Fld752" FIELDS1C="НомГода"/>
+		<FIELD FIELDSSQL="_Fld753RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld754RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld755_TYPE" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld755_RTRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld755_RRRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld756" FIELDS1C="Количество"/>
+		<FIELD FIELDSSQL="_Fld757" FIELDS1C="Сумма"/>
+		<FIELD FIELDSSQL="_Fld758" FIELDS1C="СодержаниеПроводки"/>
+		<FIELD FIELDSSQL="_Document59_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR1264" NAME1C="Документ.НачислениеДиректорскогоБонуса.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR306" NAME1C="Документ.Операция.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR366" NAME1C="Документ.ДоговорЛайф.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR384" NAME1C="Документ.НачислениеБонусов.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR395" NAME1C="Документ.НачислениеДоплатЛичные.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR402" NAME1C="Документ.ИзменениеУровняКонсультантов.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR503" NAME1C="Документ.РасчетИтогов.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR552" NAME1C="Документ.ЗакрытиеМесяца.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR568" NAME1C="Документ.ЗаносСтатусовДоговоров.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR585" NAME1C="Документ.ЗаносОплат.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR602" NAME1C="Документ.ЗаносСтатусовИОплатВместе.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR625" NAME1C="Документ.ОплатаКомиссийАлико.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR638" NAME1C="Документ.ДоговорНонЛайф.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR668" NAME1C="Документ.УстановкаЗамены.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR680" NAME1C="Документ.ОплатыНонЛайф.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR688" NAME1C="Документ.УчастиеВСеминарах.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR699" NAME1C="Документ.ИзменениеТекДанКонс.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR714" NAME1C="Документ.СворачиваниеНачислений.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR723" NAME1C="Документ.СворачиваниеНачисленийВручную.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR745" NAME1C="Документ.ИзменениеГрафикаПлатежей.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentChngR759" NAME1C="Документ.СлужДвижения77РасчИтогов.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal760" NAME1C="ЖурналДокументов.БонусыАкции" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentTRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld761" FIELDS1C="ЗаЧтоНачислено"/>
+		<FIELD FIELDSSQL="_Fld762" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal763" NAME1C="ЖурналДокументов.ОбщийКонсультантов" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentTRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number_TYPE" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Number_N" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Number_S" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld764RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld765" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal766" NAME1C="ЖурналДокументов.ИзмененияПоКонсультантам" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentTRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number_TYPE" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Number_N" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Number_S" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld767" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal768" NAME1C="ЖурналДокументов.ЗаносДанных" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentTRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld769RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld770" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal771" NAME1C="ЖурналДокументов.ПодведениеИтогов" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentTRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld772" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal773" NAME1C="ЖурналДокументов.Семинары" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld774RRef" FIELDS1C="Вид"/>
+		<FIELD FIELDSSQL="_Fld775" FIELDS1C="Место"/>
+		<FIELD FIELDSSQL="_Fld776" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal777" NAME1C="ЖурналДокументов.ОплатыКомиссийАлико" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld778RRef" FIELDS1C="Руководитель"/>
+		<FIELD FIELDSSQL="_Fld779" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal780" NAME1C="ЖурналДокументов.ДоговораНонЛайф" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld781RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld782RRef" FIELDS1C="Страхователь"/>
+		<FIELD FIELDSSQL="_Fld783RRef" FIELDS1C="Партнер"/>
+		<FIELD FIELDSSQL="_Fld784" FIELDS1C="Премия"/>
+		<FIELD FIELDSSQL="_Fld785" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal786" NAME1C="ЖурналДокументов.ОплатыНонЛайф" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld787RRef" FIELDS1C="Партнер"/>
+		<FIELD FIELDSSQL="_Fld788" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_DocumentJournal789" NAME1C="ЖурналДокументов.ИзмененияГрафикаПлатежей" MEMO="Основная">
+		<FIELD FIELDSSQL="_DocumentRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Date_Time" FIELDS1C="Дата"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Posted" FIELDS1C="Проведен"/>
+		<FIELD FIELDSSQL="_Number" FIELDS1C="Номер"/>
+		<FIELD FIELDSSQL="_Fld790RRef" FIELDS1C="Договір"/>
+		<FIELD FIELDSSQL="_Fld791" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum1202" NAME1C="Перечисление.ТипыНастроек" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum1203" NAME1C="Перечисление.ПредставленияЭлементовОтчетов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum1464" NAME1C="Перечисление.ВидыДополнительныхВнешнихОбработок" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum1512" NAME1C="Перечисление.ПрогнозФакт" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum1563" NAME1C="Перечисление.ПредупредитьОтменить" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum1601" NAME1C="Перечисление.ВидыКарьеры" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum60" NAME1C="Перечисление.ДаНет" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum61" NAME1C="Перечисление.МужЖен" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum62" NAME1C="Перечисление.ЮрСтатусыКонсультантов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum63" NAME1C="Перечисление.ЛС_ЛайфНелайфБонус" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum64" NAME1C="Перечисление.АгентКонсультант" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum65" NAME1C="Перечисление.ВидыДанных" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum66" NAME1C="Перечисление.ВидыНачисления" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum67" NAME1C="Перечисление.АктивнКонс" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum68" NAME1C="Перечисление.СемСост" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum69" NAME1C="Перечисление.ВидыПериодичности" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum70" NAME1C="Перечисление.СтатусыДоговоров" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum71" NAME1C="Перечисление.СтатусыНачисленияЕдиниц" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum72" NAME1C="Перечисление.СтатусыНачисленияКомиссии" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum73" NAME1C="Перечисление.ВидыЕдиниц" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum74" NAME1C="Перечисление.ВидыРасчета" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum75" NAME1C="Перечисление.ВидыУчетаКлаузы" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum76" NAME1C="Перечисление.ВидыКлаузы" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_Enum77" NAME1C="Перечисление.ЯзыкиИнтерфейса" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_EnumOrder" FIELDS1C="Порядок"/>
+	</TABLE>
+	<TABLE NAMESQL="_FrmDtSettings" NAME1C="" MEMO="ХранилищеНастроекДанныхФорм">
+		<FIELD FIELDSSQL="_UserId" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ObjectKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsPresentation" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsData" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1000" NAME1C="РегистрСведений.СостКонсСворачПоВетке" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1001RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1002RRef" FIELDS1C="СворачиваниеПоВетке"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1004" NAME1C="РегистрСведений.СостКонсСоглНаБлаготв" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1005RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1006RRef" FIELDS1C="СогласенНаБлаготворительность"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1008" NAME1C="РегистрСведений.СостКонсСоглНаОтч10Проц" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1009RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1010RRef" FIELDS1C="СогласенНаОтчисление10Проц"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1012" NAME1C="РегистрСведений.ГрафикиОплат" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1013RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1014" FIELDS1C="НомерПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1015" FIELDS1C="НомерГодаПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1016" FIELDS1C="СрокПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1017" FIELDS1C="СуммаПремии"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1019" NAME1C="РегистрСведений.СтатусыОплатПоНомерам" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1020RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1021" FIELDS1C="НомерПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1022" FIELDS1C="СтатусОплаты"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1024" NAME1C="РегистрСведений.СостДоговСтатПолиса" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1025RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1026RRef" FIELDS1C="СтатусПолиса"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1028" NAME1C="РегистрСведений.СостДоговСтатНачислЕдиниц" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1029RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1030RRef" FIELDS1C="СтатусНачислЕдин"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1032" NAME1C="РегистрСведений.СостДоговСтатНачислКомиссии" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1033RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1034RRef" FIELDS1C="СтатусНачислКом"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1036" NAME1C="РегистрСведений.СостДоговКвоНачислЕдиниц" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1037RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1038" FIELDS1C="КвоНачислЕдин"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1040" NAME1C="РегистрСведений.СостДоговСтрСтрукт" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1041RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1042" FIELDS1C="СтрСтрукт"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1044" NAME1C="РегистрСведений.СостДоговРасчТребКорр" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1045RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1046RRef" FIELDS1C="РасчТребКорр"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1048" NAME1C="РегистрСведений.СтавкиДиректБонуса" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld1049" FIELDS1C="ПорогОбщий"/>
+		<FIELD FIELDSSQL="_Fld1050" FIELDS1C="СтавкаБонуса"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1147" NAME1C="РегистрСведений.СтрокиРасчетаИтогов" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld1148RRef" FIELDS1C="ДокОснование"/>
+		<FIELD FIELDSSQL="_Fld1149" FIELDS1C="НомСтрокиДокумента"/>
+		<FIELD FIELDSSQL="_Fld1150RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1151RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1152" FIELDS1C="СтарУр"/>
+		<FIELD FIELDSSQL="_Fld1153RRef" FIELDS1C="СтарСтатДогов"/>
+		<FIELD FIELDSSQL="_Fld1154RRef" FIELDS1C="НовСтатДогов"/>
+		<FIELD FIELDSSQL="_Fld1155RRef" FIELDS1C="СтарСтатНачислЕд"/>
+		<FIELD FIELDSSQL="_Fld1156RRef" FIELDS1C="НовСтатНачислЕд"/>
+		<FIELD FIELDSSQL="_Fld1157" FIELDS1C="БазаНачисленияЕдин"/>
+		<FIELD FIELDSSQL="_Fld1158" FIELDS1C="КвоЕд"/>
+		<FIELD FIELDSSQL="_Fld1159" FIELDS1C="СумКомис"/>
+		<FIELD FIELDSSQL="_Fld1160" FIELDS1C="ТипКомис"/>
+		<FIELD FIELDSSQL="_Fld1161" FIELDS1C="ФормулаРасчета"/>
+		<FIELD FIELDSSQL="_Fld1162RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1163RRef" FIELDS1C="ЛичнСтрукт"/>
+		<FIELD FIELDSSQL="_Fld1164" FIELDS1C="НомерПлат"/>
+		<FIELD FIELDSSQL="_Fld1165" FIELDS1C="СтруктИсх"/>
+		<FIELD FIELDSSQL="_Fld1166" FIELDS1C="СтруктПослеРедакт"/>
+		<FIELD FIELDSSQL="_Fld1167" FIELDS1C="СтатРедакт"/>
+		<FIELD FIELDSSQL="_Fld1168" FIELDS1C="НужнРедВСледПериоде"/>
+		<FIELD FIELDSSQL="_Fld1169" FIELDS1C="СтатПерехлест"/>
+		<FIELD FIELDSSQL="_Fld1170RRef" FIELDS1C="СтарСтатНачислКом"/>
+		<FIELD FIELDSSQL="_Fld1171RRef" FIELDS1C="НовСтатНачислКом"/>
+		<FIELD FIELDSSQL="_Fld1172" FIELDS1C="УрВРасч"/>
+		<FIELD FIELDSSQL="_Fld1173" FIELDS1C="КвоЕдВРасч"/>
+		<FIELD FIELDSSQL="_Fld1174RRef" FIELDS1C="ДокПредРасч"/>
+		<FIELD FIELDSSQL="_Fld1175" FIELDS1C="НовУр"/>
+		<FIELD FIELDSSQL="_Fld1176" FIELDS1C="СумСО"/>
+		<FIELD FIELDSSQL="_Fld1177" FIELDS1C="НомСтр"/>
+		<FIELD FIELDSSQL="_Fld1178RRef" FIELDS1C="СтарСтатАктивнКонс"/>
+		<FIELD FIELDSSQL="_Fld1179" FIELDS1C="НомерГодаПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1180" FIELDS1C="ПогашенаСуммаОплаты"/>
+		<FIELD FIELDSSQL="_Fld1181" FIELDS1C="ПогашенСтатусКорректировки"/>
+		<FIELD FIELDSSQL="_Fld1182" FIELDS1C="фПогаситьВсеОстатки"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1216" NAME1C="РегистрСведений.доОтключениеПользователей" MEMO="Основная">
+		<FIELD FIELDSSQL="_Fld1217RRef" FIELDS1C="Пользователь"/>
+		<FIELD FIELDSSQL="_Fld1218" FIELDS1C="Отключить"/>
+		<FIELD FIELDSSQL="_Fld1219" FIELDS1C="ЗапретПодключения"/>
+		<FIELD FIELDSSQL="_Fld1220" FIELDS1C="БыстроеОтключение"/>
+		<FIELD FIELDSSQL="_Fld1221" FIELDS1C="СостояниеОтключения"/>
+		<FIELD FIELDSSQL="_Fld1222" FIELDS1C="Сообщение"/>
+		<FIELD FIELDSSQL="_Fld1223" FIELDS1C="ДатаВремяПуска"/>
+		<FIELD FIELDSSQL="_Fld1224" FIELDS1C="ОтключениеМинут"/>
+		<FIELD FIELDSSQL="_Fld1225" FIELDS1C="ПаузаДоОтключения"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1265" NAME1C="РегистрСведений.СтавкиДиректБонусаОтПроцОплат" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld1266" FIELDS1C="МинПроц"/>
+		<FIELD FIELDSSQL="_Fld1267" FIELDS1C="МаксПроц"/>
+		<FIELD FIELDSSQL="_Fld1268" FIELDS1C="Ставка"/>
+		<FIELD FIELDSSQL="_Fld1496" FIELDS1C="Ставка2016"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1299" NAME1C="РегистрСведений.ХранилищеОтчетов" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld1300" FIELDS1C="НачалоПериода"/>
+		<FIELD FIELDSSQL="_Fld1301" FIELDS1C="КонецПериода"/>
+		<FIELD FIELDSSQL="_Fld1302" FIELDS1C="ИмяОтчета"/>
+		<FIELD FIELDSSQL="_Fld1303RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1304" FIELDS1C="ВариантОтчета"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1314" NAME1C="РегистрСведений.ПаролиПользователей" MEMO="Основная">
+		<FIELD FIELDSSQL="_Fld1315RRef" FIELDS1C="Пользователь"/>
+		<FIELD FIELDSSQL="_Fld1316" FIELDS1C="Пароль"/>
+		<FIELD FIELDSSQL="_Fld1338" FIELDS1C="АктивностьК"/>
+		<FIELD FIELDSSQL="_Fld1345" FIELDS1C="ОтправлятьСМС"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1365" NAME1C="" MEMO="Основная">
+		<FIELD FIELDSSQL="_Fld1370" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1371" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1372RRef" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Fld1373" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SimpleKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1448" NAME1C="РегистрСведений.НастройкиКонкурсаКанары2015" MEMO="Основная">
+		<FIELD FIELDSSQL="_Fld1449" FIELDS1C="Группа"/>
+		<FIELD FIELDSSQL="_Fld1450" FIELDS1C="ГруппаСтр"/>
+		<FIELD FIELDSSQL="_Fld1451RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1452" FIELDS1C="Дирекция"/>
+		<FIELD FIELDSSQL="_SimpleKey" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1484" NAME1C="РегистрСведений.СлужебныеСообщения" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld1485" FIELDS1C="Событие"/>
+		<FIELD FIELDSSQL="_Fld1486" FIELDS1C="Комментарий1"/>
+		<FIELD FIELDSSQL="_Fld1487" FIELDS1C="Комментарий2"/>
+		<FIELD FIELDSSQL="_Fld1488" FIELDS1C="Комментарий3"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1513" NAME1C="РегистрСведений.ТаблицыПовторныхПроплат" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld1514" FIELDS1C="ОтчетныйМесяц"/>
+		<FIELD FIELDSSQL="_Fld1515RRef" FIELDS1C="ПрогнозФакт"/>
+		<FIELD FIELDSSQL="_Fld1516" FIELDS1C="НомерЗаявления"/>
+		<FIELD FIELDSSQL="_Fld1517RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld1518" FIELDS1C="ЧтоДелать"/>
+		<FIELD FIELDSSQL="_Fld1519" FIELDS1C="СтатусДляРасчета"/>
+		<FIELD FIELDSSQL="_Fld1520RRef" FIELDS1C="СтатусПолиса"/>
+		<FIELD FIELDSSQL="_Fld1551" FIELDS1C="СрокПлатежа"/>
+		<FIELD FIELDSSQL="_Fld1552" FIELDS1C="ГодИМесяцНачалаДействия"/>
+		<FIELD FIELDSSQL="_Fld1553" FIELDS1C="КолДнейПослеPaytodate"/>
+		<FIELD FIELDSSQL="_Fld1521" FIELDS1C="ХранЗнач"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1611" NAME1C="РегистрСведений.СостКонсВидКарьеры" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1612RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1613RRef" FIELDS1C="ВидКарьеры"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1614" NAME1C="РегистрСведений.СостКонсУровеньПоКарьереАгента" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1615RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1616RRef" FIELDS1C="ТекУровеньАгента"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1617" NAME1C="РегистрСведений.СтавкиПоУровнямАгентов" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld1618RRef" FIELDS1C="УровеньАгента"/>
+		<FIELD FIELDSSQL="_Fld1619" FIELDS1C="ПорядкНомерПодчиненногоУровня"/>
+		<FIELD FIELDSSQL="_Fld1620" FIELDS1C="МинКвоПодчиненногоУровня"/>
+		<FIELD FIELDSSQL="_Fld1643" FIELDS1C="КвоЕдВМес"/>
+		<FIELD FIELDSSQL="_Fld1621" FIELDS1C="ДопСтавкаОтЛичных"/>
+		<FIELD FIELDSSQL="_Fld1622" FIELDS1C="ДопСтавкаОтСтруктурных"/>
+		<FIELD FIELDSSQL="_Fld1623" FIELDS1C="ПроцентВышестоящим"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg1624" NAME1C="РегистрСведений.СостАгентовКвоПодчиненных" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld1625RRef" FIELDS1C="Агент"/>
+		<FIELD FIELDSSQL="_Fld1626" FIELDS1C="КвоПодчАгентов"/>
+		<FIELD FIELDSSQL="_Fld1627" FIELDS1C="КвоПодчМенеджеров"/>
+		<FIELD FIELDSSQL="_Fld1628" FIELDS1C="КвоПодчТренеров"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg938" NAME1C="РегистрСведений.Константы" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld939" FIELDS1C="МинПределДирБонус"/>
+		<FIELD FIELDSSQL="_Fld940" FIELDS1C="КоэффФЛ"/>
+		<FIELD FIELDSSQL="_Fld941" FIELDS1C="СтавкаПенс"/>
+		<FIELD FIELDSSQL="_Fld942" FIELDS1C="ПорогНДФЛ"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg944" NAME1C="РегистрСведений.ВалютыКурс" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld945RRef" FIELDS1C="Валюта"/>
+		<FIELD FIELDSSQL="_Fld946" FIELDS1C="Курс"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg948" NAME1C="РегистрСведений.УровниКонс" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld949RRef" FIELDS1C="Уровень"/>
+		<FIELD FIELDSSQL="_Fld950" FIELDS1C="Ставка"/>
+		<FIELD FIELDSSQL="_Fld951" FIELDS1C="ПорогОбщий"/>
+		<FIELD FIELDSSQL="_Fld952" FIELDS1C="ПорогЛичный"/>
+		<FIELD FIELDSSQL="_Fld1356" FIELDS1C="ПроцПроплат"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg954" NAME1C="РегистрСведений.ПроцПоГодамКомис" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld955RRef" FIELDS1C="ПрограммаЛайф"/>
+		<FIELD FIELDSSQL="_Fld956" FIELDS1C="КвоЛет"/>
+		<FIELD FIELDSSQL="_Fld957" FIELDS1C="Проц1Год"/>
+		<FIELD FIELDSSQL="_Fld958" FIELDS1C="Проц2Год"/>
+		<FIELD FIELDSSQL="_Fld959" FIELDS1C="Проц3Год"/>
+		<FIELD FIELDSSQL="_Fld960" FIELDS1C="Проц4Год"/>
+		<FIELD FIELDSSQL="_Fld961" FIELDS1C="Проц5Год"/>
+		<FIELD FIELDSSQL="_Fld962" FIELDS1C="Проц6Год"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg964" NAME1C="РегистрСведений.ПроцПоГодамЕдин" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld965RRef" FIELDS1C="ПрограммаЛайф"/>
+		<FIELD FIELDSSQL="_Fld966" FIELDS1C="КвоЛет"/>
+		<FIELD FIELDSSQL="_Fld967" FIELDS1C="Проц1Год"/>
+		<FIELD FIELDSSQL="_Fld968" FIELDS1C="Проц2Год"/>
+		<FIELD FIELDSSQL="_Fld969" FIELDS1C="Проц3Год"/>
+		<FIELD FIELDSSQL="_Fld970" FIELDS1C="Проц4Год"/>
+		<FIELD FIELDSSQL="_Fld971" FIELDS1C="Проц5Год"/>
+		<FIELD FIELDSSQL="_Fld972" FIELDS1C="Проц6Год"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg974" NAME1C="РегистрСведений.ПроцентыПоНонЛайф" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld975RRef" FIELDS1C="СтрахКомп"/>
+		<FIELD FIELDSSQL="_Fld976RRef" FIELDS1C="ВидНонЛайф"/>
+		<FIELD FIELDSSQL="_Fld977" FIELDS1C="ПроцентКонс"/>
+		<FIELD FIELDSSQL="_Fld978" FIELDS1C="Фактор"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg980" NAME1C="РегистрСведений.СостКонсКуратор" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld981RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld982RRef" FIELDS1C="Куратор"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg984" NAME1C="РегистрСведений.СостКонсУровень" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld985RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld986" FIELDS1C="ТекУровень"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg988" NAME1C="РегистрСведений.СостКонсЗамена" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld989RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld990RRef" FIELDS1C="Замена"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg992" NAME1C="РегистрСведений.СостКонсАктивность" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderTRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld993RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld994RRef" FIELDS1C="ТекАктивность"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRg996" NAME1C="РегистрСведений.СостКонсЮридСтатус" MEMO="Основная">
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_RecorderRRef" FIELDS1C="Регистратор"/>
+		<FIELD FIELDSSQL="_LineNo" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Active" FIELDS1C="Активность"/>
+		<FIELD FIELDSSQL="_Fld997RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld998RRef" FIELDS1C="ЮридическийСтатус"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRgChngR1498" NAME1C="РегистрСведений.ХранилищеОтчетов.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_Fld1300" FIELDS1C="НачалоПериода"/>
+		<FIELD FIELDSSQL="_Fld1301" FIELDS1C="КонецПериода"/>
+		<FIELD FIELDSSQL="_Fld1302" FIELDS1C="ИмяОтчета"/>
+		<FIELD FIELDSSQL="_Fld1303RRef" FIELDS1C="Консультант"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRgChngR1499" NAME1C="РегистрСведений.ПаролиПользователей.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_Fld1315RRef" FIELDS1C="Пользователь"/>
+	</TABLE>
+	<TABLE NAMESQL="_InfoRgChngR1500" NAME1C="РегистрСведений.СлужебныеСообщения.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_Period" FIELDS1C="Период"/>
+		<FIELD FIELDSSQL="_Fld1485" FIELDS1C="Событие"/>
+	</TABLE>
+	<TABLE NAMESQL="_Node1453" NAME1C="ПланОбмена.лл_Полный" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_SentNo" FIELDS1C="НомерОтправленного"/>
+		<FIELD FIELDSSQL="_ReceivedNo" FIELDS1C="НомерПринятого"/>
+		<FIELD FIELDSSQL="_PredefinedID" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Node1497" NAME1C="ПланОбмена.ДляСайта" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_SentNo" FIELDS1C="НомерОтправленного"/>
+		<FIELD FIELDSSQL="_ReceivedNo" FIELDS1C="НомерПринятого"/>
+		<FIELD FIELDSSQL="_PredefinedID" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Node7" NAME1C="ПланОбмена.Полный" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_SentNo" FIELDS1C="НомерОтправленного"/>
+		<FIELD FIELDSSQL="_ReceivedNo" FIELDS1C="НомерПринятого"/>
+		<FIELD FIELDSSQL="_PredefinedID" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference10" NAME1C="Справочник.Консультанты" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_ParentIDRRef" FIELDS1C="Родитель"/>
+		<FIELD FIELDSSQL="_Folder" FIELDS1C="ЭтоГруппа"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld117" FIELDS1C="КодКонсультанта"/>
+		<FIELD FIELDSSQL="_Fld118" FIELDS1C="ИНН"/>
+		<FIELD FIELDSSQL="_Fld119" FIELDS1C="ТелефонМоб"/>
+		<FIELD FIELDSSQL="_Fld120" FIELDS1C="Телефоны"/>
+		<FIELD FIELDSSQL="_Fld121" FIELDS1C="email"/>
+		<FIELD FIELDSSQL="_Fld122" FIELDS1C="icq"/>
+		<FIELD FIELDSSQL="_Fld123" FIELDS1C="АвтоЗапись"/>
+		<FIELD FIELDSSQL="_Fld124" FIELDS1C="КодСсылки"/>
+		<FIELD FIELDSSQL="_Fld125" FIELDS1C="Дирекция"/>
+		<FIELD FIELDSSQL="_Fld126" FIELDS1C="БанкРС"/>
+		<FIELD FIELDSSQL="_Fld127" FIELDS1C="БанкМФО"/>
+		<FIELD FIELDSSQL="_Fld128" FIELDS1C="БанкАдрес"/>
+		<FIELD FIELDSSQL="_Fld129" FIELDS1C="БанкНомКарты"/>
+		<FIELD FIELDSSQL="_Fld130" FIELDS1C="ДатаРожд"/>
+		<FIELD FIELDSSQL="_Fld131" FIELDS1C="МестоРожд"/>
+		<FIELD FIELDSSQL="_Fld132RRef" FIELDS1C="Гражданство"/>
+		<FIELD FIELDSSQL="_Fld133" FIELDS1C="МестоРаботы"/>
+		<FIELD FIELDSSQL="_Fld134" FIELDS1C="Должность"/>
+		<FIELD FIELDSSQL="_Fld135" FIELDS1C="ФЛ_ЕстьКопПасп"/>
+		<FIELD FIELDSSQL="_Fld136" FIELDS1C="ФЛ_ЕстьКопИНН"/>
+		<FIELD FIELDSSQL="_Fld137" FIELDS1C="ЧП_ЕстьКопПасп"/>
+		<FIELD FIELDSSQL="_Fld138" FIELDS1C="ЧП_ЕстьКопИнн"/>
+		<FIELD FIELDSSQL="_Fld139" FIELDS1C="ЧП_ЕстьКопСвРегистр"/>
+		<FIELD FIELDSSQL="_Fld140" FIELDS1C="ЧП_ЕстьКопСвПФ"/>
+		<FIELD FIELDSSQL="_Fld141" FIELDS1C="ЧП_ЕстьКопСвЕдНал"/>
+		<FIELD FIELDSSQL="_Fld142" FIELDS1C="ЧП_ЕстьКопСвПлатНдс"/>
+		<FIELD FIELDSSQL="_Fld143" FIELDS1C="ЧП_ЕстьКопСвПлатОбщОсн"/>
+		<FIELD FIELDSSQL="_Fld144" FIELDS1C="ЧП_КопСвЕдНалДействДо"/>
+		<FIELD FIELDSSQL="_Fld145" FIELDS1C="АдресИндекс"/>
+		<FIELD FIELDSSQL="_Fld146" FIELDS1C="АдресОбласть"/>
+		<FIELD FIELDSSQL="_Fld147" FIELDS1C="АдресРайон"/>
+		<FIELD FIELDSSQL="_Fld148" FIELDS1C="АдресНасПункт"/>
+		<FIELD FIELDSSQL="_Fld149" FIELDS1C="АдресУлица"/>
+		<FIELD FIELDSSQL="_Fld150" FIELDS1C="ПаспортнДанСерияНомер"/>
+		<FIELD FIELDSSQL="_Fld151" FIELDS1C="ПаспортнДанКемВыдан"/>
+		<FIELD FIELDSSQL="_Fld152" FIELDS1C="ПаспортнДанДатаВыдачи"/>
+		<FIELD FIELDSSQL="_Fld153" FIELDS1C="ДатаСоздания"/>
+		<FIELD FIELDSSQL="_Fld154" FIELDS1C="ДатаРегистрДогов"/>
+		<FIELD FIELDSSQL="_Fld155" FIELDS1C="СтатПустышки"/>
+		<FIELD FIELDSSQL="_Fld156" FIELDS1C="БанкПримечание"/>
+		<FIELD FIELDSSQL="_Fld157" FIELDS1C="БанкОКПО"/>
+		<FIELD FIELDSSQL="_Fld158" FIELDS1C="ДатаПлатЛичнДог"/>
+		<FIELD FIELDSSQL="_Fld159" FIELDS1C="ДатаПодписДогов"/>
+		<FIELD FIELDSSQL="_Fld160" FIELDS1C="НеПовышУровень"/>
+		<FIELD FIELDSSQL="_Fld161" FIELDS1C="ДоговорСдан"/>
+		<FIELD FIELDSSQL="_Fld162" FIELDS1C="СтарКод"/>
+		<FIELD FIELDSSQL="_Fld163" FIELDS1C="ЧП_ЕстьКопВыпРеестра"/>
+		<FIELD FIELDSSQL="_Fld164RRef" FIELDS1C="Регион"/>
+		<FIELD FIELDSSQL="_Fld1195" FIELDS1C="фПредупреждениеОПаркинге"/>
+		<FIELD FIELDSSQL="_Fld1196" FIELDS1C="ДатаПримененияПредупрежденияОПаркинге"/>
+		<FIELD FIELDSSQL="_Fld1282RRef" FIELDS1C="ЛичныйДоговорЛайф"/>
+		<FIELD FIELDSSQL="_Fld1298" FIELDS1C="ИсключитьИзКонкурсов"/>
+		<FIELD FIELDSSQL="_Fld1305" FIELDS1C="Фамилия"/>
+		<FIELD FIELDSSQL="_Fld1306" FIELDS1C="Имя"/>
+		<FIELD FIELDSSQL="_Fld1307" FIELDS1C="Отчество"/>
+		<FIELD FIELDSSQL="_Fld1346" FIELDS1C="НовоеПриложение"/>
+		<FIELD FIELDSSQL="_Fld1360" FIELDS1C="Сворачивать"/>
+		<FIELD FIELDSSQL="_Fld1457" FIELDS1C="рКомментарий"/>
+		<FIELD FIELDSSQL="_Fld1460" FIELDS1C="КомментарийДляОбработки"/>
+		<FIELD FIELDSSQL="_Fld1554" FIELDS1C="фПредупреждениеОПониженииУровня"/>
+		<FIELD FIELDSSQL="_Fld1555" FIELDS1C="ДатаУстановкиПредупрежденияОПониженииУровня"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference10_VT1139" NAME1C="Справочник.Консультанты.Комментарии" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1140" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1141" FIELDS1C="ВремяИзменения"/>
+		<FIELD FIELDSSQL="_Fld1142" FIELDS1C="Комментарий"/>
+		<FIELD FIELDSSQL="_Fld1143" FIELDS1C="Автор"/>
+		<FIELD FIELDSSQL="_Reference10_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference10_VT1557" NAME1C="Справочник.Консультанты.ЛичныеДоговора" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1558" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1559RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Reference10_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference11" NAME1C="Справочник.Партнеры" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld170" FIELDS1C="ПолнНаим"/>
+		<FIELD FIELDSSQL="_Fld171RRef" FIELDS1C="ВидРасчета"/>
+		<FIELD FIELDSSQL="_Fld172" FIELDS1C="ПроцИсполнителю"/>
+		<FIELD FIELDSSQL="_Fld173" FIELDS1C="НаимДляXml"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1144" NAME1C="Справочник.СуперДиректораДляНеактивных" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1145RRef" FIELDS1C="СуперДиректор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference12" NAME1C="Справочник.Номенклатура" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_ParentIDRRef" FIELDS1C="Родитель"/>
+		<FIELD FIELDSSQL="_Folder" FIELDS1C="ЭтоГруппа"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1200" NAME1C="Справочник.Пользователи" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_ParentIDRRef" FIELDS1C="Родитель"/>
+		<FIELD FIELDSSQL="_Folder" FIELDS1C="ЭтоГруппа"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1337RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1341" FIELDS1C="УникальныйИдентификатор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1201" NAME1C="Справочник.СохраненныеНастройкиСКД" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1205RRef" FIELDS1C="ТипНастройки"/>
+		<FIELD FIELDSSQL="_Fld1206_TYPE" FIELDS1C="НастраиваемыйОбъект"/>
+		<FIELD FIELDSSQL="_Fld1206_S" FIELDS1C="НастраиваемыйОбъект"/>
+		<FIELD FIELDSSQL="_Fld1206_RTRef" FIELDS1C="НастраиваемыйОбъект"/>
+		<FIELD FIELDSSQL="_Fld1206_RRRef" FIELDS1C="НастраиваемыйОбъект"/>
+		<FIELD FIELDSSQL="_Fld1207" FIELDS1C="СохранятьАвтоматически"/>
+		<FIELD FIELDSSQL="_Fld1208" FIELDS1C="ИспользоватьПриОткрытии"/>
+		<FIELD FIELDSSQL="_Fld1209" FIELDS1C="СохранятьПериод"/>
+		<FIELD FIELDSSQL="_Fld1210" FIELDS1C="ОткрыватьПриЗапуске"/>
+		<FIELD FIELDSSQL="_Fld1211" FIELDS1C="ХранилищеНастроек"/>
+		<FIELD FIELDSSQL="_Fld1212" FIELDS1C="Описание"/>
+		<FIELD FIELDSSQL="_Fld1213RRef" FIELDS1C="Пользователь"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference13" NAME1C="Справочник.Контрагенты" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld176RRef" FIELDS1C="Пол"/>
+		<FIELD FIELDSSQL="_Fld177" FIELDS1C="Email"/>
+		<FIELD FIELDSSQL="_Fld178" FIELDS1C="icq"/>
+		<FIELD FIELDSSQL="_Fld179" FIELDS1C="ИНН"/>
+		<FIELD FIELDSSQL="_Fld180" FIELDS1C="Фамилия"/>
+		<FIELD FIELDSSQL="_Fld181" FIELDS1C="Имя"/>
+		<FIELD FIELDSSQL="_Fld182" FIELDS1C="Отчество"/>
+		<FIELD FIELDSSQL="_Fld183" FIELDS1C="ПаспортСерия"/>
+		<FIELD FIELDSSQL="_Fld184" FIELDS1C="ПаспортНомер"/>
+		<FIELD FIELDSSQL="_Fld185" FIELDS1C="ПаспортВыдан"/>
+		<FIELD FIELDSSQL="_Fld186RRef" FIELDS1C="СемСост"/>
+		<FIELD FIELDSSQL="_Fld187" FIELDS1C="ДевичФамил"/>
+		<FIELD FIELDSSQL="_Fld188" FIELDS1C="Возраст"/>
+		<FIELD FIELDSSQL="_Fld189" FIELDS1C="МестоРожд"/>
+		<FIELD FIELDSSQL="_Fld190" FIELDS1C="АдресПрожив"/>
+		<FIELD FIELDSSQL="_Fld191" FIELDS1C="ПочтИндекс"/>
+		<FIELD FIELDSSQL="_Fld192" FIELDS1C="ДомТел"/>
+		<FIELD FIELDSSQL="_Fld193" FIELDS1C="МобТел"/>
+		<FIELD FIELDSSQL="_Fld194" FIELDS1C="МестоРаботы"/>
+		<FIELD FIELDSSQL="_Fld195" FIELDS1C="Должность"/>
+		<FIELD FIELDSSQL="_Fld196" FIELDS1C="СлужОбязанн"/>
+		<FIELD FIELDSSQL="_Fld197" FIELDS1C="АдресРаботы"/>
+		<FIELD FIELDSSQL="_Fld198" FIELDS1C="ПочтИндексРаботы"/>
+		<FIELD FIELDSSQL="_Fld199" FIELDS1C="ТелРаботы"/>
+		<FIELD FIELDSSQL="_Fld200" FIELDS1C="ДатаРожд"/>
+		<FIELD FIELDSSQL="_Fld201" FIELDS1C="СтарКод"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1317" NAME1C="Справочник.ОтчетыУпр" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1510" FIELDS1C="ДатаНачалаКонкурса"/>
+		<FIELD FIELDSSQL="_Fld1511" FIELDS1C="ДатаКонцаКонкурса"/>
+		<FIELD FIELDSSQL="_Fld1334" FIELDS1C="Реквизит6"/>
+		<FIELD FIELDSSQL="_Fld1335" FIELDS1C="УровеньОТ"/>
+		<FIELD FIELDSSQL="_Fld1336" FIELDS1C="УровеньДО"/>
+		<FIELD FIELDSSQL="_Fld1318" FIELDS1C="Надпись1"/>
+		<FIELD FIELDSSQL="_Fld1319" FIELDS1C="Реквизит1"/>
+		<FIELD FIELDSSQL="_Fld1320" FIELDS1C="Надпись2"/>
+		<FIELD FIELDSSQL="_Fld1321" FIELDS1C="Реквизит2"/>
+		<FIELD FIELDSSQL="_Fld1322" FIELDS1C="Надпись3"/>
+		<FIELD FIELDSSQL="_Fld1323" FIELDS1C="Реквизит3"/>
+		<FIELD FIELDSSQL="_Fld1324" FIELDS1C="Надпись4"/>
+		<FIELD FIELDSSQL="_Fld1325" FIELDS1C="Реквизит4"/>
+		<FIELD FIELDSSQL="_Fld1326" FIELDS1C="Надпись5"/>
+		<FIELD FIELDSSQL="_Fld1327" FIELDS1C="Реквизит5"/>
+		<FIELD FIELDSSQL="_Fld1328" FIELDS1C="ОснКартинка"/>
+		<FIELD FIELDSSQL="_Fld1329" FIELDS1C="ДопКартинка"/>
+		<FIELD FIELDSSQL="_Fld1330" FIELDS1C="НавСсылкаОсн"/>
+		<FIELD FIELDSSQL="_Fld1331" FIELDS1C="НавСсылкаДоп"/>
+		<FIELD FIELDSSQL="_Fld1332" FIELDS1C="Надпись6"/>
+		<FIELD FIELDSSQL="_Fld1333" FIELDS1C="Надпись7"/>
+		<FIELD FIELDSSQL="_Fld1576" FIELDS1C="СсылкаНаСайтеНаУсловия"/>
+		<FIELD FIELDSSQL="_Fld1580" FIELDS1C="НеОбновлятьПриВыгрузке"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference14" NAME1C="Справочник.ТаблФактор" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld206" FIELDS1C="Фактор"/>
+		<FIELD FIELDSSQL="_Fld207" FIELDS1C="Фактор1Раз"/>
+		<FIELD FIELDSSQL="_Fld208RRef" FIELDS1C="ПрограммаЛайф"/>
+		<FIELD FIELDSSQL="_Fld209" FIELDS1C="КвоЛет"/>
+		<FIELD FIELDSSQL="_Fld1492" FIELDS1C="Фактор2016"/>
+		<FIELD FIELDSSQL="_Fld1493" FIELDS1C="Фактор2016_1Раз"/>
+		<FIELD FIELDSSQL="_Fld1509RRef" FIELDS1C="СтрахКомп"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1463" NAME1C="Справочник.ВнешниеОбработки" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_ParentIDRRef" FIELDS1C="Родитель"/>
+		<FIELD FIELDSSQL="_Folder" FIELDS1C="ЭтоГруппа"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1465" FIELDS1C="ХранилищеВнешнейОбработки"/>
+		<FIELD FIELDSSQL="_Fld1466RRef" FIELDS1C="ВидОбработки"/>
+		<FIELD FIELDSSQL="_Fld1467" FIELDS1C="Комментарий"/>
+		<FIELD FIELDSSQL="_Fld1468" FIELDS1C="КомментарийКФайлуИсточнику"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1463_VT1469" NAME1C="Справочник.ВнешниеОбработки.Принадлежность" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1470" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1471" FIELDS1C="ПредставлениеОбъекта"/>
+		<FIELD FIELDSSQL="_Fld1472_TYPE" FIELDS1C="СсылкаОбъекта"/>
+		<FIELD FIELDSSQL="_Fld1472_RTRef" FIELDS1C="СсылкаОбъекта"/>
+		<FIELD FIELDSSQL="_Fld1472_RRRef" FIELDS1C="СсылкаОбъекта"/>
+		<FIELD FIELDSSQL="_Fld1473" FIELDS1C="ТабличнаяЧастьИмя"/>
+		<FIELD FIELDSSQL="_Fld1474" FIELDS1C="ТабличнаяЧастьПредставление"/>
+		<FIELD FIELDSSQL="_Fld1475" FIELDS1C="НастройкиПостроителяДляОтбора"/>
+		<FIELD FIELDSSQL="_Fld1476" FIELDS1C="ХранилищеВнешнейОбработки"/>
+		<FIELD FIELDSSQL="_Fld1477_TYPE" FIELDS1C="ЗаменяемаяПечатнаяФорма"/>
+		<FIELD FIELDSSQL="_Fld1477_S" FIELDS1C="ЗаменяемаяПечатнаяФорма"/>
+		<FIELD FIELDSSQL="_Fld1477_RRRef" FIELDS1C="ЗаменяемаяПечатнаяФорма"/>
+		<FIELD FIELDSSQL="_Fld1478" FIELDS1C="ИмяФайлаПечатнойФормы"/>
+		<FIELD FIELDSSQL="_Fld1479" FIELDS1C="ПредставлениеОтбораПостроителя"/>
+		<FIELD FIELDSSQL="_Fld1480" FIELDS1C="ПредставлениеКнопки"/>
+		<FIELD FIELDSSQL="_Fld1481" FIELDS1C="ДополнительныеПараметрыОбработки"/>
+		<FIELD FIELDSSQL="_Fld1482" FIELDS1C="ПредставлениеНастроекОбработки"/>
+		<FIELD FIELDSSQL="_Reference1463_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference15" NAME1C="Справочник.УровниКонсультантов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1501" FIELDS1C="КвоЕдМесПоПодчин"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference15_VT1502" NAME1C="Справочник.УровниКонсультантов.ТаблицаУсловий" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1503" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1504" FIELDS1C="УровПодч"/>
+		<FIELD FIELDSSQL="_Fld1505" FIELDS1C="КвоПодч"/>
+		<FIELD FIELDSSQL="_Fld1506" FIELDS1C="Вариант1КвоЕдПоПодчЗа1МесВТеч6Мес"/>
+		<FIELD FIELDSSQL="_Fld1507" FIELDS1C="Вариант2КвоЕдПоПодчЗа1МесВТеч3Мес"/>
+		<FIELD FIELDSSQL="_Fld1508" FIELDS1C="Вариант3КвоЕдПоПодчЗа1МесВТеч2Мес"/>
+		<FIELD FIELDSSQL="_Reference15_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference15_VT211" NAME1C="Справочник.УровниКонсультантов.ТаблУсловийСтар" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo212" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld213" FIELDS1C="Уров1"/>
+		<FIELD FIELDSSQL="_Fld214" FIELDS1C="Кво1"/>
+		<FIELD FIELDSSQL="_Fld215" FIELDS1C="Сум3Мес1"/>
+		<FIELD FIELDSSQL="_Fld216" FIELDS1C="Уров2"/>
+		<FIELD FIELDSSQL="_Fld217" FIELDS1C="Кво2"/>
+		<FIELD FIELDSSQL="_Fld218" FIELDS1C="Сум3Мес2"/>
+		<FIELD FIELDSSQL="_Fld219" FIELDS1C="Сум3МесВсего"/>
+		<FIELD FIELDSSQL="_Fld1361" FIELDS1C="Уров3"/>
+		<FIELD FIELDSSQL="_Fld1362" FIELDS1C="Кво3"/>
+		<FIELD FIELDSSQL="_Fld1363" FIELDS1C="Сум3Мес3"/>
+		<FIELD FIELDSSQL="_Reference15_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1548" NAME1C="Справочник.СписокПП" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1549RRef" FIELDS1C="КонсультантУчредитель"/>
+		<FIELD FIELDSSQL="_Fld1550RRef" FIELDS1C="КонсультантПП"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1565" NAME1C="Справочник.НакопленныеЕдиницы" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1566" FIELDS1C="ДатаИтогов"/>
+		<FIELD FIELDSSQL="_Fld1567RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1568" FIELDS1C="КонсультантДирекция"/>
+		<FIELD FIELDSSQL="_Fld1569" FIELDS1C="КонсультантКод"/>
+		<FIELD FIELDSSQL="_Fld1570RRef" FIELDS1C="Куратор"/>
+		<FIELD FIELDSSQL="_Fld1571" FIELDS1C="КураторДирекция"/>
+		<FIELD FIELDSSQL="_Fld1572" FIELDS1C="КураторКод"/>
+		<FIELD FIELDSSQL="_Fld1573RRef" FIELDS1C="ВидЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1574" FIELDS1C="ВидЕдиницНаименование"/>
+		<FIELD FIELDSSQL="_Fld1575" FIELDS1C="Количество"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1581" NAME1C="Справочник.ПобедителиКонкурсовДляПроверки" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_ParentIDRRef" FIELDS1C="Родитель"/>
+		<FIELD FIELDSSQL="_Folder" FIELDS1C="ЭтоГруппа"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1582" FIELDS1C="КодВарианта"/>
+		<FIELD FIELDSSQL="_Fld1583" FIELDS1C="НазваниеОтчетаВМетаданных"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1581_VT1584" NAME1C="Справочник.ПобедителиКонкурсовДляПроверки.Победители" MEMO="ТабличнаяЧасть">
+		<FIELD FIELDSSQL="_LineNo1585" FIELDS1C="НомерСтроки"/>
+		<FIELD FIELDSSQL="_Fld1586RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Reference1581_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_KeyField" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference1599" NAME1C="Справочник.УровниАгентов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld1602" FIELDS1C="ПорядковыйНомер"/>
+		<FIELD FIELDSSQL="_Fld1603" FIELDS1C="ПорядкНомерПодчиненногоУровня"/>
+		<FIELD FIELDSSQL="_Fld1604" FIELDS1C="МинКвоПодчиненногоУровня"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference16" NAME1C="Справочник.ВидыРискСтрахования" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference17" NAME1C="Справочник.Регионы" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference18" NAME1C="Справочник.СтавкиПоРискам" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_OwnerIDRRef" FIELDS1C="Владелец"/>
+		<FIELD FIELDSSQL="_ParentIDRRef" FIELDS1C="Родитель"/>
+		<FIELD FIELDSSQL="_Folder" FIELDS1C="ЭтоГруппа"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld223RRef" FIELDS1C="ВидРиска"/>
+		<FIELD FIELDSSQL="_Fld224" FIELDS1C="Проц"/>
+		<FIELD FIELDSSQL="_Fld225" FIELDS1C="Фактор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference19" NAME1C="Справочник.НазвВалВОтчетах" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld230RRef" FIELDS1C="СоотвВалюта"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference20" NAME1C="Справочник.НазвПартнеровВОтчетах" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld232RRef" FIELDS1C="СоотвПартнер"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference21" NAME1C="Справочник.НазвВидовРискаВОтчетах" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld234RRef" FIELDS1C="СоотвВидРиска"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference22" NAME1C="Справочник.НазвРегионовВОтчетах" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld236RRef" FIELDS1C="СоотвРегион"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference23" NAME1C="Справочник.НазвКонтрВОтчетах" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld238RRef" FIELDS1C="СоотвКонтр"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference24" NAME1C="Справочник.ПериодыОтчетовПоСтрукт" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld240" FIELDS1C="Дата1"/>
+		<FIELD FIELDSSQL="_Fld241" FIELDS1C="Дата2"/>
+		<FIELD FIELDSSQL="_Fld242" FIELDS1C="ИмяОбщегоАрхива"/>
+		<FIELD FIELDSSQL="_Fld243" FIELDS1C="ИмяСтруктурногоАрхива"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference25" NAME1C="Справочник.ПроцентыПоЛайфПрогр" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld245" FIELDS1C="СрокУпл"/>
+		<FIELD FIELDSSQL="_Fld246" FIELDS1C="Проц1Год"/>
+		<FIELD FIELDSSQL="_Fld247" FIELDS1C="Проц2Год"/>
+		<FIELD FIELDSSQL="_Fld248" FIELDS1C="Проц3Год"/>
+		<FIELD FIELDSSQL="_Fld249" FIELDS1C="Проц4Год"/>
+		<FIELD FIELDSSQL="_Fld250" FIELDS1C="Проц5Год"/>
+		<FIELD FIELDSSQL="_Fld251" FIELDS1C="Проц6Год"/>
+		<FIELD FIELDSSQL="_Fld252" FIELDS1C="ПроцЕд1Год"/>
+		<FIELD FIELDSSQL="_Fld253" FIELDS1C="ПроцЕд2Год"/>
+		<FIELD FIELDSSQL="_Fld254" FIELDS1C="ПроцЕд3Год"/>
+		<FIELD FIELDSSQL="_Fld255" FIELDS1C="ПроцЕд4Год"/>
+		<FIELD FIELDSSQL="_Fld256" FIELDS1C="ПроцЕд5Год"/>
+		<FIELD FIELDSSQL="_Fld257" FIELDS1C="ПроцЕд6Год"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference26" NAME1C="Справочник.Дирекции" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference27" NAME1C="Справочник.СтатусыДоговоров" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld260" FIELDS1C="Расшифровка"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference28" NAME1C="Справочник.СостоянияДоговоров" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld262RRef" FIELDS1C="Договор"/>
+		<FIELD FIELDSSQL="_Fld263RRef" FIELDS1C="СтатусПолиса"/>
+		<FIELD FIELDSSQL="_Fld264RRef" FIELDS1C="СтатусНачислЕдин"/>
+		<FIELD FIELDSSQL="_Fld265" FIELDS1C="КвоНачислЕдин"/>
+		<FIELD FIELDSSQL="_Fld266" FIELDS1C="Структ"/>
+		<FIELD FIELDSSQL="_Fld267RRef" FIELDS1C="РасчТребКорр"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference29" NAME1C="Справочник.ДопУсловияУровней" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_OwnerIDRRef" FIELDS1C="Владелец"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld269" FIELDS1C="Уров1"/>
+		<FIELD FIELDSSQL="_Fld270" FIELDS1C="Кво1"/>
+		<FIELD FIELDSSQL="_Fld271" FIELDS1C="Сум3Мес1"/>
+		<FIELD FIELDSSQL="_Fld272" FIELDS1C="Уров2"/>
+		<FIELD FIELDSSQL="_Fld273" FIELDS1C="Кво2"/>
+		<FIELD FIELDSSQL="_Fld274" FIELDS1C="Сум3Мес2"/>
+		<FIELD FIELDSSQL="_Fld275" FIELDS1C="Сум3МесВсего"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference30" NAME1C="Справочник.ВидыГражданства" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld277" FIELDS1C="СокрНаим"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference31" NAME1C="Справочник.КомментыКонс" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_OwnerIDRRef" FIELDS1C="Владелец"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld279" FIELDS1C="Комментарий"/>
+		<FIELD FIELDSSQL="_Fld280" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference32" NAME1C="Справочник.КомментыДог" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_OwnerIDRRef" FIELDS1C="Владелец"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld282" FIELDS1C="Комментарий"/>
+		<FIELD FIELDSSQL="_Fld283" FIELDS1C="Автор"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference33" NAME1C="Справочник.ВидыСеминаров" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference34" NAME1C="Справочник.ПорогиДирБон" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld286" FIELDS1C="ОбщПорог"/>
+		<FIELD FIELDSSQL="_Fld287" FIELDS1C="СтавкаБон"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference35" NAME1C="Справочник.ИсключенияДляКонкурсов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld289RRef" FIELDS1C="Консультант"/>
+		<FIELD FIELDSSQL="_Fld1270" FIELDS1C="ДляКонкурса"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference36" NAME1C="Справочник.ПрограммыЛайф" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_OwnerIDRRef" FIELDS1C="Владелец"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld291" FIELDS1C="АдминРасходы"/>
+		<FIELD FIELDSSQL="_Fld292" FIELDS1C="МаксКвоЛет"/>
+		<FIELD FIELDSSQL="_Fld293" FIELDS1C="фНеНачислЕдинИКомиссию"/>
+		<FIELD FIELDSSQL="_Fld1587" FIELDS1C="ПостоянныйПроцентЕдиниц"/>
+		<FIELD FIELDSSQL="_Fld1588" FIELDS1C="ПостоянныйПроцентКомиссионных"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference37" NAME1C="Справочник.ЗаменыПоСуперДиректорам" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld295RRef" FIELDS1C="ИсхКонсультант"/>
+		<FIELD FIELDSSQL="_Fld296RRef" FIELDS1C="КонсультантЗамена"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference38" NAME1C="Справочник.ПорогиДляКонкурсовИнтервальные" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld298" FIELDS1C="ДатаОт"/>
+		<FIELD FIELDSSQL="_Fld299" FIELDS1C="ДатаПо"/>
+		<FIELD FIELDSSQL="_Fld300" FIELDS1C="МинКвоЛичнЕд"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference39" NAME1C="Справочник.СтруктурыДляКонкурсов" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld302RRef" FIELDS1C="КураторВетки"/>
+		<FIELD FIELDSSQL="_Fld303" FIELDS1C="фБезКуратораЛично"/>
+	</TABLE>
+	<TABLE NAMESQL="_Reference9" NAME1C="Справочник.Валюты" MEMO="Основная">
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C="ВерсияДанных"/>
+		<FIELD FIELDSSQL="_Marked" FIELDS1C="ПометкаУдаления"/>
+		<FIELD FIELDSSQL="_IsMetadata" FIELDS1C="Предопределенный"/>
+		<FIELD FIELDSSQL="_Code" FIELDS1C="Код"/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C="Наименование"/>
+		<FIELD FIELDSSQL="_Fld113" FIELDS1C="ПолнНаим"/>
+		<FIELD FIELDSSQL="_Fld114" FIELDS1C="Курс"/>
+		<FIELD FIELDSSQL="_Fld115" FIELDS1C="Кратность"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR1146" NAME1C="Справочник.СуперДиректораДляНеактивных.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR116" NAME1C="Справочник.Валюты.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR1204" NAME1C="Справочник.Пользователи.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR1215" NAME1C="Справочник.СохраненныеНастройкиСКД.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR1454" NAME1C="Справочник.ОтчетыУпр.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR169" NAME1C="Справочник.Консультанты.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR174" NAME1C="Справочник.Партнеры.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR175" NAME1C="Справочник.Номенклатура.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR205" NAME1C="Справочник.Контрагенты.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR210" NAME1C="Справочник.ТаблФактор.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR220" NAME1C="Справочник.УровниКонсультантов.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR221" NAME1C="Справочник.ВидыРискСтрахования.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR222" NAME1C="Справочник.Регионы.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR229" NAME1C="Справочник.СтавкиПоРискам.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR231" NAME1C="Справочник.НазвВалВОтчетах.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR233" NAME1C="Справочник.НазвПартнеровВОтчетах.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR235" NAME1C="Справочник.НазвВидовРискаВОтчетах.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR237" NAME1C="Справочник.НазвРегионовВОтчетах.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR239" NAME1C="Справочник.НазвКонтрВОтчетах.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR244" NAME1C="Справочник.ПериодыОтчетовПоСтрукт.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR258" NAME1C="Справочник.ПроцентыПоЛайфПрогр.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR259" NAME1C="Справочник.Дирекции.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR261" NAME1C="Справочник.СтатусыДоговоров.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR268" NAME1C="Справочник.СостоянияДоговоров.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR276" NAME1C="Справочник.ДопУсловияУровней.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR278" NAME1C="Справочник.ВидыГражданства.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR281" NAME1C="Справочник.КомментыКонс.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR284" NAME1C="Справочник.КомментыДог.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR285" NAME1C="Справочник.ВидыСеминаров.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR288" NAME1C="Справочник.ПорогиДирБон.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR290" NAME1C="Справочник.ИсключенияДляКонкурсов.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR294" NAME1C="Справочник.ПрограммыЛайф.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR297" NAME1C="Справочник.ЗаменыПоСуперДиректорам.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR301" NAME1C="Справочник.ПорогиДляКонкурсовИнтервальные.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_ReferenceChngR304" NAME1C="Справочник.СтруктурыДляКонкурсов.Изменения" MEMO="РегистрацияИзменений">
+		<FIELD FIELDSSQL="_NodeTRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_NodeRRef" FIELDS1C="Узел"/>
+		<FIELD FIELDSSQL="_MessageNo" FIELDS1C="НомерСообщения"/>
+		<FIELD FIELDSSQL="_IDRRef" FIELDS1C="Ссылка"/>
+	</TABLE>
+	<TABLE NAMESQL="_RepSettings" NAME1C="" MEMO="ХранилищеПользовательскихНастроекОтчетов">
+		<FIELD FIELDSSQL="_UserId" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ObjectKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsPresentation" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsData" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_RepVarSettings" NAME1C="" MEMO="ХранилищеВариантовОтчетов">
+		<FIELD FIELDSSQL="_UserId" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ObjectKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsPresentation" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsData" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_ScheduledJobs1359" NAME1C="" MEMO="РегламентныеЗадания">
+		<FIELD FIELDSSQL="_ID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_JobKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MetadataID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Predefined" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Parameters" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UserName" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActivationCondition" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Use" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartCount" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartAttemptNumber" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_State" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_StartTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_FinishTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_ScheduledJobs1364" NAME1C="" MEMO="РегламентныеЗадания">
+		<FIELD FIELDSSQL="_ID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_JobKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MetadataID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Predefined" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Parameters" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UserName" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActivationCondition" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Use" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartCount" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartAttemptNumber" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_State" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_StartTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_FinishTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_ScheduledJobs1489" NAME1C="" MEMO="РегламентныеЗадания">
+		<FIELD FIELDSSQL="_ID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_JobKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MetadataID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Predefined" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Parameters" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UserName" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActivationCondition" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Use" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartCount" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartAttemptNumber" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_State" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_StartTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_FinishTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_ScheduledJobs1490" NAME1C="" MEMO="РегламентныеЗадания">
+		<FIELD FIELDSSQL="_ID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_JobKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MetadataID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Predefined" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Parameters" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UserName" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActivationCondition" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Use" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartCount" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartAttemptNumber" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_State" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_StartTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_FinishTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_ScheduledJobs1491" NAME1C="" MEMO="РегламентныеЗадания">
+		<FIELD FIELDSSQL="_ID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Description" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_JobKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_MetadataID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Predefined" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Parameters" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UserName" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ActivationCondition" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Use" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartCount" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartPeriod" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_RestartAttemptNumber" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_State" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_StartTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_FinishTime" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_SystemSettings" NAME1C="" MEMO="ХранилищеСистемныхНастроек">
+		<FIELD FIELDSSQL="_UserId" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_ObjectKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsKey" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Version" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsPresentation" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_SettingsData" FIELDS1C=""/>
+	</TABLE>
+	<TABLE NAMESQL="_UsersWorkHistory" NAME1C="" MEMO="ИсторияРаботыПользователей">
+		<FIELD FIELDSSQL="_ID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_UserID" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_URL" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_Date" FIELDS1C=""/>
+		<FIELD FIELDSSQL="_URLHash" FIELDS1C=""/>
+	</TABLE>
+</TABLES>
