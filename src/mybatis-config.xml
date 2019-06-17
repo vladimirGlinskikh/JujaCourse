@@ -20,8 +20,8 @@
         </environment>
     </environments>
     <mappers><!--в данном блоке необходимо описать маперы, которые используются в проекте-->
-        <mapper class="kz.zhelezyaka.mapper.SubscriberMapper"/>
-        <mapper class="kz.zhelezyaka.mapper.TariffMapper"/>
-        <mapper class="kz.zhelezyaka.mapper.PaymentMapper"/>
+        <mapper class="anotherExperiments.myBatis.mapper.SubscriberMapper"/>
+        <mapper class="anotherExperiments.myBatis.mapper.TariffMapper"/>
+        <mapper class="anotherExperiments.myBatis.mapper.PaymentMapper"/>
     </mappers>
 </configuration>
