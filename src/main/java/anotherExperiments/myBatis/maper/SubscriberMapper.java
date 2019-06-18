@@ -8,4 +8,6 @@ public interface SubscriberMapper {
     Subscriber getSubscriberById(Integer id);
 
     List getSubscriber();
+
+    List<Subscriber> getSubscribers();
 }
