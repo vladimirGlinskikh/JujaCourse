@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="petmapper">
+    <!-- Add SQL statements -->
+    <select id="getAllPets" resultType="anotherExperiments.ORM.mybatis.db.PetDVO">
+-- SELECT ID, NAME, OWNER,
+-- SPECIES,
+-- SEX, BIRTH, DEATH
+-- FROM Pet
+select * from pet
+        <where>
+            <if test="name != null">
+                name = #{name}
+            </if>
+            <if test="owner != null ">
+                and owner = #{owner}
+            </if>
+            <if test="species != null">
+                and species = #{species}
+            </if>
+        </where>
+</select>
+</mapper>
