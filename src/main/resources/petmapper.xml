@@ -9,16 +9,6 @@
 -- SEX, BIRTH, DEATH
 -- FROM Pet
 select * from pet
-        <where>
-            <if test="name != null">
-                name = #{name}
-            </if>
-            <if test="owner != null ">
-                and owner = #{owner}
-            </if>
-            <if test="species != null">
-                and species = #{species}
-            </if>
-        </where>
+
 </select>
 </mapper>
