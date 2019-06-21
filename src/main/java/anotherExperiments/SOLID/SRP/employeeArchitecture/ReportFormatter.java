@@ -1,4 +1,4 @@
-package anotherExperiments.SOLID.employeeArchitecture;
+package anotherExperiments.SOLID.SRP.employeeArchitecture;
 
 public class ReportFormatter {
 

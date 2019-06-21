@@ -1,4 +1,4 @@
-package anotherExperiments.SOLID.solution;
+package anotherExperiments.SOLID.SRP.solution;
 
 public class PhoneClient {
     public static void main(String[] args) {

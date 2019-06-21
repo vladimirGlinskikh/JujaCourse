@@ -1,4 +1,4 @@
-package anotherExperiments.SOLID.solution;
+package anotherExperiments.SOLID.SRP.solution;
 
 public class ConnectionManagerImpl implements IConnectionManager {
     @Override

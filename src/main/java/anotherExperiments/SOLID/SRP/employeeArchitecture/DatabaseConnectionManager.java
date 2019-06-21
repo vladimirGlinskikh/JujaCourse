@@ -1,4 +1,4 @@
-package anotherExperiments.SOLID.employeeArchitecture;
+package anotherExperiments.SOLID.SRP.employeeArchitecture;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

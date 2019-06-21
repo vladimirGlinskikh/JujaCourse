@@ -1,4 +1,4 @@
-package anotherExperiments.SOLID.violation;
+package anotherExperiments.SOLID.SRP.violation;
 
 public class PhoneClient {
     public static void main(String[] args) {
