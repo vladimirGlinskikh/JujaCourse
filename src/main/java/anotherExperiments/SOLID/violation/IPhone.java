@@ -1,4 +1,4 @@
-package anotherExperiments.SOLID;
+package anotherExperiments.SOLID.violation;
 
 public interface IPhone {
 
