@@ -1,4 +1,4 @@
-package anotherExperiments.SOLID.LCP.violation;
+package anotherExperiments.SOLID.LSP.violation;
 
 import java.util.ArrayList;
 import java.util.List;

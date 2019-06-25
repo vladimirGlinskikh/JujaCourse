@@ -1,4 +1,4 @@
-package anotherExperiments.SOLID.LCP.solution;
+package anotherExperiments.SOLID.LSP.solution;
 
 public class MediaPlayer {
     public void playAudio() {
