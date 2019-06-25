@@ -5,7 +5,7 @@ public class MediaPlayer {
         System.out.println("Playing something audio...");
     }
 
-    public void playVideo() {
+    public void playVideo() throws VideoUnsupportedException {
         System.out.println("Playing something video...");
     }
 }
