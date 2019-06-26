@@ -1,9 +1,13 @@
 package anotherExperiments.SOLID.DIP;
 
 public class LoginManager {
-    SimpleLogin simpleLogin = new SimpleLogin();
+    Authenticator authenticator;
+
+    public LoginManager(Authenticator authenticator) {
+        this.authenticator = authenticator;
+    }
 
     public void login(User user) {
-        simpleLogin.authentificate(user);
+        authenticator.authentificate(user);
     }
 }
