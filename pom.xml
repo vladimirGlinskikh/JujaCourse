@@ -76,7 +76,7 @@
             <artifactId>sqljdbc4-4.0</artifactId>
             <version>4-4.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/src/main/resources/sqljdbc42.jar</systemPath>
+            <systemPath>src/main/resources/anotherExperiments/sqljdbc42.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
