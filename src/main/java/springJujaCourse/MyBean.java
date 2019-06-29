@@ -1,6 +1,7 @@
 package springJujaCourse;
 
 public class MyBean {
+    private Service service;
     private String name;
     private String text;
 
@@ -9,7 +10,7 @@ public class MyBean {
     }
 
     public String getText() {
-        return text;
+        return text + "{" + service.getData() + "}";
     }
 
     public void setText(String text) {
@@ -17,14 +18,22 @@ public class MyBean {
     }
 
     public String getName() {
-        return name;
+        return name + "{" + service.getData() + "}";
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
+    public Service getService() {
+        return service;
+    }
+
+    public void setService(Service service) {
+        this.service = service;
+    }
+
     public void sayHello() {
-        System.out.println(text);
+        System.out.println(getText());
     }
 }
