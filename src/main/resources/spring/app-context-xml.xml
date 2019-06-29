@@ -9,5 +9,5 @@
           p:messageProvider-ref="provider"/>
 
     <bean id="provider"
-          class="springFramework.ch2.decoupled.HelloJujaMessageProvider"/>
+          class="springFramework.ch3.annotation.HelloJujaMessageProvider"/>
 </beans>
