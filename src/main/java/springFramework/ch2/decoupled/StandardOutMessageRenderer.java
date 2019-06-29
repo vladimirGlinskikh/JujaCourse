@@ -1,5 +1,9 @@
 package springFramework.ch2.decoupled;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("renderer")
 public class StandardOutMessageRenderer implements MessageRenderer {
     private MessageProvider messageProvider;
 
@@ -18,6 +22,7 @@ public class StandardOutMessageRenderer implements MessageRenderer {
         return this.messageProvider;
     }
 
+    @Autowired
     @Override
     public void setMessageProvider(MessageProvider provider) {
         this.messageProvider = provider;
