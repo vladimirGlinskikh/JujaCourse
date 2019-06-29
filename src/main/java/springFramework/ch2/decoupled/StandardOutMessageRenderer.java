@@ -22,8 +22,8 @@ public class StandardOutMessageRenderer implements MessageRenderer {
         return this.messageProvider;
     }
 
-    @Autowired
     @Override
+    @Autowired
     public void setMessageProvider(MessageProvider provider) {
         this.messageProvider = provider;
     }
