@@ -6,8 +6,8 @@
 
     <bean id="beans" class="springJujaCourse.MyBean">
         <constructor-arg value="Hi!"/>
+        <constructor-arg type="springJujaCourse.Service" ref="service"/>
         <property name="name" value="Alice"/>
-        <property name="service" ref="service"/>
     </bean>
     <bean id="service" class="springJujaCourse.HelloJujaServiceImpl"/>
 </beans>

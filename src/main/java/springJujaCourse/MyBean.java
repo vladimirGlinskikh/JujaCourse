@@ -5,8 +5,9 @@ public class MyBean {
     private String name;
     private String text;
 
-    public MyBean(String text) {
+    public MyBean(String text, Service service) {
         this.text = text;
+        this.service = service;
     }
 
     public String getText() {
@@ -27,10 +28,6 @@ public class MyBean {
 
     public Service getService() {
         return service;
-    }
-
-    public void setService(Service service) {
-        this.service = service;
     }
 
     public void sayHello() {
