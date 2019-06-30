@@ -4,15 +4,15 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="beans" class="springJujaCourse.MyBean">
+    <bean id="beans" class="springJujaCourse.exampleStart.MyBean">
         <constructor-arg value="Hi!"/>
-        <constructor-arg type="springJujaCourse.Service" ref="service"/>
+        <constructor-arg type="springJujaCourse.exampleStart.Service" ref="service"/>
         <property name="name" value="Alice"/>
     </bean>
-    <bean id="qwe" class="springJujaCourse.MyBean">
+    <bean id="qwe" class="springJujaCourse.exampleStart.MyBean">
         <constructor-arg value="Hello!"/>
-        <constructor-arg type="springJujaCourse.Service" ref="service"/>
+        <constructor-arg type="springJujaCourse.exampleStart.Service" ref="service"/>
         <property name="name" value="Vladimir"/>
     </bean>
-    <bean id="service" class="springJujaCourse.HelloJujaServiceImpl"/>
+    <bean id="service" class="springJujaCourse.exampleStart.HelloJujaServiceImpl"/>
 </beans>

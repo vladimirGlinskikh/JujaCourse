@@ -1,4 +1,4 @@
-package springJujaCourse;
+package springJujaCourse.exampleStart;
 
 public class MyBean {
     private Service service;

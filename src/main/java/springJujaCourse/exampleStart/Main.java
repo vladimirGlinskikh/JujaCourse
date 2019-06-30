@@ -1,4 +1,4 @@
-package springJujaCourse;
+package springJujaCourse.exampleStart;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

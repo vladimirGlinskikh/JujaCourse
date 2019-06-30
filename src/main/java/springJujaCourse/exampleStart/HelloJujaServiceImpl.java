@@ -1,4 +1,4 @@
-package springJujaCourse;
+package springJujaCourse.exampleStart;
 
 public class HelloJujaServiceImpl implements Service{
     @Override
