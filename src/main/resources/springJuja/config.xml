@@ -9,5 +9,10 @@
         <constructor-arg type="springJujaCourse.Service" ref="service"/>
         <property name="name" value="Alice"/>
     </bean>
+    <bean id="qwe" class="springJujaCourse.MyBean">
+        <constructor-arg value="Hello!"/>
+        <constructor-arg type="springJujaCourse.Service" ref="service"/>
+        <property name="name" value="Vladimir"/>
+    </bean>
     <bean id="service" class="springJujaCourse.HelloJujaServiceImpl"/>
 </beans>
