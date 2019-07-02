@@ -6,8 +6,15 @@
     <bean id="musicBean"
           class="springJujaCourse.springCourse.RockMusic">
     </bean>
+    <bean id="classicBean"
+          class="springJujaCourse.springCourse.ClassicalMusic">
+    </bean>
     <bean id="musicPlayer"
           class="springJujaCourse.springCourse.MusicPlayer">
         <constructor-arg ref="musicBean"/>
+    </bean>
+    <bean id="classicMusic"
+          class="springJujaCourse.springCourse.MusicPlayer">
+        <constructor-arg ref="classicBean"/>
     </bean>
 </beans>
