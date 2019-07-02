@@ -9,7 +9,12 @@ public class MainSpring {
         );
 
         MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
+        MusicPlayer player1 = context.getBean("musicPlayer", MusicPlayer.class);
 
+        boolean comparison = player == player1;
+        System.out.println(comparison);
+        System.out.println(player);
+        System.out.println(player1);
         player.playMusicList();
         context.close();
     }
