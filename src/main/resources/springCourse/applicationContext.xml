@@ -12,6 +12,8 @@
     <bean id="musicPlayer"
           class="springJujaCourse.springCourse.MusicPlayer">
         <property name="music" ref="musicBean"/>
+        <property name="name" value="Some name"/>
+        <property name="volume" value="57"/>
     </bean>
     <!--    <bean id="classicMusic"-->
     <!--          class="springJujaCourse.springCourse.MusicPlayer">-->
