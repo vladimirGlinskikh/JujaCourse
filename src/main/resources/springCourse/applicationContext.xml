@@ -4,6 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="musicBean"
-          class="springJujaCourse.springCourse.ClassicalMusic">
+          class="springJujaCourse.springCourse.RockMusic">
+    </bean>
+    <bean id="musicPlayer"
+          class="springJujaCourse.springCourse.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
     </bean>
 </beans>
