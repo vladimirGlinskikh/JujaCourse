@@ -8,15 +8,9 @@ public class MainSpring {
                 "springCourse/applicationContext.xml"
         );
 
-//        Music music = context.getBean("musicBean", Music.class);
-//        MusicPlayer player = new MusicPlayer(music);
-
         MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
-//        MusicPlayer players = context.getBean("classicMusic", MusicPlayer.class);
-        player.playMusic();
-//        players.playMusic();
-        System.out.println(player.getName());
-        System.out.println(player.getVolume());
+
+        player.playMusicList();
         context.close();
     }
 }
