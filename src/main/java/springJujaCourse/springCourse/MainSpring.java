@@ -12,9 +12,9 @@ public class MainSpring {
 //        MusicPlayer player = new MusicPlayer(music);
 
         MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
-        MusicPlayer players = context.getBean("classicMusic", MusicPlayer.class);
+//        MusicPlayer players = context.getBean("classicMusic", MusicPlayer.class);
         player.playMusic();
-        players.playMusic();
+//        players.playMusic();
         context.close();
     }
 }
