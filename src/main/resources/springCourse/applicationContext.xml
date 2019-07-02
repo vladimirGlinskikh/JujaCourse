@@ -11,7 +11,9 @@
     </bean>
 
     <bean id="musicBean1"
-          class="springJujaCourse.springCourse.ClassicalMusic">
+          class="springJujaCourse.springCourse.ClassicalMusic"
+          init-method="doMyInit"
+          destroy-method="doMyDestroy">
     </bean>
 
     <bean id="musicPlayer"
