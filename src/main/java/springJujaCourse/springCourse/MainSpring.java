@@ -8,7 +8,7 @@ public class MainSpring {
                 "springCourse/applicationContext.xml"
         );
 
-        Music music = context.getBean("musicBean", Music.class);
+        Music music = context.getBean("classicalMusic", Music.class);
         Music rockMusic = context.getBean("rockMusic", Music.class);
         MusicPlayer musicPlayer = new MusicPlayer(music);
         MusicPlayer rockMusicPlayer = new MusicPlayer(rockMusic);
