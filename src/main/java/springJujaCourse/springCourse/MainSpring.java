@@ -8,14 +8,13 @@ public class MainSpring {
                 "springCourse/applicationContext.xml"
         );
 
-        MusicPlayer player = context.getBean("musicPlayer", MusicPlayer.class);
-        MusicPlayer player1 = context.getBean("musicPlayer", MusicPlayer.class);
+        Music music = context.getBean("musicBean", Music.class);
+        Music rockMusic = context.getBean("rockMusic", Music.class);
+        MusicPlayer musicPlayer = new MusicPlayer(music);
+        MusicPlayer rockMusicPlayer = new MusicPlayer(rockMusic);
 
-        boolean comparison = player == player1;
-        System.out.println(comparison);
-        System.out.println(player);
-        System.out.println(player1);
-        player.playMusicList();
+        musicPlayer.playMusic();
+        rockMusicPlayer.playMusic();
         context.close();
     }
 }
