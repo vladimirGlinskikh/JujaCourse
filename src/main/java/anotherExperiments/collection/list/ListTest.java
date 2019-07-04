@@ -15,10 +15,16 @@ public class ListTest {
     }
 
     private static void measureTime(List<Integer> list) {
-        long start = System.currentTimeMillis();
-        for (int i = 0; i < 1_000_000; i++) {
+        for (int i = 0; i < 100_000; i++) {
             list.add(i);
         }
+
+        long start = System.currentTimeMillis();
+
+        for (int i = 0; i < 100_000; i++) {
+            list.get(i);
+        }
+
         long end = System.currentTimeMillis();
         System.out.println(end - start);
     }
