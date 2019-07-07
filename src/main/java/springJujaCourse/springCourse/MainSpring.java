@@ -8,15 +8,8 @@ public class MainSpring {
                 "springCourse/applicationContext.xml"
         );
 
-//        Music music = context.getBean("classicalMusic", Music.class);
-//        Music rockMusic = context.getBean("rockMusic", Music.class);
-//        MusicPlayer musicPlayer = new MusicPlayer(music);
-//        MusicPlayer rockMusicPlayer = new MusicPlayer(rockMusic);
-//
-//        musicPlayer.playMusic();
-//        rockMusicPlayer.playMusic();
-        MusicPlayer musicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
-        musicPlayer.playMusic();
+        Computer computer = context.getBean("computer", Computer.class);
+        System.out.println(computer);
         context.close();
     }
 }
