@@ -12,7 +12,7 @@ public class TestPerson {
         Person person4 = new Person(4);
         Person person5 = new Person(5);
 
-        Queue<Person> people = new ArrayBlockingQueue<>(10);
+        Queue<Person> people = new ArrayBlockingQueue<>(4);
         people.add(person3);
         people.add(person2);
         people.add(person4);
