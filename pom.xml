@@ -13,12 +13,39 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.4.RELEASE</version>
     </parent>
+    <properties>
+        <junit.version>5.0.0</junit.version>
+    </properties>
 
     <dependencies>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <version>1.0.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>org.junit.vintage</groupId>-->
+        <!--            <artifactId>junit-vintage-engine</artifactId>-->
+        <!--            <version>4.12.0</version>-->
+        <!--            <scope>test</scope>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/javax/javaee-api -->
@@ -71,13 +98,13 @@
             <artifactId>poi</artifactId>
             <version>4.0.1</version>
         </dependency>
-        <dependency>
-            <groupId>sqljdbc</groupId>
-            <artifactId>sqljdbc4-4.0</artifactId>
-            <version>4-4.0</version>
-            <scope>system</scope>
-            <systemPath>src/main/resources/anotherExperiments/sqljdbc42.jar</systemPath>
-        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>sqljdbc</groupId>-->
+        <!--            <artifactId>sqljdbc4-4.0</artifactId>-->
+        <!--            <version>4-4.0</version>-->
+        <!--            <scope>system</scope>-->
+        <!--            <systemPath>src/main/resources/anotherExperiments/sqljdbc42.jar</systemPath>-->
+        <!--        </dependency>-->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
@@ -101,11 +128,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13-beta-1</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>

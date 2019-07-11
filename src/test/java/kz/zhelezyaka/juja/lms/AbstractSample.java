@@ -3,6 +3,7 @@ package kz.zhelezyaka.juja.lms;
 import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AbstractSample {
     public void assertArray(String expected, int[] array) {
