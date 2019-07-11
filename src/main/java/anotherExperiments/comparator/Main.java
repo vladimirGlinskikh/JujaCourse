@@ -13,7 +13,15 @@ public class Main {
         list.add("animals");
         list.add("an");
 
-        Collections.sort(list, new StringLengthComparator());
+        Collections.sort(list, (o1, o2) -> {
+            if (o1.length() > o2.length()) {
+                return 1;
+            } else if (o1.length() < o2.length()) {
+                return -1;
+            } else {
+                return 0;
+            }
+        });
         System.out.println(list);
 
         List<Integer> numbers = new ArrayList<>();
@@ -24,7 +32,15 @@ public class Main {
         numbers.add(9);
         numbers.add(2);
 
-        Collections.sort(numbers, new BackwardsIntegerComparator());
+        Collections.sort(numbers, (o1, o2) -> {
+            if (o1 > o2) {
+                return -1;
+            } else if (o1 < o2) {
+                return 1;
+            } else {
+                return 0;
+            }
+        });
         System.out.println(numbers);
     }
 }
