@@ -1,6 +1,5 @@
 package anotherExperiments.queue;
 
-import java.util.LinkedList;
 import java.util.Queue;
 import java.util.concurrent.ArrayBlockingQueue;
 
@@ -13,11 +12,11 @@ public class TestPerson {
         Person person5 = new Person(5);
 
         Queue<Person> people = new ArrayBlockingQueue<>(4);
-        people.add(person3);
-        people.add(person2);
-        people.add(person4);
-        people.add(person1);
-        people.add(person5);
+        people.offer(person4);
+        people.offer(person3);
+        people.offer(person2);
+        people.offer(person1);
+        people.offer(person5);
 
         System.out.println(people.remove());
         System.out.println(people.peek());
