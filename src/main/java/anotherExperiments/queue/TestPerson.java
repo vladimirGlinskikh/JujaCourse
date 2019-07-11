@@ -2,6 +2,7 @@ package anotherExperiments.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.ArrayBlockingQueue;
 
 public class TestPerson {
     public static void main(String[] args) {
@@ -11,15 +12,15 @@ public class TestPerson {
         Person person4 = new Person(4);
         Person person5 = new Person(5);
 
-        Queue<Person> people = new LinkedList<>();
+        Queue<Person> people = new ArrayBlockingQueue<>(10);
         people.add(person3);
         people.add(person2);
         people.add(person4);
         people.add(person1);
         people.add(person5);
 
-        for (Person p : people) {
-            System.out.println(p);
-        }
+        System.out.println(people.remove());
+        System.out.println(people.peek());
+        System.out.println(people);
     }
 }
