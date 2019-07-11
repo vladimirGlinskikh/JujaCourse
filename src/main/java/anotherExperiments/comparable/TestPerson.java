@@ -19,7 +19,7 @@ public class TestPerson {
     private static void addElements(Collection collection) {
         collection.add(new Person(1, "Vladimir"));
         collection.add(new Person(3, "Vlad"));
-        collection.add(new Person(2, "Geny"));
+        collection.add(new Person(2, "Gen"));
 
     }
 }

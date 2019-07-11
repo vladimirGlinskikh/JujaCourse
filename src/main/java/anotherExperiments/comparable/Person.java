@@ -15,6 +15,10 @@ public class Person implements Comparable<Person> {
         return id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -39,9 +43,9 @@ public class Person implements Comparable<Person> {
 
     @Override
     public int compareTo(Person o) {
-        if (this.id > o.getId()) {
+        if (this.name.length() > o.getName().length()) {
             return 1;
-        } else if (this.id < o.getId()) {
+        } else if (this.name.length() < o.getName().length()) {
             return -1;
         } else {
             return 0;
