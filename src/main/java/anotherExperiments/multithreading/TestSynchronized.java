@@ -13,21 +13,15 @@ public class TestSynchronized {
     }
 
     public void doWork() throws InterruptedException {
-        Thread thread1 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 100000; i++) {
-                    increment();
-                }
+        Thread thread1 = new Thread(() -> {
+            for (int i = 0; i < 100000; i++) {
+                increment();
             }
         });
 
-        Thread thread2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = 0; i < 100000; i++) {
-                    increment();
-                }
+        Thread thread2 = new Thread(() -> {
+            for (int i = 0; i < 100000; i++) {
+                increment();
             }
         });
 
