@@ -7,11 +7,6 @@ public class Frank extends Money {
     }
 
     @Override
-    protected String currency() {
-        return currency;
-    }
-
-    @Override
     public Money times(int multiplier) {
         return Money.frank(amount * multiplier);
     }
