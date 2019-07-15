@@ -3,6 +3,8 @@ package guruSpringFramework;
 public abstract class Money {
     protected int amount;
 
+    protected abstract String currency();
+
     public abstract Money times(int multiplier);
 
     public static Dollar dollar(int amount) {
