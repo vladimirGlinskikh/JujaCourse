@@ -1,12 +1,9 @@
 package guruSpringFramework;
 
 public class Frank extends Money {
-    private String currency;
-
 
     public Frank(int amount, String currency) {
-        this.amount = amount;
-        this.currency = currency;
+        super(amount, currency);
     }
 
     @Override
