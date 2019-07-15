@@ -4,9 +4,9 @@ public class Frank extends Money {
     private String currency;
 
 
-    public Frank(int amount) {
+    public Frank(int amount, String currency) {
         this.amount = amount;
-        this.currency = "CHF";
+        this.currency = currency;
     }
 
     @Override
@@ -16,6 +16,6 @@ public class Frank extends Money {
 
     @Override
     public Money times(int multiplier) {
-        return new Frank(amount * multiplier);
+        return Money.frank(amount * multiplier);
     }
 }
