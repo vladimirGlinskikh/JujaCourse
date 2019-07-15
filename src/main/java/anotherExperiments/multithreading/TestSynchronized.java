@@ -8,7 +8,7 @@ public class TestSynchronized {
         test.doWork();
     }
 
-    private void increment() {
+    private synchronized void increment() {
         counter++;
     }
 
