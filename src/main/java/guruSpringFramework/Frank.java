@@ -1,7 +1,7 @@
 package guruSpringFramework;
 
-public class Frank {
-    public int amount;
+public class Frank extends Money {
+
 
     public Frank(int amount) {
         this.amount = amount;
