@@ -1,14 +1,16 @@
 package guruSpringFramework;
 
 public class Dollar extends Money {
+    private String currency;
 
     public Dollar(int amount) {
         this.amount = amount;
+        this.currency = "USD";
     }
 
     @Override
     protected String currency() {
-        return "USD";
+        return currency;
     }
 
     @Override
