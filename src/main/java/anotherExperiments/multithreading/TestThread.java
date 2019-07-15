@@ -7,6 +7,8 @@ public class TestThread {
 //        thread1.start();
 //        MyThread thread2 = new MyThread();
 //        thread2.start();
+        Thread tread = new Thread(new Runner());
+        tread.start();
 
         System.out.println("I'm going to sleep");
         try {
@@ -18,11 +20,21 @@ public class TestThread {
     }
 }
 
-class MyThread extends Thread {
+//class MyThread extends Thread {
+//    @Override
+//    public void run() {
+//        for (int i = 0; i < 1000; i++) {
+//            System.out.println("Hello Juja " + i);
+//        }
+//    }
+//}
+
+class Runner implements Runnable {
+
     @Override
     public void run() {
-        for (int i = 0; i < 1000; i++) {
-            System.out.println("Hello Juja " + i);
+        for (int i = 0; i < 100; i++) {
+            System.out.println("Hello Juja! " + i);
         }
     }
 }
