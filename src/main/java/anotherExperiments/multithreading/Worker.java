@@ -10,7 +10,7 @@ public class Worker {
     private List<Integer> list1 = new ArrayList<>();
     private List<Integer> list2 = new ArrayList<>();
 
-    public void addToListOne() {
+    public synchronized void addToListOne() {
         try {
             Thread.sleep(1);
         } catch (InterruptedException e) {
@@ -19,7 +19,7 @@ public class Worker {
         list1.add(random.nextInt(100));
     }
 
-    public void addToListTwo() {
+    public synchronized void addToListTwo() {
         try {
             Thread.sleep(1);
         } catch (InterruptedException e) {
