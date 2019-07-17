@@ -8,8 +8,10 @@ public class TestSynchronized {
         test.doWork();
     }
 
-    private synchronized void increment() {
-        counter++;
+    private void increment() {
+        synchronized (this) {
+            counter++;
+        }
     }
 
     public void doWork() throws InterruptedException {
