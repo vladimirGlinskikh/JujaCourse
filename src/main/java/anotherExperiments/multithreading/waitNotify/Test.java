@@ -2,11 +2,11 @@ package anotherExperiments.multithreading.waitNotify;
 
 public class Test {
     public static void main(String[] args) throws InterruptedException {
-        WaitAndNotify wn = new WaitAndNotify();
+        ProducerConsumer ps = new ProducerConsumer();
 
         Thread thread1 = new Thread(() -> {
             try {
-                wn.produce();
+                ps.produce();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -14,7 +14,7 @@ public class Test {
 
         Thread thread2 = new Thread(() -> {
             try {
-                wn.consume();
+                ps.consume();
             } catch (InterruptedException e) {
 
             }
