@@ -1,5 +1,8 @@
 package anotherExperiments.regex;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Test {
     public static void main(String[] args) {
         /*
@@ -19,5 +22,12 @@ public class Test {
          */
         String string = "43";
         System.out.println(string.matches("\\d+"));
+        String str = "Hello.Juja!";
+        String[] words = str.split("\\.");
+        System.out.println(Arrays.toString(words));
+
+        String b = "Hello Juja!";
+        String string1 = b.replaceAll(" ", ".");
+        System.out.println(string1);
     }
 }
