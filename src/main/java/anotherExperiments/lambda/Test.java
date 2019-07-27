@@ -6,10 +6,14 @@ public class Test {
         runner.run(new ExecutableImpl());
         runner.run(new Executable() {
             @Override
-            public void execute() {
+            public int execute() {
                 System.out.println("Hello Juja!");
+                return 1;
             }
         });
-        runner.run(() -> System.out.println("Hello Test!"));
+        runner.run(() -> {
+            System.out.println("Hello Test!");
+            return 5;
+        });
     }
 }
