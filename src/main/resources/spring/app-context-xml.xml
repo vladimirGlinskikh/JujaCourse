@@ -20,5 +20,14 @@
           p:ageInSeconds="128372871"/>
 
     <bean id="injectSimpleConfig"
-          class="springFramework.ch3.annotated.InjectSimpleConfig"/>
+          class="springFramework.ch3.annotated.InjectSimpleConfig"
+    />
+
+    <bean id="injectSimpleSpel"
+          class="springFramework.ch3.xml.InjectSimpleSpel"
+          p:name="#{injectSimpleSpel.name}"
+          p:age="#{injectSimpleSpel.age + 1}"
+          p:height="#{injectSimpleSpel.height}"
+          p:programmer="true"
+          p:ageInSeconds="#{injectSimpleSpel.ageInSeconds}"/>
 </beans>
