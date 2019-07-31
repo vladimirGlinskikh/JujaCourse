@@ -10,4 +10,12 @@
 
     <bean id="provider"
           class="springFramework.ch3.annotation.HelloJujaMessageProvider"/>
+
+    <bean id="injectSimple"
+          class="springFramework.ch3.xml.InjectSimple"
+          p:name="John Mayer"
+          p:age="39"
+          p:height="1.92"
+          p:programmer="false"
+          p:ageInSeconds="128372871"/>
 </beans>
