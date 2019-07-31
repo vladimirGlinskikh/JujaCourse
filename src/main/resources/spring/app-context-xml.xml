@@ -18,4 +18,7 @@
           p:height="1.92"
           p:programmer="false"
           p:ageInSeconds="128372871"/>
+
+    <bean id="injectSimpleConfig"
+          class="springFramework.ch3.annotated.InjectSimpleConfig"/>
 </beans>
