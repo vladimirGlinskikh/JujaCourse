@@ -9,4 +9,5 @@
 
     <context:component-scan base-package="springFramework.ch3.annotation"/>
     <context:component-scan base-package="springFramework.ch3.annotated"/>
+    <context:component-scan base-package="springFramework.ch3.xml"/>
 </beans>
