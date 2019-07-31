@@ -3,11 +3,11 @@ package springFramework.ch3.xml;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class InjectSimpleSpel {
-    private String name = "Vladimir Glinskikh";
-    private int age = 43;
-    private float height = 1.70f;
-    private boolean programmer = true;
-    private Long ageInSeconds = 1_235_123_456L;
+    private String name;
+    private int age;
+    private float height;
+    private boolean programmer;
+    private Long ageInSeconds;
 
     public String getName() {
         return name;
