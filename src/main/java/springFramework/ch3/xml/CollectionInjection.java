@@ -1,9 +1,10 @@
 package springFramework.ch3.xml;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
@@ -11,16 +12,20 @@ import java.util.Set;
 
 @Service("injectCollection")
 public class CollectionInjection {
-    @Resource(name = "map")
+    @Autowired
+    @Qualifier("map")
     private Map<String, Object> map;
 
-    @Resource(name = "props")
+    @Autowired
+    @Qualifier("props")
     private Properties props;
 
-    @Resource(name = "set")
+    @Autowired
+    @Qualifier("set")
     private Set set;
 
-    @Resource(name = "list")
+    @Autowired
+    @Qualifier("list")
     private List list;
 
     public static void main(String[] args) {
