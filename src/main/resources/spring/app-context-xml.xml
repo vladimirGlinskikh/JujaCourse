@@ -39,4 +39,37 @@
             <ref bean="wiseworm"/>
         </property>
     </bean>
+
+    <bean id="injectCollection"
+          class="springFramework.ch3.xml.CollectionInjection">
+        <property name="map">
+            <map>
+                <entry key="someValue">
+                    <value>
+                        It's a Friday, we finally made it
+                    </value>
+                </entry>
+            </map>
+        </property>
+        <property name="props">
+            <props>
+                <prop key="firsName">John</prop>
+                <prop key="secondName">Mayer</prop>
+            </props>
+        </property>
+        <property name="set">
+            <set>
+                <value>
+                    I can't believe I get to see your face
+                </value>
+            </set>
+        </property>
+        <property name="list">
+            <list>
+                <value>
+                    You've been working and I've been waiting
+                </value>
+            </list>
+        </property>
+    </bean>
 </beans>
