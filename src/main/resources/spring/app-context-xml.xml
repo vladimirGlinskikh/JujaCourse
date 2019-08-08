@@ -72,4 +72,15 @@
             </list>
         </property>
     </bean>
+    <bean id="singer"
+          class="springFramework.ch3.Singer"
+          scope="prototype"/>
+    <bean id="abstractLookupBean"
+          class="springFramework.ch3.AbstractLookupDemoBean">
+        <lookup-method name="getMySinger" bean="singer"/>
+    </bean>
+    <bean id="standardLookupBean"
+          class="springFramework.ch3.StandardLookupDemoBean">
+        <property name="mySinger" ref="singer"/>
+    </bean>
 </beans>
