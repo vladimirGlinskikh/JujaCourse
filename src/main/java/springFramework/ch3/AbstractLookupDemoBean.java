@@ -1,8 +1,16 @@
 package springFramework.ch3;
 
-public abstract class AbstractLookupDemoBean implements DemoBean {
+import org.springframework.beans.factory.annotation.Lookup;
+import org.springframework.stereotype.Component;
+import springFramework.ch3.annotated.Singer;
 
-    public abstract Singer getMySinger();
+@Component("abstractLookupBean")
+public class AbstractLookupDemoBean implements DemoBean {
+
+    @Lookup("singer")
+    public Singer getMySinger() {
+        return null;
+    }
 
     @Override
     public void doSomething() {

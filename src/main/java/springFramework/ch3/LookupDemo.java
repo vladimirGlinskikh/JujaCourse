@@ -1,12 +1,20 @@
 package springFramework.ch3;
 
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.util.StopWatch;
+import springFramework.ch3.annotated.Singer;
 
 public class LookupDemo {
+    @Configuration
+    @ComponentScan(basePackages = {"springFramework.ch3.annotated"})
+    public static class LookupConfig {
+    }
+
     public static void main(String[] args) {
         GenericXmlApplicationContext context = new GenericXmlApplicationContext();
-        context.load("classpath:spring/app-context-xml.xml");
+        context.load("classpath:spring/app-context-annotated.xml");
         context.refresh();
 
         DemoBean abstractBean = context.getBean("abstractLookupBean", DemoBean.class);
