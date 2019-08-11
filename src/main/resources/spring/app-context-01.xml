@@ -6,4 +6,5 @@
     <bean id="string1" class="java.lang.String"/>
     <bean id="string2" class="java.lang.String"/>
     <bean class="java.lang.String"/>
+    <bean class="java.lang.String"/>
 </beans>
