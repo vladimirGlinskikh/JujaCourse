@@ -1,18 +1,12 @@
 package springFramework.ch3.annotated;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-@Component("singer")
-@Scope("prototype")
+@Component
 public class Singer {
-    private String lyric = "I played a quick game of chess " +
-            "with the salt and pepper shaker";
-
-//    @Autowired
-//    private Inspiration inspirationBean;
+    private String lyric = "We found a message in a bottle we were drinking.";
 
     public void sing() {
-//        System.out.println("... " + inspirationBean.getLyric());
+        System.out.println(lyric);
     }
 }
