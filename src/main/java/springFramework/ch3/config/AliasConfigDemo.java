@@ -15,7 +15,7 @@ public class AliasConfigDemo {
     @Configuration
     public static class AliasBeanConfig {
 
-        @Bean
+        @Bean(name = {"Vladimir Glinskikh", "Vlad", "Svetlana", "Alexandr"})
         public Singer singer() {
             return new Singer();
         }
