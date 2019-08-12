@@ -2,7 +2,7 @@ package springFramework.ch3.annotated;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("Vladimir Glinskikh")
 public class Singer {
     private String lyric = "We found a message in a bottle we were drinking.";
 
