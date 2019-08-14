@@ -85,12 +85,12 @@
     <!--        <property name="mySinger" ref="singer"/>-->
     <!--    </bean>-->
     <bean id="singerOne"
-          class="springFramework.ch4.Singer"
+          class="springFramework.ch4.SingerWithInterface"
           p:name="John Mayer" p:age="39"/>
     <bean id="singerTwo"
-          class="springFramework.ch4.Singer"
+          class="springFramework.ch4.SingerWithInterface"
           p:age="72"/>
     <bean id="singerThree"
-          class="springFramework.ch4.Singer"
+          class="springFramework.ch4.SingerWithInterface"
           p:name="John Butler"/>
 </beans>
