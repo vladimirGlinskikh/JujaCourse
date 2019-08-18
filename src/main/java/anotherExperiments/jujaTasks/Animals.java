@@ -6,7 +6,7 @@ public class Animals {
     private int size;
 
     public void setName(String userName) {
-        userName = name;
+        this.name = userName;
     }
 
     public void voice() {
