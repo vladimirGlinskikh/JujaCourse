@@ -3,12 +3,15 @@ package springFramework.ch4;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.io.File;
 
 public class DestructiveBean implements InitializingBean {
     private File file;
     private String filePath;
 
+    @PostConstruct
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("Initializing Bean");
@@ -24,6 +27,7 @@ public class DestructiveBean implements InitializingBean {
         System.out.println("File exists: " + file.exists());
     }
 
+    @PreDestroy
     public void destroy() {
         System.out.println("Destroying Bean");
 
