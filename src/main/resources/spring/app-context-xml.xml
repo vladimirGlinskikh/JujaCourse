@@ -92,10 +92,12 @@
     <!--    <bean id="singerThree"-->
     <!--          class="springFramework.ch4.SingerWithInterface"-->
     <!--          p:name="John Butler"/>-->
-    <context:annotation-config/>
-    <bean id="destructiveBean"
-          class="springFramework.ch4.DestructiveBean"
-          destroy-method="destroy"
-          p:filePath=
-                  "#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>
+    <!--    <context:annotation-config/>-->
+    <!--    <bean id="destructiveBean"-->
+    <!--          class="springFramework.ch4.DestructiveBean"-->
+    <!--          destroy-method="destroy"-->
+    <!--          p:filePath=-->
+    <!--                  "#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>-->
+    <bean id="johnMayer"
+          class="springFramework.ch4.NameSinger"/>
 </beans>
