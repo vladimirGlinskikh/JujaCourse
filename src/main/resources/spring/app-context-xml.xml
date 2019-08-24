@@ -98,6 +98,18 @@
     <!--          destroy-method="destroy"-->
     <!--          p:filePath=-->
     <!--                  "#{systemProperties['java.io.tmpdir']}#{systemProperties['file.separator']}test.txt"/>-->
-    <bean id="johnMayer"
-          class="springFramework.ch4.NameSinger"/>
+    <!--    <bean id="johnMayer"-->
+    <!--          class="springFramework.ch4.NameSinger"/>-->
+
+    <bean id="shaDigest"
+          class="springFramework.ch4.MessageDigestFactoryBean"
+          p:algorithmName="SHA1"/>
+
+    <bean id="defaultDigest"
+          class="springFramework.ch4.MessageDigestFactoryBean"/>
+
+    <bean id="digester"
+          class="springFramework.ch4.MessageDigester"
+          p:digest1-ref="shaDigest"
+          p:digest2-ref="defaultDigest"/>
 </beans>
