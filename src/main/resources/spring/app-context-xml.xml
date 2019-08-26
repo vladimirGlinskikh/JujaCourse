@@ -134,12 +134,18 @@
     <!--          p:digest1-ref="shaDigest"-->
     <!--          p:digest2-ref="defaultDigest"/>-->
 
-    <bean id="messageSource"
-          class="org.springframework.context.support.ResourceBundleMessageSource"
-          p:basenames-ref="basenames"/>
+    <!--    <bean id="messageSource"-->
+    <!--          class="org.springframework.context.support.ResourceBundleMessageSource"-->
+    <!--          p:basenames-ref="basenames"/>-->
 
-    <util:list id="basenames">
-        <value>buttons</value>
-        <value>labels</value>
-    </util:list>
+    <!--    <util:list id="basenames">-->
+    <!--        <value>buttons</value>-->
+    <!--        <value>labels</value>-->
+    <!--    </util:list>-->
+
+    <bean id="publisher"
+          class="springFramework.ch4.Publisher"/>
+
+    <bean id="messageEventListener"
+          class="springFramework.ch4.MessageEventListener"/>
 </beans>
