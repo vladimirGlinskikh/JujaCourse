@@ -34,11 +34,10 @@ public class SignUpServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = req.getParameter("name");
-        String password = req.getParameter("password");
         LocalDate birthDate = LocalDate.parse(req.getParameter("birthDate"));
+        String password = req.getParameter("password");
         User user = new User(name, password, birthDate);
         usersRepository.save(user);
-        RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/signUp");
-        dispatcher.forward(req, resp);
+        doGet(req, resp);
     }
 }

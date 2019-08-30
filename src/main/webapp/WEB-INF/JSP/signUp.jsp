@@ -5,15 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<form method="post" action="/signUp">
+<form method="post" action="/JujaCourse_war_exploded/signUp">
     <label for="name">User name
         <input type="text" id="name" name="name">
     </label>
-    <label for="birthDate">Birth date
-        <input type="text" id="birthDate" name="birthDate">
-    </label>
     <label for="password">Password
         <input type="password" id="password" name="password">
+    </label>
+    <label for="birthDate">Birth date
+        <input type="text" id="birthDate" name="birthDate">
     </label>
     <input type="submit" value="Sign Up">
 </form>
