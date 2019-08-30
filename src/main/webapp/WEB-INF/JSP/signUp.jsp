@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<form>
+<form method="post" action="/signUp">
     <label for="name">User name
         <input type="text" id="name" name="name">
     </label>
