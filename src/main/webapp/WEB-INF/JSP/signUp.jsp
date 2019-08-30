@@ -3,20 +3,25 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        <%@include file="/WEB-INF/css/style.css" %>
+    </style>
 </head>
 <body>
-<form method="post" action="/JujaCourse_war_exploded/signUp">
-    <label for="name">User name
-        <input type="text" id="name" name="name">
-    </label>
-    <label for="password">Password
-        <input type="password" id="password" name="password">
-    </label>
-    <label for="birthDate">Birth date
-        <input type="text" id="birthDate" name="birthDate">
-    </label>
-    <input type="submit" value="Sign Up">
-</form>
+<div class="form-style-2">
+    <form method="post" action="/JujaCourse_war_exploded/signUp">
+        <label for="name">User name
+            <input type="text" id="name" name="name">
+        </label>
+        <label for="password">Password
+            <input type="password" id="password" name="password">
+        </label>
+        <label for="birthDate">Birth date
+            <input type="text" id="birthDate" name="birthDate">
+        </label>
+        <input type="submit" value="Sign Up">
+    </form>
+</div>
 <table>
     <tr>
         <th>User name</th>
