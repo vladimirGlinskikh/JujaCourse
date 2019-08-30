@@ -36,5 +36,9 @@ public class SignUpServlet extends HttpServlet {
         String name = req.getParameter("name");
         String password = req.getParameter("password");
         LocalDate birthDate = LocalDate.parse(req.getParameter("birthDate"));
+        User user = new User(name, password, birthDate);
+        usersRepository.save(user);
+        RequestDispatcher dispatcher = req.getServletContext().getRequestDispatcher("/signUp");
+        dispatcher.forward(req, resp);
     }
 }
