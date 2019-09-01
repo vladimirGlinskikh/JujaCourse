@@ -21,5 +21,6 @@ public class HomeServlet extends HttpServlet {
 
         Cookie colorCookie = new Cookie("color", color);
         resp.addCookie(colorCookie);
+        resp.sendRedirect(req.getContextPath() + "/home");
     }
 }
