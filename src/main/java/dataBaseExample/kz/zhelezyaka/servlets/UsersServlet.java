@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
 @WebServlet("/users")
@@ -43,6 +44,21 @@ public class UsersServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getServletContext().getRequestDispatcher("/WEB-INF/JSP/addUser.jsp").forward(req, resp);
+    }
 
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String firstName = req.getParameter("first-name");
+        String lastName = req.getParameter("last-name");
+
+        try {
+            Statement statement = connection.createStatement();
+            String sqlInsert = "INSERT INTO fix_user(first_name, last_name)" +
+                    "VALUES('" + firstName + "','" + lastName + "');";
+            System.out.println(sqlInsert);
+            statement.execute(sqlInsert);
+        } catch (SQLException e) {
+            throw new IllegalStateException(e);
+        }
     }
 }
