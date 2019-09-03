@@ -1,8 +1,6 @@
 package dataBaseExample.kz.zhelezyaka;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class Program {
     public static void main(String[] args) {
