@@ -62,3 +62,4 @@ public class UsersServlet extends HttpServlet {
         }
     }
 }
+// так нельзя делать! Это чревато SQL Injection!
