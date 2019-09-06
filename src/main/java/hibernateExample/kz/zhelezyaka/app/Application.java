@@ -11,7 +11,9 @@ public class Application {
         configuration.setProperty("hibernate.connection.password", "zh");
         configuration.setProperty("hibernate.connection.driver.class", "org.postgresql.Driver");
         configuration.setProperty("hibernate.dialect", "org.hibernate.dialect.PostgreSQL95Dialect");
+        configuration.setProperty("hibernate.hbm2ddl.auto", "update");
 
+        configuration.addResource("User.hbm.xml");
         SessionFactory sessionFactory = configuration.buildSessionFactory();
 
     }
