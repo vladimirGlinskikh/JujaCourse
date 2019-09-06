@@ -13,7 +13,7 @@ public class UsersDaoJdbcTemplateImpl implements UsersDao {
     private Map<Integer, User> usersMap = new HashMap<>();
     private final String SQL_SELECT_ALL = "SELECT * FROM fix_user";
     //language=SQL
-    private final String SQL_SELECT_USER_CARS = "SELECT fix_user.*, fix_car.id AS car_id, fix_car.model FROM fix_user LEFT JOIN fix_car ON fix_user.id = fix_car.owner_id WHERE fix_user.id = ?";
+    private final String SQL_SELECT_USER_WITH_CARS = "SELECT fix_user.*, fix_car.id AS car_id, fix_car.model FROM fix_user LEFT JOIN fix_car ON fix_user.id = fix_car.owner_id WHERE fix_user.id = ?";
     //language=SQL
     private final String SQL_SELECT_ALL_BY_FIRST_NAME = "SELECT *FROM fix_user WHERE first_name = ?";
 
@@ -42,6 +42,10 @@ public class UsersDaoJdbcTemplateImpl implements UsersDao {
 
     @Override
     public Optional<User> find(Integer id) {
+        template.query(SQL_SELECT_USER_WITH_CARS, userRowMapper, id);
+        if (usersMap.containsKey(id)) {
+            return Optional.of(usersMap.get(id));
+        }
         return Optional.empty();
     }
 
