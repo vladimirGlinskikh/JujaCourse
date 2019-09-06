@@ -12,6 +12,12 @@ public class User {
     public User() {
     }
 
+    public User(String firstName, String lastName, Integer age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
     public User(Integer id, String firstName, String lastName) {
         this.id = id;
         this.firstName = firstName;
@@ -63,6 +69,17 @@ public class User {
 
     public void setCars(List<Car> cars) {
         this.cars = cars;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", cars=" + cars +
+                '}';
     }
 
     //    public User() {
