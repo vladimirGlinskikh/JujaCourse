@@ -12,5 +12,9 @@ public class Main {
         for (Field field : fields) {
             System.out.println(field.getType() + " " + field.getName());
         }
+
+        System.out.println(someObject.someField);
+        someField.set(someObject, 789);
+        System.out.println(someObject.someField);
     }
 }
