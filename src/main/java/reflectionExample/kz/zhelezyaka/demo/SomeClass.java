@@ -1,4 +1,4 @@
-package reflectionExample.kz.zhelezyaka;
+package reflectionExample.kz.zhelezyaka.demo;
 
 public class SomeClass {
     public int someField;
