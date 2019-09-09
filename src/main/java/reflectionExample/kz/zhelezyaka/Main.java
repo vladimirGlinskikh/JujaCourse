@@ -19,5 +19,9 @@ public class Main {
 
         Field privateField = someClassAsClass.getDeclaredField("somePrivate");
         System.out.println(privateField.getName() + " is " + privateField.getType());
+
+        privateField.setAccessible(true);
+        privateField.set(someObject, "Vladimir");
+        System.out.println(someObject.getSomePrivate());
     }
 }
