@@ -1,7 +1,13 @@
 package springDemo.kz.zhelezyaka;
 
 public class MessageRenderer {
+    private String text;
+
+    public MessageRenderer(String text) {
+        this.text = text;
+    }
+
     public void printMessage() {
-        System.out.println("Hello Spring!");
+        System.out.println(text);
     }
 }

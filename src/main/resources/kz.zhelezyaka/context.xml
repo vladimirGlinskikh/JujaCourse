@@ -6,5 +6,6 @@
     <bean id="messageRenderer"
           class="springDemo.kz.zhelezyaka.MessageRenderer">
 
+        <constructor-arg name="text" value="Hello Spring from constructor!"/>
     </bean>
 </beans>
