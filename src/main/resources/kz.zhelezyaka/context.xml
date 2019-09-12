@@ -5,7 +5,11 @@
 
     <bean id="messageRenderer"
           class="springDemo.kz.zhelezyaka.MessageRenderer">
-
-        <constructor-arg name="text" value="Hello Spring from constructor!"/>
+        <constructor-arg name="message" ref="message"/>
     </bean>
+    <bean id="message"
+          class="springDemo.kz.zhelezyaka.HelloMessage">
+        <constructor-arg name="text" value="Vladimir"/>
+    </bean>
+
 </beans>
