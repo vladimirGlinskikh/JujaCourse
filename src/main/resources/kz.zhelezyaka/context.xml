@@ -8,7 +8,7 @@
         <constructor-arg name="message" ref="message"/>
     </bean>
     <bean id="message"
-          class="springDemo.kz.zhelezyaka.HelloMessage">
+          class="springDemo.kz.zhelezyaka.ByeMessage">
         <constructor-arg name="text" value="Vladimir"/>
     </bean>
 
