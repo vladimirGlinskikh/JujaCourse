@@ -1,16 +1,23 @@
 package springMVCExample.kz.zhelezyaka.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@ToString(exclude = "owner")
+@Entity
+@Table(name = "fix_car")
 public class Car {
-    private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String model;
+
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
     private User owner;
 }
