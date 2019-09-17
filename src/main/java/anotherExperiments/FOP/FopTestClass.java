@@ -21,12 +21,12 @@ import org.xml.sax.SAXException;
 public class FopTestClass {
     public static void main(String[] args) {
         try {
-            FopFactory fopFactory = FopFactory.newInstance(new File("")); // FOP-Konfiguration
+            FopFactory fopFactory = FopFactory.newInstance(new File("fop-2.1/conf/fop.xconf")); // FOP-Konfiguration
             OutputStream out = new BufferedOutputStream(new FileOutputStream(new File("myfile.pdf")));
             Fop fop = fopFactory.newFop(MimeConstants.MIME_PDF, out);
             TransformerFactory factory = TransformerFactory.newInstance();
             Transformer transformer = factory.newTransformer();
-            File fo = new File("");
+            File fo = new File("template.xml");
             Source src = new StreamSource(fo);
             Result res = new SAXResult(fop.getDefaultHandler());
             transformer.transform(src, res);
