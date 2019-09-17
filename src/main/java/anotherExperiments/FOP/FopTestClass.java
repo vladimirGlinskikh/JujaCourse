@@ -26,7 +26,7 @@ public class FopTestClass {
             Fop fop = fopFactory.newFop(MimeConstants.MIME_PDF, out);
             TransformerFactory factory = TransformerFactory.newInstance();
             Transformer transformer = factory.newTransformer();
-            File fo = new File("template.xml");
+            File fo = new File("src/main/resources/fop-2.1/conf/template.xml");
             Source src = new StreamSource(fo);
             Result res = new SAXResult(fop.getDefaultHandler());
             transformer.transform(src, res);
