@@ -27,3 +27,13 @@ ___________________
     nl        uniq
     od        wc
     paste
+##### FHS    
+    /bin   - basic command binaries
+    /boot  - bootloader files
+    /dev   - devices
+    /etc   - configuration for computer
+    /home  - home files
+    /lib   - libraries and kernel modules
+    /proc  - information about working system
+    /media - media mounting
+    
