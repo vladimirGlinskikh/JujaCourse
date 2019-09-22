@@ -36,4 +36,11 @@ ___________________
     /lib   - libraries and kernel modules
     /proc  - information about working system
     /media - media mounting
-    
+    /mnt   - mounting media
+    /opt   - additional software
+    /root  - home files admin
+    /sbin  - basic system program settings
+    /srv   - data for system services
+    /tmp   - temp files
+    /usr   - binaries user files
+    /var   - variables
