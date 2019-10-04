@@ -234,6 +234,14 @@ ___________________
    * vim crontab 
    
     отображает какие у нас задачи выполняются 
+    
+   + Системные задания
+     - /etc/crontab
+     - /etc/cron.d/
+     - /etc/cron.{hourly, daily, weekly, montly} 
+     
+   + Пользовательские задания
+     - /var/spool/cron/crontab   
   
      
    
