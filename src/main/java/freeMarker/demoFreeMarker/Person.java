@@ -1,4 +1,4 @@
-package kz.zhelezyaka.demoFreeMarker;
+package freeMarker.demoFreeMarker;
 
 public class Person {
     public Person(String firstName, Integer age) {

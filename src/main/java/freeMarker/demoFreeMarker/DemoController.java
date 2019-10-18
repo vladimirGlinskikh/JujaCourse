@@ -1,4 +1,4 @@
-package kz.zhelezyaka.demoFreeMarker;
+package freeMarker.demoFreeMarker;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

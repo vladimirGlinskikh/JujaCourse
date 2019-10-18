@@ -1,4 +1,4 @@
-package kz.zhelezyaka.demoFreeMarker;
+package freeMarker.demoFreeMarker;
 
 import org.springframework.stereotype.Service;
 
