@@ -5,7 +5,7 @@
     <title>Person List</title>
     <link rel="stylesheet"
           type="text/css"
-          href="<@spring.url '/style/my.css'/>"/>
+          href="<@spring.url '/css/style.css'/>"/>
 </head>
 <body>
 <h3>Person List</h3>

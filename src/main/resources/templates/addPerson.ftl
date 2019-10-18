@@ -4,7 +4,7 @@
 <head>
     <title>Add Person</title>
     <link rel="stylesheet"
-          type="text/css" href="<@spring.url '/style/my.css'/>"/>
+          type="text/css" href="<@spring.url '/css/style.css'/>"/>
 </head>
 <body>
 <#if errorMessage??>
