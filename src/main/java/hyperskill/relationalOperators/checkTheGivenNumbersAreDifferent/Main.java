@@ -9,13 +9,12 @@ public class Main {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int c = scanner.nextInt();
+        int d = scanner.nextInt();
 
-        if (a == b && b == c) {
-            System.out.println(false);
-        } else if (a != b && b != c && a != c) {
-            System.out.println(true);
-        } else {
-            System.out.println(false);
-        }
+        int a1 = --a;
+        int b1 = --b;
+        int c1 = --c;
+        int d1 = --d;
+        System.out.println(a1 + " " + b1 + " " + c1 + " " + d1);
     }
 }
