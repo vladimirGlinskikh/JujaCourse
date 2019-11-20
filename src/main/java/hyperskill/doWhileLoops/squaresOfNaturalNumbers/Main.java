@@ -11,7 +11,7 @@ public class Main {
         int prev = 0;
 
         for (int i = 1; prev < n; i++) {
-            square = (square + i + prev);
+            square += i + prev;
             if (square <= n) {
                 System.out.println(square);
             }
