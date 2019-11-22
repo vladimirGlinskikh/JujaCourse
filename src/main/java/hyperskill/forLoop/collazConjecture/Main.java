@@ -8,15 +8,14 @@ public class Main {
 
         int number = scanner.nextInt();
 
-        System.out.print(number + " ");
-        while (number > 1) {
-            if (number == 1) {
-                System.out.println(number);
-            } else if (number % 2 == 0) {
-                System.out.print((number = number / 2) + " ");
+        while (number != 1) {
+            System.out.print(number + " ");
+            if (number % 2 == 0) {
+                number = number / 2;
             } else {
-                System.out.print((number = (number * 3) + 1) + " ");
+                number = number * 3 + 1;
             }
         }
+        System.out.print(number);
     }
 }
