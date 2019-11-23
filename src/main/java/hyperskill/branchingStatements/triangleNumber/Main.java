@@ -1,4 +1,4 @@
-package hyperskill.branchingStatements;
+package hyperskill.branchingStatements.triangleNumber;
 
 public class Main {
     public static void main(String[] args) {
