@@ -1,4 +1,4 @@
-package designPatterns.factory.exampleTwo;
+package designPatterns.factory.factoryMethod.exampleTwo;
 
 public class XmlWriter extends AbstractWriter {
     @Override

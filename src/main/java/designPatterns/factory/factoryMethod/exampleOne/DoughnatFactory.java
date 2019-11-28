@@ -1,4 +1,4 @@
-package designPatterns.factory.exampleOne;
+package designPatterns.factory.factoryMethod.exampleOne;
 
 public class DoughnatFactory {
     private Integer cherryDoughnutCount = 0;

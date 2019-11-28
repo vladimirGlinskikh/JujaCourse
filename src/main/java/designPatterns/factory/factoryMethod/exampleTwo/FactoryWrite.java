@@ -1,4 +1,4 @@
-package designPatterns.factory.exampleTwo;
+package designPatterns.factory.factoryMethod.exampleTwo;
 
 import org.w3c.dom.Document;
 
