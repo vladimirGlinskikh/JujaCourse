@@ -1,4 +1,4 @@
-package designPatterns.factory;
+package designPatterns.factory.exampleOne;
 
 public class ChocolateDoughnut implements Doughnut {
     @Override
