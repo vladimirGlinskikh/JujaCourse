@@ -51,12 +51,12 @@ class StudentInfo3 {
         list.add(st5);
         StudentInfo3 si = new StudentInfo3();
 
-        si.testStudents(list, (Student3 st) -> st.avgGrade > 8.5);
-        si.testStudents(list, (Student3 st) -> st.avgGrade < 9);
-        si.testStudents(list, (Student3 st) -> st.age > 29);
-        si.testStudents(list, (Student3 st) -> st.sex > 'm');
+        si.testStudents(list, st -> st.avgGrade > 8.5);
+        si.testStudents(list, st -> st.avgGrade < 9);
+        si.testStudents(list, st -> st.age > 29);
+        si.testStudents(list, st -> st.sex > 'm');
         System.out.println("--------------");
-        si.testStudents(list, (Student3 st) -> st.avgGrade > 5.3 && st.sex == 'm' && st.age >= 22);
+        si.testStudents(list, st -> st.avgGrade > 5.3 && st.sex == 'm' && st.age >= 22);
     }
 }
 
