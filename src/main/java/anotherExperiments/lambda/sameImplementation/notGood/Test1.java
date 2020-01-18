@@ -1,4 +1,4 @@
-package anotherExperiments.lambda.sameImplementation;
+package anotherExperiments.lambda.sameImplementation.notGood;
 
 import java.util.ArrayList;
 
