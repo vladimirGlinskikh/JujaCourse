@@ -15,5 +15,9 @@ public class App {
         books.put("Братья Карамазовы", "Федор Достоевский");
         books.put("Властелин Колец", "Джон Толкин");
         books.forEach((a, b) -> System.out.println("Название книги: " + a + ". Автор: " + b));
+
+        books.compute("Философия Java", (a, b) -> b + ", крутой чувак");
+        System.out.println("_______________________");
+        books.forEach((a, b) -> System.out.println("Название книги: " + a + ". Автор: " + b));
     }
 }
