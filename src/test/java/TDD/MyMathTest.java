@@ -2,11 +2,17 @@ package TDD;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.TestRule;
+import org.junit.rules.Timeout;
 
 import static org.junit.Assert.*;
 
 public class MyMathTest {
+
+    @Rule
+    public TestRule timeout = new Timeout(300);
 
     @Before
     public void setUp() throws Exception {
@@ -16,7 +22,7 @@ public class MyMathTest {
     public void tearDown() throws Exception {
     }
 
-    @Test(timeout = 300)
+    @Test
     public void add() throws InterruptedException {
         int a = 2;
         int b = 7;
