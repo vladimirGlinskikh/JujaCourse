@@ -31,7 +31,12 @@ public class MyMathTest {
         assertEquals(expResult, result);
     }
 
-    @Test
-    public void div() {
+    @Test(expected = ArithmeticException.class)
+    public void div() throws InterruptedException {
+        int a = 7;
+        int b = 0;
+        int expResult = 0;
+        int result = MyMath.div(a, b);
+        assertEquals(expResult, result);
     }
 }
