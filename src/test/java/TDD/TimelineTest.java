@@ -5,13 +5,13 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TimelineTest {
+    private final static int NEW_FETCH_COUNT = Timeline.DEFAULT_FETCH_COUNT + 1;
+
     @Test
     public void setFetchCount() {
         Timeline timeline = new Timeline();
-        int expected = 5;
 
-        timeline.setFetchCount(expected);
-        int actual = timeline.getFetchCount();
-        assertEquals(expected, actual);
+        timeline.setFetchCount(NEW_FETCH_COUNT);
+        assertEquals(NEW_FETCH_COUNT, timeline.getFetchCount());
     }
 }

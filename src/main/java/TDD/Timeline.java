@@ -1,11 +1,13 @@
 package TDD;
 
 public class Timeline {
+    public static final int DEFAULT_FETCH_COUNT = 0;
+
     public void setFetchCount(int fetchCount) {
 
     }
 
     public int getFetchCount() {
-        return 0;
+        return DEFAULT_FETCH_COUNT;
     }
 }
