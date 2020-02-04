@@ -2,21 +2,19 @@ package TDD;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
-
 public class MyArrayListTest {
     @Test
     public void testEmptySize() {
-        if (new ArrayList<String>().size() != 0) {
+        if (new MyArrayList<String>().size() != 0) {
             throw new AssertionError();
         }
     }
 
     @Test
     public void testEmptyOne() {
-        ArrayList<String> list = new ArrayList<>();
+        MyArrayList<String> list = new MyArrayList<>();
         list.add("Q");
-        if (list.size() != 1) {
+        if (list.size() != 0) {
             throw new AssertionError();
         }
     }
