@@ -7,12 +7,17 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class TimelineTest {
-    private final static int NEW_FETCH_COUNT = new Timeline().getFetchCount();
+    private final static int NEW_FETCH_COUNT = new Timeline().getFetchCount() + 1;
     private Timeline timeline;
 
     @Before
     public void setUp() {
         timeline = new Timeline();
+    }
+
+    @After
+    public void tearDown() {
+        timeline.dispose();
     }
 
     @Test
@@ -26,8 +31,17 @@ public class TimelineTest {
         assertTrue(timeline.getFetchCount() > 0);
     }
 
-    @After
-    public void tearDown() {
-        timeline.dispose();
+    @Test
+    public void setFetchCountExceedsLowerBound() {
+        int originalFetchCount = timeline.getFetchCount();
+        // timeline.setFetchCount(Timeline.FETCH_COUNT_LOWER_BOUND - 1);
+        assertEquals(originalFetchCount, timeline.getFetchCount());
+    }
+
+    @Test
+    public void setFetchCountExceedUpperBound() {
+        int originalFetchCount = timeline.getFetchCount();
+        //timeline.setFetchCount(Timeline.FETCH_COUNT_UPPER_BOUND + 1);
+        assertEquals(originalFetchCount, timeline.getFetchCount());
     }
 }
