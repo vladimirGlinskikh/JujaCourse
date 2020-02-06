@@ -10,4 +10,8 @@ public class Timeline {
     public int getFetchCount() {
         return DEFAULT_FETCH_COUNT;
     }
+
+    public void dispose() {
+
+    }
 }

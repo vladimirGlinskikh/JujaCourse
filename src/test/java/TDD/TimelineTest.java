@@ -1,13 +1,13 @@
 package TDD;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class TimelineTest {
-    private final static int NEW_FETCH_COUNT = new Timeline().getFetchCount() + 1;
+    private final static int NEW_FETCH_COUNT = new Timeline().getFetchCount();
     private Timeline timeline;
 
     @Before
@@ -24,5 +24,10 @@ public class TimelineTest {
     @Test
     public void initialState() {
         assertTrue(timeline.getFetchCount() > 0);
+    }
+
+    @After
+    public void tearDown() {
+        timeline.dispose();
     }
 }
